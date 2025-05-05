@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  new WOW().init();
+});
+
 // ----header-dropdown-menu---
 $(document).ready(function () {
   $(".moblie-menu-btn").click(function () {
@@ -45,6 +49,47 @@ var swiper = new Swiper(".banner_slider .mySwiper", {
     1200: {
       slidesPerView: 7,
       spaceBetween: 50,
+    },
+  },
+});
+
+// ---modal-top-fans-slider---
+var swiper = new Swiper(".modal_top_fans_slider .mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    425: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    576: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4.5,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 5.5,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 6.5,
+      spaceBetween: 20,
+    },
+    1400: {
+      slidesPerView: 7.5,
+      spaceBetween: 20,
     },
   },
 });
