@@ -3,11 +3,15 @@
 @import url("./main.css");
 @import url("./var.css");
 @import url("./home.css");
-
+@import url("./login.css");
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
 }
 
 a {
