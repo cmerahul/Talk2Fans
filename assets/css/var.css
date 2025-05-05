@@ -1,0 +1,16 @@
+:root {
+  /* ---fonts--- */
+  --Poppins-Regular: "Poppins-Regular";
+  --Poppins-Medium: "Poppins-Medium";
+  --Poppins-SemiBold: "Poppins-SemiBold";
+  --Poppins-Bold: "Poppins-Bold";
+  --Poppins-ExtraBold: "Poppins-ExtraBold";
+  --Poppins-Black: "Poppins-Black";
+
+  /* ---colors--- */
+  --primaryColor: #eb3349;
+  --secondaryColor: #000;
+  --white: #fff;
+}
+
+

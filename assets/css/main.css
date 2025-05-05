@@ -1,0 +1,99 @@
+@import url("./font.css");
+@import url("./header.css");
+@import url("./main.css");
+@import url("./var.css");
+@import url("./home.css");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+li {
+  list-style-type: none;
+}
+
+.cmn_btn {
+  font-family: var(--Poppins-Medium);
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--white);
+  background-color: var(--primaryColor);
+  border-radius: 20px;
+  padding: 15px 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.cmn_btn span {
+  display: inline-block;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+}
+
+.cmn_btn span svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cmn_btn span svg path {
+  fill: var(--white);
+}
+
+.cmn_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: var(--white);
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+.cmn_btn:hover::before {
+  width: 100%;
+}
+
+.cmn_btn:hover {
+  color: var(--primaryColor);
+}
+.cmn_btn:hover span svg path {
+  fill: var(--primaryColor);
+}
+
+.cmn_btn_2 {
+  background-color: var(--white);
+  color: var(--primaryColor);
+}
+
+.cmn_btn_2 span svg path {
+  fill: var(--primaryColor);
+}
+
+.cmn_btn_2::before {
+  background-color: var(--primaryColor);
+}
+
+.cmn_btn_2:hover {
+  color: var(--white);
+}
+.cmn_btn_2:hover span svg path {
+  fill: var(--white);
+}
+
+.p-100 {
+  padding: 100px 0px;
+}
