@@ -4,6 +4,9 @@
 @import url("./var.css");
 @import url("./home.css");
 @import url("./login.css");
+@import url("./footer.css");
+@import url("./modal_stream_view.css");
+
 * {
   margin: 0px;
   padding: 0px;

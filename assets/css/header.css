@@ -195,6 +195,10 @@ header {
   display: none;
 }
 
+.modal_stream_view_header nav {
+  gap: 15px !important;
+}
+
 /* ===Media-quary=== */
 @media only screen and (max-width: 1399px) {
   .header_main ul li a {
@@ -324,5 +328,21 @@ header {
   }
   header {
     height: 70px;
+  }
+  .modal_stream_view_header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .modal_stream_main_header {
+    height: 90px !important;
+  }
+  .modal_stream_main_header .header_main ul.active {
+    top: 80px;
+  }
+  .modal_stream_main_header .header_main ul {
+    top: 80px;
+  }
+  .header-coin-wrp {
+    margin-left: 0px !important;
   }
 }
