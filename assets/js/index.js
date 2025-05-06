@@ -56,50 +56,50 @@ var swiper = new Swiper(".banner_slider .mySwiper", {
 document.addEventListener("DOMContentLoaded", () => {
   //   // Register the SplitText plugin
   //   gsap.registerPlugin(SplitText);
-// ---modal-top-fans-slider---
-var swiper = new Swiper(".modal_top_fans_slider .mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 10,
-  loop: true,
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+  // ---modal-top-fans-slider---
+  var swiper = new Swiper(".modal_top_fans_slider .mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
     },
-    425: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      425: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4.5,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 5.5,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 6.5,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 7.5,
+        spaceBetween: 20,
+      },
     },
-    576: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 4.5,
-      spaceBetween: 20,
-    },
-    992: {
-      slidesPerView: 5.5,
-      spaceBetween: 20,
-    },
-    1200: {
-      slidesPerView: 6.5,
-      spaceBetween: 20,
-    },
-    1400: {
-      slidesPerView: 7.5,
-      spaceBetween: 20,
-    },
-  },
-});
+  });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   // Register the SplitText plugin
-//   gsap.registerPlugin(SplitText);
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   // Register the SplitText plugin
+  //   gsap.registerPlugin(SplitText);
 
   //   // Targeting the element correctly
   //   const splitHomeTitle = new SplitText(".banner_content h1", { type: "lines" });
@@ -228,4 +228,28 @@ var swiper = new Swiper(".modal_top_fans_slider .mySwiper", {
   });
 
   // Upload Image In Login End =============================================
+});
+
+// ===live-video-hide-show===
+const clickcard = document.querySelectorAll(".streaming_fans_card");
+const videoDiv = document.querySelector(".live_video_wrp");
+const parentdiv = document.querySelector(".streaming_fans_card_Wrp");
+const backbtn = document.querySelector(".live_video_back_btn");
+const endvideo = document.querySelector(".live_video_end_btn");
+
+clickcard.forEach((curcard) => {
+  curcard.addEventListener("click", () => {
+    videoDiv.classList.add("active");
+    parentdiv.classList.add("active");
+  });
+});
+
+backbtn.addEventListener("click", () => {
+  videoDiv.classList.remove("active");
+  parentdiv.classList.remove("active");
+});
+
+endvideo.addEventListener("click", () => {
+  videoDiv.classList.remove("active");
+  parentdiv.classList.remove("active");
 });
