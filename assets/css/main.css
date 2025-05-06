@@ -7,6 +7,7 @@
 @import url("./footer.css");
 @import url("./modal_stream_view.css");
 @import url("./video_stream_view.css");
+@import url("./modal_profile.css");
 
 * {
   margin: 0px;
@@ -105,4 +106,49 @@ li {
 
 .p-100 {
   padding: 100px 0px;
+}
+
+.section-title {
+  margin-bottom: 0px;
+  font-family: var(--Poppins-SemiBold);
+  font-size: 38px;
+  line-height: 45.6px;
+  color: var(--secondaryColor);
+}
+
+/* ===Media-quary=== */
+
+@media only screen and (max-width: 1399px) {
+ 
+}
+
+@media only screen and (max-width: 1199px) {
+  .section-title {
+    font-size: 35px;
+    line-height: 35.6px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+ 
+}
+
+@media only screen and (max-width: 991px) {
+  .section-title {
+    font-size: 32px;
+    line-height: 32.6px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section-title {
+    font-size: 30px;
+    line-height: 30.6px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .section-title {
+    font-size: 26px;
+    line-height: 26.6px;
+  }
 }
