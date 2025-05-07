@@ -53,8 +53,8 @@
 .login-section form .stepsRow {
   height: 100%;
 }
-.userLogin-section .userlogin-row{
-    height: 100%;
+.userLogin-section .userlogin-row {
+  height: 100%;
 }
 
 .from-main-section {
@@ -450,9 +450,9 @@ label.login-from-userImg-section span {
     height: 350px;
   }
 
-  label.login-from-userImg-section {
+  /* label.login-from-userImg-section {
     aspect-ratio: 3/2;
-  }
+  } */
 
   .fromSubmit-btn-section {
     margin-top: 20px;
@@ -495,17 +495,16 @@ label.login-from-userImg-section span {
     height: 300px;
   }
 
-  .login-from-img img{
+  .login-from-img img {
     object-position: right;
   }
 
   .login-from-userImg-main-section {
     grid-template-columns: repeat(2, 1fr);
-    padding: 10px ;
+    padding: 10px;
     background-color: #f4f4f4;
     width: 100%;
   }
-
 }
 
 @media only screen and (max-width: 767px) {
