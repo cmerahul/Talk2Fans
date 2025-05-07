@@ -146,6 +146,10 @@
   border-radius: 13px;
 }
 
+.input-section input#phone{
+  padding-left: 0;
+}
+
 .input-section label {
   position: absolute;
   top: -8px;
@@ -422,7 +426,7 @@ label.login-from-userImg-section span {
 }
 
 .input-section .dropdown:has(.phoneDropwon) {
-  margin-right: 8px;
+  margin: 0 8px;
 }
 
 .input-section .phoneDropwon span {
