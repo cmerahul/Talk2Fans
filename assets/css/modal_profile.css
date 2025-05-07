@@ -493,6 +493,13 @@
 .modalProfile-follow-list {
   padding: 0;
   margin: 0;
+  max-height: 563px;
+  overflow-y: auto;
+}
+
+.modalProfile-follow-list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .modalProfile-follow-list .modalProfile-follow-item {
@@ -1599,12 +1606,11 @@
 
   #giftSenders-viewerSummaryModal .offcanvas-body .card-section {
     padding: 0 20px;
-}
+  }
 
-.offcanvas-body-footer {
-  padding: 30px 15px;
-}
-
+  .offcanvas-body-footer {
+    padding: 30px 15px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
