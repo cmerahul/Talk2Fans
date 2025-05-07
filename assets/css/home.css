@@ -801,6 +801,9 @@
       filter: blur(5px);
     }
   }
+  .p-100 {
+    padding: 70px 0px !important;
+  }
 }
 @media only screen and (max-width: 767px) {
   .banner_section {
@@ -1101,6 +1104,9 @@
   }
   .hearts .heart {
     scale: 0.6;
+  }
+  .p-100 {
+    padding: 50px 0px !important;
   }
 }
 
