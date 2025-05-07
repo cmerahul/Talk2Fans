@@ -567,7 +567,7 @@ label.login-from-userImg-section span {
     width: 300px;
     height: 300px;
     left: 0;
-    bottom: -145px;
+    bottom: 0px;
     transform: none;
   }
 
