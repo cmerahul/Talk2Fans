@@ -125,6 +125,10 @@
   color: var(--white);
   text-transform: capitalize;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 110px;
 }
 
 .banner_slider_content h6 {
