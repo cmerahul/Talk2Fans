@@ -23,6 +23,8 @@
 .live_video_wrp.active {
   display: block;
   margin-top: -56px;
+  position: sticky;
+  top: 100px;
 }
 
 .streaming_fans_card {
@@ -475,61 +477,62 @@
 /* ===Media-quary=== */
 
 @media only screen and (max-width: 1399px) {
-  /* .video_streaming .streaming_fans_card {
-    min-width: 172px;
-    max-width: 172px;
-    flex-basis: 172px   ;
-  } */
-
-  /* .video_streaming .streaming_fans_card {
-    min-width: 195px;
-    max-width: 204px;
-    flex-basis: 195px;
+  .video_streaming .streaming_fans_card_Wrp.active .row,
+  .video_streaming .streaming_fans_card_Wrp.active .streaming_fans_card_inner {
+    flex-basis: 50%;
   }
 
-  .video_streaming
-    .streaming_fans_card_Wrp.active
-    .streaming_fans_card_inner
-    .streaming_fans_card {
-    min-width: 172px;
-    max-width: 172px;
-    flex-basis: 172px;
-  } */
+  .live_video_wrp {
+    flex-basis: 50%;
+  }
 
   .streaming_fans_card_inner {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
-}
-
-@media only screen and (max-width: 1299px) {
-  /* .video_streaming .streaming_fans_card {
-    min-width: 207px;
-    max-width: 235px;
-    flex-basis: 207px;
+  .live_video_screen_profile_left_img {
+    width: 100%;
+    max-width: 45px;
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
   }
-  .video_streaming
-    .streaming_fans_card_Wrp.active
-    .streaming_fans_card_inner
-    .streaming_fans_card {
-    min-width: 148px;
-    max-width: 170px;
-    flex-basis: 148px;
-  } */
+  .live_video_screen_profile_left_content h3 {
+    font-size: 16px;
+  }
+  .live_video_screen_profile_left_content p {
+    font-size: 13px;
+    line-height: 13px;
+    gap: 5px;
+  }
 
-  .streaming_fans_card_inner {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  .live_video_screen_profile_left_content p svg {
+    width: 15px;
+    height: 15px;
+  }
+  .live_video_follow_btn {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 12px 30px;
+    gap: 10px;
+    border-radius: 14px;
+  }
+  .live_video_end_btn {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 12px 30px;
+    gap: 10px;
+    border-radius: 14px;
+  }
+  .live_video_setting_btn {
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 15px;
   }
 }
 
 @media only screen and (max-width: 1199px) {
-  /* .video_streaming .streaming_fans_card {
-    min-width: 207px;
-    max-width: 210px;
-    flex-basis: 207px;
-  } */
-}
-
-@media only screen and (max-width: 1024px) {
   .video_streaming .streaming_fans_card_Wrp.active .row,
   .video_streaming .streaming_fans_card_Wrp.active .streaming_fans_card_inner {
     flex-basis: 40%;
@@ -538,23 +541,15 @@
   .live_video_wrp {
     flex-basis: 60%;
   }
-
   .video_streaming .streaming_fans_card_Wrp.active .streaming_fans_card_inner {
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+  .video_streaming .streaming_fans_card_Wrp .streaming_fans_card_inner {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 }
 
 @media only screen and (max-width: 991px) {
-  /* .video_streaming .streaming_fans_card {
-    min-width: 167px;
-    max-width: 210px;
-    flex-basis: 150px;
-  } */
-
-  .video_streaming .streaming_fans_card_Wrp {
-    flex-direction: column-reverse;
-  }
-
   .streaming_fans_card_inner {
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     width: 100%;
@@ -567,6 +562,66 @@
 
   .live_video_wrp.active {
     margin-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--white);
+    height: 100dvh;
+  }
+  .live_video_screen {
+    height: 100%;
+  }
+  .live_video_head {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .live_video_screen_info {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    padding: 10px 20px;
+  }
+  .live_video_screen video {
+    border-radius: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .live_video_screen_profile_left_img {
+    width: 100%;
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+  }
+  .live_video_follow_btn {
+    font-size: 15px;
+    line-height: 15px;
+    padding: 10px 25px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+  .live_video_end_btn {
+    font-size: 15px;
+    line-height: 15px;
+    padding: 10px 25px;
+    gap: 10px;
+    border-radius: 10px;
+    min-width: 100px;
+  }
+  .live_video_setting_btn {
+    max-width: 35px;
+    min-width: 35px;
+    height: 35px;
+    border-radius: 10px;
+  }
+  .live_video_setting_btn svg {
+    width: 100%;
+    max-width: 20px;
   }
 }
 
@@ -574,10 +629,94 @@
   .streaming_fans_card_inner {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
+  .live_video_screen_profile {
+    padding: 20px 10px;
+  }
+  .live_video_screen_info {
+    padding: 10px 10px;
+  }
+  .live_video_screen_coins_wrp {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .live_video_screen_coins_wrp li button {
+    font-size: 13px;
+    line-height: 13px;
+    padding: 4px 6px;
+    min-width: 70px;
+  }
+  .live_video_head_left ul li {
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 424px) {
+  .live_video_head_left ul {
+    display: none;
+  }
+  .live_video_back_btn {
+    max-width: 35px;
+    min-width: 35px;
+    height: 35px;
+  }
+  .live_video_head_views p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .live_video_head_views svg {
+    width: 15px;
+    height: 15px;
+  }
+  .live_video_head_right button {
+    background-color: transparent;
+    border: transparent;
+    width: 100%;
+    max-width: 22px;
+    height: 22px;
+  }
+
+  .live_video_follow_btn {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+  .live_video_end_btn {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 10px;
+    min-width: 50px;
+  }
+  .live_video_setting_btn {
+    max-width: 35px;
+    min-width: 35px;
+    height: 35px;
+    border-radius: 10px;
+  }
+  .live_video_screen_profile_left_content h3 {
+    font-size: 14px;
+  }
+  .live_video_screen_profile_left_content p {
+    font-size: 12px;
+    line-height: 12px;
+    gap: 5px;
+  }
+  .live_video_screen_info {
+    bottom: 55px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
   .streaming_fans_card_inner {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+  .video_streaming .streaming_fans_card_Wrp .streaming_fans_card_inner {
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   }
 }
