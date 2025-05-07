@@ -485,6 +485,10 @@
   margin-bottom: 0px;
 }
 
+.user_stream_view.video_streaming .streaming_fans_card_Wrp {
+  display: block;
+}
+
 /* ===Media-quary=== */
 
 @media only screen and (max-width: 1399px) {
@@ -661,6 +665,10 @@
     max-width: 40px;
     min-width: 40px;
     height: 40px;
+  }
+  .streaming_fans_card_content h5 {
+    font-size: 12px;
+    line-height: 12px;
   }
 }
 
