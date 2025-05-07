@@ -237,14 +237,14 @@ const parentdiv = document.querySelector(".streaming_fans_card_Wrp");
 const backbtn = document.querySelector(".live_video_back_btn");
 const endvideo = document.querySelector(".live_video_end_btn");
 
-clickcard.forEach((curcard) => {
+clickcard?.forEach((curcard) => {
   curcard.addEventListener("click", () => {
     videoDiv.classList.add("active");
     parentdiv.classList.add("active");
   });
 });
 
-backbtn.addEventListener("click", () => {
+backbtn?.addEventListener("click", () => {
   videoDiv.classList.remove("active");
   parentdiv.classList.remove("active");
 });
@@ -253,3 +253,11 @@ backbtn.addEventListener("click", () => {
 //   videoDiv.classList.remove("active");
 //   parentdiv.classList.remove("active");
 // });
+
+// SearchBar Show Hide =====================
+const searchBarSeaction =  document.querySelector(".searchBar-section")
+const ShowSearchBarBtn  =  document.querySelector(".searchShowBtn")
+
+ShowSearchBarBtn.addEventListener("click", () => {
+  searchBarSeaction.classList.add("active");
+});

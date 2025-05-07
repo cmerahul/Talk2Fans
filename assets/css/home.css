@@ -189,6 +189,10 @@
   border-bottom: 1px solid var(--primaryColor);
 }
 
+.live_streaming{
+  overflow-x: hidden ;
+}
+
 .live_streaming_card_wrp {
   margin-top: 30px;
 }
