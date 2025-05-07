@@ -380,7 +380,7 @@
   margin-bottom: 0;
 }
 
-.modalProfile-banner-left h4 span {
+.modalProfile-banner-left h4 a {
   display: inline-block;
   padding: 5px 15px;
   color: #eb3349;
@@ -877,6 +877,567 @@
 
 /* ==== modal Subscribe Section End ==== */
 
+/* ==== Boost Stream Modal Strat ====  */
+
+#boostStreammodal .modal-content {
+  border: none;
+  max-width: 494px;
+  border-radius: 22px;
+  background: var(--white);
+  overflow-y: auto;
+}
+
+#boostStreammodal .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: none;
+  padding: 24px;
+}
+
+#boostStreammodal .modal-header .boostStremModalHeader-icon {
+  width: 100%;
+  max-width: 74px;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eb334933;
+}
+
+#boostStreammodal .modal-header button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+#boostStreammodal .modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 24px 24px;
+}
+
+#boostStreammodal .modal-body .modal-title {
+  font-family: var(--Poppins-SemiBold);
+  font-size: 22px;
+  line-height: 26.4px;
+  color: var(--secondaryColor);
+  margin-bottom: 15px;
+}
+
+#boostStreammodal .modal-body .modal-text {
+  font-family: var(--Poppins-Regular);
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0;
+  line-height: 18px;
+}
+
+#boostStreammodal .modal-footer {
+  padding: 24px;
+  border: none;
+}
+
+.modal-btn-1 {
+  padding: 17px 12px;
+  margin: 0px !important;
+  width: 100%;
+  flex: 1 1 auto;
+  border: none;
+  background: linear-gradient(to top right, #eb3349, #f45c43);
+  border-radius: 14px;
+  font-size: 14px;
+  font-family: var(--Poppins-Medium);
+  color: var(--white);
+  line-height: 16.8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-btn-1:hover {
+  background: linear-gradient(to bottom left, #eb3349, #f45c43);
+}
+
+.modal-btn-2 {
+  padding: 17px 12px;
+  margin: 0px !important;
+  width: 100%;
+  flex: 1 1 auto;
+  border: none;
+  background: #d5d5d5;
+  border-radius: 14px;
+  font-size: 14px;
+  font-family: var(--Poppins-Medium);
+  color: #4d4d4d;
+  line-height: 16.8px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* ==== Boost Stream Modal End ====  */
+
+/* ==== live Stream Settings Modal Start ====  */
+
+#liveStreamSettings.offcanvas-backdrop.show {
+  opacity: 0.3;
+  backdrop-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.offcanvas.offcanvas-end {
+  border-radius: 14px 0 0 14px;
+  border: 1px solid rgba(0, 0, 0, 0.3) !important;
+  border-right: none !important;
+  --bs-offcanvas-width: 480px;
+  overflow-y: auto;
+}
+.offcanvas.offcanvas-end::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.offcanvas-header {
+  padding: 38px 38px 29px !important;
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  z-index: 999;
+}
+
+.offcanvas-header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  margin-right: 8px;
+}
+
+.offcanvas-header .offcanvas-title {
+  font-size: 20px;
+  font-family: var(--Poppins-SemiBold);
+  color: var(--secondaryColor);
+}
+
+.offcanvas-body {
+  padding: 0 38px !important;
+}
+
+#liveStreamSettings .offcanvas-main-input-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 0 18px;
+  margin: 0 0 26px;
+  border-bottom: 1px solid #ebebeb;
+  padding-top: 5px;
+}
+#liveStreamSettings .offcanvas-main-input-section .input-section {
+  width: 100%;
+}
+
+.offcanvas-main-input-section.radio-input-section {
+  justify-content: flex-start;
+}
+
+.offcanvas-main-input-section.radio-input-section .input-section div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.offcanvas-main-input-section.radio-input-section
+  .input-section
+  div:last-child {
+  margin-bottom: 0;
+}
+
+.offcanvas-main-input-section.radio-input-section .input-section div input {
+  width: auto;
+}
+
+.offcanvas-main-input-section.radio-input-section .input-section div label {
+  position: static;
+  font-size: 14px;
+  font-family: var(--Poppins-Medium);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.offcanvas-main-input-section.radio-input-section .input-section div input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.offcanvas-main-input-section.radio-input-section
+  .input-section
+  div
+  input::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid #f45c43;
+}
+.offcanvas-main-input-section.radio-input-section
+  .input-section
+  div
+  input::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #eb3349, #f45c43);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.offcanvas-main-input-section.radio-input-section
+  .input-section
+  div
+  input:checked::after {
+  opacity: 1;
+}
+
+#liveStreamSettings .offcanvas-checkBox-section {
+  display: flex;
+  align-items: flex-start;
+}
+
+#liveStreamSettings .offcanvas-checkBox-section:last-child {
+  padding: 18px 0 0;
+  margin: 18px 0 0;
+  border-top: 1px solid #ebebeb;
+}
+
+#liveStreamSettings
+  .offcanvas-checkBox-section
+  .offcanvas-checkBox-title-section {
+  margin-right: 12px;
+}
+
+#liveStreamSettings
+  .offcanvas-checkBox-section
+  .offcanvas-checkBox-title-section
+  h4 {
+  font-size: 14px;
+  font-family: var(--Poppins-Medium);
+  color: var(--secondaryColor);
+  margin-bottom: 4px;
+}
+
+#liveStreamSettings
+  .offcanvas-checkBox-section
+  .offcanvas-checkBox-title-section
+  p {
+  font-size: 12px;
+  font-family: var(--Poppins-Regular);
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0;
+}
+
+.checkbox-section .checkbox-icon {
+  position: relative;
+  width: 100%;
+  max-width: 30px;
+  min-width: 30px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: #d5d5d5;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.checkbox-section .checkbox-icon span {
+  position: absolute;
+  content: "";
+  width: 100%;
+  max-width: 20px;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #d5d5d5;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkbox-section .checkbox-icon span::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  max-width: 7px;
+  min-width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--white);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.checkbox-section input[type="checkbox"]:checked ~ .checkbox-icon {
+  background: #fbd6db;
+}
+
+.checkbox-section input[type="checkbox"]:checked ~ .checkbox-icon span {
+  background: linear-gradient(to top right, #eb3349, #f45c43);
+  left: 10px;
+}
+
+.offcanvas-body-footer {
+  padding: 30px 38px;
+}
+
+.liveStreamSettings-bottom-side .modal-btn-2 {
+  margin-top: 12px !important;
+}
+
+/* ==== live Stream Settings Modal End ====  */
+
+/* ==== End Streming Modal Strat ====  */
+
+#endStreamingModal .modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 24px 24px 0px;
+}
+
+#endStreamingModal .modal-body .modal-title {
+  font-family: var(--Poppins-SemiBold);
+  font-size: 22px;
+  line-height: 26.4px;
+  color: var(--secondaryColor);
+  margin-bottom: 15px;
+}
+
+#endStreamingModal .modal-body .modal-text {
+  font-family: var(--Poppins-Regular);
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0;
+  line-height: 18px;
+}
+
+.endStreamingModal-btn-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 330px;
+  gap: 9px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#endStreamingModal .modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 24px;
+  border: none;
+}
+
+#endStreamingModal .modal-footer button {
+  font-size: 14px;
+  font-family: var(--Poppins-Medium);
+  background: linear-gradient(to top right, #eb3349, #f45c43);
+  border: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+#endStreamingModal .modal-footer button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to top right, #eb3349, #f45c43);
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  transition: all 0.3s ease-in;
+}
+
+#endStreamingModal .modal-footer button:hover::before {
+  bottom: -2px;
+}
+
+/* ==== End Streming Modal End ====  */
+
+/* ==== End Streming Modal End ====  */
+
+.giftSenders-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+  width: 100%;
+  border-radius: 16px;
+  background-color: #eb334933;
+}
+
+.giftSenders-card.giftSenders-card-2 {
+  background-color: #f45c4333;
+}
+
+.giftSenders-card .giftSenders-card-left-side .icon {
+  width: 100%;
+  max-width: 42px;
+  min-width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.giftSenders-card .giftSenders-card-right-side {
+  width: 100%;
+}
+.giftSenders-card .giftSenders-card-right-side h6 {
+  font-size: 11px;
+  font-family: var(--Poppins-Regular);
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 16.8px;
+  margin-bottom: 0;
+}
+
+.giftSenders-card .giftSenders-card-right-side h5 {
+  font-size: 14px;
+  font-family: var(--Poppins-Medium);
+  color: var(--secondaryColor);
+  line-height: 19.2px;
+  margin-bottom: 0;
+}
+
+#giftSenders-viewerSummaryModal .offcanvas-body {
+  padding: 0 !important;
+}
+
+#giftSenders-viewerSummaryModal .offcanvas-body .card-section {
+  padding: 0 38px;
+}
+
+.summaryList-section {
+  background-color: #f4f4f4;
+  margin-top: 20px;
+  padding: 20px 38px;
+}
+
+.user-summary-list {
+  max-height: 408px;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.user-summary-list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.user-summary-list .user-summary-item {
+  margin-bottom: 12px;
+}
+
+.user-summary-list .user-summary-item:last-child {
+  margin-bottom: 0;
+}
+
+.user-summary-list .user-summary-item .user-summary-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.user-summary-link .user-profile-img {
+  width: 100%;
+  max-width: 34px;
+  min-width: 34px;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-summary-link .user-profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.user-summary-link .user-summary-details-section {
+  width: 100%;
+}
+
+.user-summary-link .user-summary-details-section h5 {
+  font-size: 13px;
+  font-family: var(--Poppins-Medium);
+  line-height: 15.6px;
+  margin-bottom: 0;
+  color: var(--secondaryColor);
+}
+
+.user-summary-link .user-summary-details-section p {
+  font-size: 11px;
+  font-family: var(--Poppins-Regular);
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.user-summary-link .user-summary-details-section p img {
+  margin: 0 2px;
+}
+
+.user-summary-link .user-summary-details-section p .coinImage {
+  width: 100%;
+  max-width: 14.26px;
+  min-width: 14.26px;
+  height: 12.18px;
+}
+
+.user-summary-link .user-summary-details-section p .giftIconimg {
+  width: 100%;
+  max-width: 13px;
+  min-width: 13px;
+  height: 14px;
+}
+
+/* ==== End Streming Modal End ====  */
+
 /* ===Media-quary=== */
 
 @media only screen and (max-width: 1399px) {
@@ -910,7 +1471,7 @@
     font-size: 30px;
   }
 
-  .modalProfile-banner-left h4 span {
+  .modalProfile-banner-left h4 a {
     padding: 5px 12px;
     font-size: 13px;
     margin-left: 14px;
@@ -981,7 +1542,7 @@
     font-size: 24px;
   }
 
-  .modalProfile-banner-left h4 span {
+  .modalProfile-banner-left h4 a {
     padding: 3px 10px;
     font-size: 12px;
     margin-left: 11px;
@@ -1018,6 +1579,32 @@
     font-size: 14px;
     padding: 10px 14px;
   }
+
+  .offcanvas.offcanvas-end {
+    --bs-offcanvas-width: 380px;
+  }
+
+  .offcanvas-header {
+    padding: 38px 15px 29px !important;
+  }
+
+  .offcanvas-body {
+    padding: 0 15px !important;
+  }
+
+  .offcanvas-header .offcanvas-title {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  #giftSenders-viewerSummaryModal .offcanvas-body .card-section {
+    padding: 0 20px;
+}
+
+.offcanvas-body-footer {
+  padding: 30px 15px;
+}
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -1051,7 +1638,7 @@
     height: 12px;
   }
 
-  .modalProfile-banner-left h4 span {
+  .modalProfile-banner-left h4 a {
     padding: 3px 8px;
     font-size: 10px;
     margin-left: 7px;
@@ -1082,5 +1669,14 @@
   .purchaseAd-ons-select-input h5 {
     font-size: 14px;
     margin-right: 5px;
+  }
+
+  .offcanvas.offcanvas-end {
+    --bs-offcanvas-width: 300px;
+  }
+
+  .offcanvas-header .offcanvas-title {
+    font-size: 15px;
+    line-height: 1.2;
   }
 }

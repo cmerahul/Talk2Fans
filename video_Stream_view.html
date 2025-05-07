@@ -1880,8 +1880,8 @@
                   </div>
                   <div class="live_video_screen_profile_right">
                     <!-- <button class="live_video_follow_btn">Follow</button> -->
-                    <button class="live_video_end_btn">End</button>
-                    <button class="live_video_setting_btn">
+                    <button class="live_video_end_btn" data-bs-toggle="modal"data-bs-target="#endStreamingModal" >End</button>
+                    <button class="live_video_setting_btn" data-bs-target="#liveStreamSettings" data-bs-toggle="offcanvas">
                       <svg
                         width="32"
                         height="34"
@@ -2059,6 +2059,631 @@
       </div>
     </section>
     <!-- ===modal_streaming_fans-start=== -->
+
+    <!-- ====== Boost Stream Modal Start ====== -->
+
+    <div
+      class="modal fade"
+      id="boostStreammodal"
+      tabindex="-1"
+      aria-labelledby="boostStreammodal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="boostStremModalHeader-icon">
+              <svg
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27.3125 3.5625H10.6875C10.0576 3.5625 9.45352 3.81272 9.00812 4.25812C8.56272 4.70352 8.3125 5.30761 8.3125 5.9375V11.2812C8.3133 11.6498 8.3995 12.0132 8.56433 12.3428C8.72915 12.6725 8.96813 12.9595 9.2625 13.1813L17.0213 19L9.2625 24.8188C8.96813 25.0405 8.72915 25.3275 8.56433 25.6572C8.3995 25.9868 8.3133 26.3502 8.3125 26.7188V32.0625C8.3125 32.6924 8.56272 33.2965 9.00812 33.7419C9.45352 34.1873 10.0576 34.4375 10.6875 34.4375H27.3125C27.9424 34.4375 28.5465 34.1873 28.9919 33.7419C29.4373 33.2965 29.6875 32.6924 29.6875 32.0625V26.7722C29.6867 26.405 29.6012 26.043 29.4377 25.7143C29.2742 25.3855 29.0372 25.0989 28.7449 24.8766L20.9698 19L28.7449 13.1219C29.0373 12.9001 29.2745 12.6138 29.438 12.2852C29.6015 11.9567 29.6869 11.5948 29.6875 11.2278V5.9375C29.6875 5.30761 29.4373 4.70352 28.9919 4.25812C28.5465 3.81272 27.9424 3.5625 27.3125 3.5625ZM27.3125 5.9375V8.3125H10.6875V5.9375H27.3125ZM27.3125 32.0625H10.6875V26.7188L19 20.4844L27.3125 26.7707V32.0625ZM19 17.5156L10.6875 11.2812V10.6875H27.3125V11.2278L19 17.5156Z"
+                  fill="#EB3349"
+                />
+              </svg>
+            </div>
+            <button type="button" data-bs-dismiss="modal">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.8873 19.7381C20.9628 19.8136 21.0227 19.9032 21.0635 20.0018C21.1044 20.1005 21.1254 20.2062 21.1254 20.313C21.1254 20.4197 21.1044 20.5254 21.0635 20.6241C21.0227 20.7227 20.9628 20.8123 20.8873 20.8878C20.8118 20.9633 20.7222 21.0232 20.6236 21.064C20.5249 21.1049 20.4192 21.1259 20.3125 21.1259C20.2057 21.1259 20.1 21.1049 20.0014 21.064C19.9027 21.0232 19.8131 20.9633 19.7376 20.8878L13 14.1491L6.26231 20.8878C6.10985 21.0403 5.90307 21.1259 5.68746 21.1259C5.47186 21.1259 5.26508 21.0403 5.11262 20.8878C4.96016 20.7353 4.87451 20.5286 4.87451 20.313C4.87451 20.0973 4.96016 19.8906 5.11262 19.7381L11.8513 13.0005L5.11262 6.2628C4.96016 6.11034 4.87451 5.90356 4.87451 5.68795C4.87451 5.47234 4.96016 5.26557 5.11262 5.11311C5.26508 4.96065 5.47186 4.875 5.68746 4.875C5.90307 4.875 6.10985 4.96065 6.26231 5.11311L13 11.8518L19.7376 5.11311C19.8901 4.96065 20.0969 4.875 20.3125 4.875C20.5281 4.875 20.7348 4.96065 20.8873 5.11311C21.0398 5.26557 21.1254 5.47234 21.1254 5.68795C21.1254 5.90356 21.0398 6.11034 20.8873 6.2628L14.1486 13.0005L20.8873 19.7381Z"
+                  fill="#565656"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h3 class="modal-title">Boost Stream</h3>
+            <p class="modal-text">
+              Increase your stream’s visibility to reach a larger audience.
+              Promote in real-time and attract more viewers instantly.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="modal-btn-1">Boost Stream</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== Boost Stream Modal End ====== -->
+
+    <!-- ====== Boost Stream Modal Start ====== -->
+
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="liveStreamSettings"
+      aria-labelledby="liveStreamSettings"
+    >
+      <form action="">
+        <div class="liveStreamSettings-main-section">
+          <div class="liveStreamSettings-top-side">
+            <div class="offcanvas-header">
+              <button type="button" class="" data-bs-dismiss="offcanvas">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.8123 9.99987C17.8123 10.2485 17.7135 10.487 17.5377 10.6628C17.3619 10.8386 17.1234 10.9374 16.8748 10.9374H5.39039L9.41539 14.9616C9.59151 15.1377 9.69045 15.3766 9.69045 15.6256C9.69045 15.8747 9.59151 16.1136 9.41539 16.2897C9.23927 16.4658 9.0004 16.5648 8.75132 16.5648C8.50225 16.5648 8.26338 16.4658 8.08726 16.2897L2.46226 10.6647C2.37486 10.5776 2.30552 10.4741 2.2582 10.3602C2.21088 10.2462 2.18652 10.124 2.18652 10.0006C2.18652 9.87726 2.21088 9.75509 2.2582 9.64113C2.30552 9.52718 2.37486 9.42368 2.46226 9.33659L8.08726 3.71159C8.17447 3.62438 8.278 3.55521 8.39194 3.50801C8.50588 3.46081 8.628 3.43652 8.75132 3.43652C8.87465 3.43652 8.99677 3.46081 9.11071 3.50801C9.22465 3.55521 9.32818 3.62438 9.41539 3.71159C9.50259 3.79879 9.57177 3.90232 9.61896 4.01626C9.66616 4.1302 9.69045 4.25232 9.69045 4.37565C9.69045 4.49898 9.66616 4.6211 9.61896 4.73504C9.57177 4.84898 9.50259 4.95251 9.41539 5.03971L5.39039 9.06237H16.8748C17.1234 9.06237 17.3619 9.16114 17.5377 9.33696C17.7135 9.51277 17.8123 9.75123 17.8123 9.99987Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
+              <h5 class="offcanvas-title">Live Stream Settings</h5>
+            </div>
+            <div class="offcanvas-body">
+              <div class="offcanvas-main-input-section">
+                <div class="input-section">
+                  <label for="title">Title</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="title"
+                    placeholder="Enter Title"
+                  />
+                </div>
+                <div class="input-section">
+                  <label for="category">Category</label>
+                  <select>
+                    <option value="in">Select</option>
+                    <option value="in">india</option>
+                    <option value="in">india</option>
+                  </select>
+                </div>
+                <div class="input-section">
+                  <label for="Hashtags">Hashtags</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="Hashtags"
+                    placeholder="Enter Hashtags"
+                  />
+                </div>
+              </div>
+              <div class="offcanvas-main-input-section radio-input-section">
+                <div class="input-section">
+                  <label for="Visibility">Choose Visibility</label>
+                  <div>
+                    <input
+                      type="radio"
+                      id="Public"
+                      name="visibility"
+                      class="Visibility-radio"
+                    />
+                    <label for="Public">Public</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="Private"
+                      name="visibility"
+                      class="Visibility-radio"
+                    />
+                    <label for="Private">Private</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="offcanvas-checkBox-section">
+                <div class="offcanvas-checkBox-title-section">
+                  <h4>Live Chat</h4>
+                  <p>
+                    Manage your customer support with ease. Turn chat on for
+                    real-time help or off when unavailable. Stay in control of
+                    your communication.
+                  </p>
+                </div>
+                <div class="checkbox-section">
+                  <input hidden type="checkbox" id="liveChat" />
+                  <label for="liveChat" class="checkbox-icon">
+                    <span></span>
+                  </label>
+                </div>
+              </div>
+              <div class="offcanvas-checkBox-section">
+                <div class="offcanvas-checkBox-title-section">
+                  <h4>Shareable Stream Link</h4>
+                  <p>
+                    Easily generate a link to share your live stream with
+                    customers or team members. Perfect for quick access and
+                    seamless viewing—anytime, anywhere.
+                  </p>
+                </div>
+                <div class="checkbox-section">
+                  <input hidden type="checkbox" id="streamLink" />
+                  <label class="checkbox-icon" for="streamLink">
+                    <span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="liveStreamSettings-bottom-side">
+            <div class="offcanvas-body-footer">
+              <button class="modal-btn-1" type="submit">Save Changes</button>
+              <button
+                class="modal-btn-2"
+                type="button"
+                data-bs-dismiss="offcanvas"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- ====== Boost Stream Modal End ====== -->
+
+    <!-- ====== End Streaming Modal Start ====== -->
+
+    <div
+      class="modal fade"
+      id="endStreamingModal"
+      tabindex="-1"
+      aria-labelledby="endStreamingModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3 class="modal-title">End Streaming</h3>
+            <p class="modal-text">
+              Stop your live session instantly when you're done. This will
+              disconnect all viewers and close the stream for everyone in
+              real-time.
+            </p>
+            <div class="endStreamingModal-btn-section">
+              <button class="modal-btn-2" data-bs-dismiss="modal">Cancel</button>
+              <button class="modal-btn-1">Boost Stream</button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button>Pause Streaming</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== End Streaming Modal End ====== -->
+
+    <!-- ====== End Streaming Modal Strat ====== -->
+
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="giftSenders-viewerSummaryModal"
+      aria-labelledby="giftSenders-viewerSummaryModal"
+    >
+      <form action="">
+        <div class="liveStreamSettings-main-section">
+          <div class="liveStreamSettings-top-side">
+            <div class="offcanvas-header">
+              <button type="button" class="" data-bs-dismiss="offcanvas">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.8123 9.99987C17.8123 10.2485 17.7135 10.487 17.5377 10.6628C17.3619 10.8386 17.1234 10.9374 16.8748 10.9374H5.39039L9.41539 14.9616C9.59151 15.1377 9.69045 15.3766 9.69045 15.6256C9.69045 15.8747 9.59151 16.1136 9.41539 16.2897C9.23927 16.4658 9.0004 16.5648 8.75132 16.5648C8.50225 16.5648 8.26338 16.4658 8.08726 16.2897L2.46226 10.6647C2.37486 10.5776 2.30552 10.4741 2.2582 10.3602C2.21088 10.2462 2.18652 10.124 2.18652 10.0006C2.18652 9.87726 2.21088 9.75509 2.2582 9.64113C2.30552 9.52718 2.37486 9.42368 2.46226 9.33659L8.08726 3.71159C8.17447 3.62438 8.278 3.55521 8.39194 3.50801C8.50588 3.46081 8.628 3.43652 8.75132 3.43652C8.87465 3.43652 8.99677 3.46081 9.11071 3.50801C9.22465 3.55521 9.32818 3.62438 9.41539 3.71159C9.50259 3.79879 9.57177 3.90232 9.61896 4.01626C9.66616 4.1302 9.69045 4.25232 9.69045 4.37565C9.69045 4.49898 9.66616 4.6211 9.61896 4.73504C9.57177 4.84898 9.50259 4.95251 9.41539 5.03971L5.39039 9.06237H16.8748C17.1234 9.06237 17.3619 9.16114 17.5377 9.33696C17.7135 9.51277 17.8123 9.75123 17.8123 9.99987Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
+              <h5 class="offcanvas-title">Gift Senders & viewer summary</h5>
+            </div>
+            <div class="offcanvas-body">
+              <div class="card-section">
+                <div class="row gy-3">
+                  <div class="col-lg-6">
+                    <div class="giftSenders-card giftSenders-card-1">
+                      <div class="giftSenders-card-left-side">
+                        <div class="icon">
+                          <svg
+                            width="25"
+                            height="27"
+                            viewBox="0 0 25 27"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M12.5 7.64551H12.5029C14.7345 7.63562 16.9658 7.70353 19.1924 7.85059V7.85156C20.4045 7.94008 21.5465 8.42465 22.4365 9.2207L22.6113 9.38379C23.4665 10.2205 24.005 11.3104 24.1475 12.4756L24.1709 12.71V12.7139C24.2863 14.1178 24.3555 15.5439 24.3555 16.999C24.3555 18.092 24.3161 19.1671 24.248 20.2285L24.1709 21.2861V21.29C24.0816 22.4647 23.5902 23.5756 22.7773 24.4453L22.6113 24.6162C21.7558 25.4532 20.6362 25.984 19.4346 26.125L19.1924 26.1484C17.7041 26.2517 16.091 26.3162 14.3223 26.3418L12.5 26.3545H12.4971C10.2652 26.3651 8.03352 26.2967 5.80664 26.1504H5.80762C4.59662 26.062 3.45479 25.5764 2.56445 24.7803L2.38965 24.6172C1.53423 23.7807 0.99527 22.6906 0.852539 21.5254L0.829102 21.292V21.2881L0.751953 20.2305C0.683898 19.1693 0.644552 18.0946 0.644531 17.002C0.646097 15.9291 0.681708 14.8567 0.75 13.7861L0.829102 12.7158V12.71C0.918815 11.5357 1.40994 10.425 2.22266 9.55566L2.38965 9.38574C3.30231 8.49326 4.51516 7.94787 5.80762 7.85352L5.80664 7.85254C7.29504 7.74751 8.90845 7.68392 10.6777 7.6582L12.5 7.64551Z"
+                              stroke="#EB3349"
+                              stroke-width="1.28952"
+                            />
+                            <path
+                              d="M1 17H24"
+                              stroke="#EB3349"
+                              stroke-width="1.28952"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M12.6387 26.148V8"
+                              stroke="#EB3349"
+                              stroke-width="1.28952"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M12.3555 7.79384L15.5777 2.60774C16.9632 0.379081 20.266 0.489243 21.501 2.80265C22.4014 4.49321 21.7129 6.58841 19.9778 7.42733L18.8031 7.8317"
+                              stroke="#EB3349"
+                              stroke-width="1.28952"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M12.3551 7.79384L9.13284 2.60774C7.74735 0.379081 4.4446 0.489243 3.20952 2.80265C2.30915 4.49321 2.99767 6.58841 4.7306 7.42733L5.58508 7.8317"
+                              stroke="#EB3349"
+                              stroke-width="1.28952"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="giftSenders-card-right-side">
+                        <h6>Total Gifts Sent</h6>
+                        <h5>15,000</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="giftSenders-card giftSenders-card-1">
+                      <div class="giftSenders-card-left-side">
+                        <div class="icon">
+                          <svg
+                            width="26"
+                            height="26"
+                            viewBox="0 0 26 26"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.4905 13.6279C18.6386 13.6279 21.9586 17.6693 21.9586 22.9995H5.02246C5.02246 17.6693 8.34595 13.6279 13.4905 13.6279Z"
+                              stroke="#F45C43"
+                              stroke-width="1.29"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M13.4902 13.6283C17.1814 13.6283 19.2617 11.5515 19.2617 7.86032C19.2617 4.16561 17.1814 2.08887 13.4902 2.08887C9.79549 2.08887 7.71875 4.16561 7.71875 7.86032C7.71875 11.5515 9.79549 13.6283 13.4902 13.6283Z"
+                              stroke="#F45C43"
+                              stroke-width="1.29"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="giftSenders-card-right-side">
+                        <h6>Total Viewer</h6>
+                        <h5>20,000</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="giftSenders-card giftSenders-card-2">
+                      <div class="giftSenders-card-left-side">
+                        <div class="icon">
+                          <svg
+                            width="26"
+                            height="26"
+                            viewBox="0 0 26 26"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.3703 5.25586C9.0407 5.30056 7.73304 5.42713 6.45286 5.56983C4.30143 5.80962 2.57022 7.54085 2.33993 9.69332C2.16993 11.2823 2.02637 12.9136 2.02637 14.5768C2.02637 16.2399 2.16993 17.8713 2.33993 19.4603C2.57022 21.6127 4.30143 23.344 6.45286 23.5837C8.05086 23.7618 9.69161 23.9149 11.3644 23.9149C13.0373 23.9149 14.678 23.7618 16.2761 23.5837C18.4275 23.344 20.1587 21.6127 20.389 19.4603C20.535 18.0951 20.6616 16.6989 20.6943 15.2779"
+                              stroke="#F45C43"
+                              stroke-width="1.29"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M11.3649 23.9148C9.69202 23.9148 8.05127 23.7617 6.45326 23.5836C6.20351 23.5558 5.9594 23.5079 5.72266 23.4416C5.99705 22.1687 6.73209 20.9194 7.73827 20.097C8.76163 19.2606 10.0427 18.8037 11.3644 18.8037C12.6861 18.8037 13.9672 19.2606 14.9906 20.097C16.0139 20.9335 16.7167 22.0981 16.9797 23.3933C16.9797 23.3933 16.979 23.4141 16.9786 23.4494C16.7507 23.5118 16.5162 23.5569 16.2765 23.5836C14.6784 23.7617 13.0377 23.9148 11.3649 23.9148Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M11.3649 23.9148C9.69202 23.9148 8.05127 23.7617 6.45326 23.5836C6.20351 23.5558 5.9594 23.5079 5.72266 23.4416C5.99705 22.1687 6.73209 20.9194 7.73827 20.097C8.76163 19.2606 10.0427 18.8037 11.3644 18.8037C12.6861 18.8037 13.9672 19.2606 14.9906 20.097C16.0139 20.9335 16.7167 22.0981 16.9797 23.3933C16.9797 23.3933 16.979 23.4141 16.9786 23.4494C16.7507 23.5118 16.5162 23.5569 16.2765 23.5836C14.6784 23.7617 13.0377 23.9148 11.3649 23.9148Z"
+                              stroke="#F45C43"
+                              stroke-width="1.29"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M11.3512 15.8783C13.2729 15.8783 14.3539 14.7973 14.3539 12.8757C14.3539 10.954 13.2729 9.87305 11.3512 9.87305C9.42958 9.87305 8.34863 10.954 8.34863 12.8757C8.34863 14.7973 9.42958 15.8783 11.3512 15.8783Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M11.3512 15.8783C13.2729 15.8783 14.3539 14.7973 14.3539 12.8757C14.3539 10.954 13.2729 9.87305 11.3512 9.87305C9.42958 9.87305 8.34863 10.954 8.34863 12.8757C8.34863 14.7973 9.42958 15.8783 11.3512 15.8783Z"
+                              stroke="#F45C43"
+                              stroke-width="1.29"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M20.3213 11.6425V2.71387"
+                              stroke="#F45C43"
+                              stroke-width="1.29"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.8574 7.17871H24.7861"
+                              stroke="#F45C43"
+                              stroke-width="1.29"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="giftSenders-card-right-side">
+                        <h6>New Followers</h6>
+                        <h5>5,000</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="giftSenders-card giftSenders-card-2">
+                      <div class="giftSenders-card-left-side">
+                        <div class="icon">
+                          <svg
+                            width="26"
+                            height="26"
+                            viewBox="0 0 26 26"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_203_36239)">
+                              <path
+                                d="M5.95651 1.88194C8.37564 1.60779 11.0296 1.39258 13.464 1.39258C15.8987 1.39258 18.5547 1.60783 20.975 1.88203C22.6413 2.07077 23.9491 3.39049 24.1307 5.05741C24.3927 7.46391 24.6069 10.1151 24.6069 12.5354C24.6069 14.9564 24.3927 17.6127 24.1305 20.0221C23.9491 21.6891 22.6413 23.0088 20.9748 23.1958C18.5546 23.4675 15.8986 23.6783 13.464 23.6783C11.3408 23.6783 9.05067 23.518 6.89494 23.2968L1.39258 24.6069L2.66784 18.7407C2.46838 16.6926 2.32122 14.5339 2.32122 12.5354C2.32122 10.1151 2.53706 7.46386 2.80024 5.05733C2.9825 3.39049 4.29039 2.07075 5.95651 1.88194Z"
+                                stroke="#F45C43"
+                                stroke-width="1.29"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M8.9375 10.2139H17.9911"
+                                stroke="#F45C43"
+                                stroke-width="1.29"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M8.9375 15.7852H15.7857"
+                                stroke="#F45C43"
+                                stroke-width="1.29"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_203_36239">
+                                <rect width="26" height="26" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="giftSenders-card-right-side">
+                        <h6>Total Comments</h6>
+                        <h5>10,00,000</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="summaryList-section">
+                <ul class="user-summary-list">
+                  <li class="user-summary-item">
+                    <a href="" class="user-summary-link">
+                      <div class="user-profile-img">
+                        <img src="./assets/img/modalProfileImg1.png" alt="">
+                      </div>
+                      <div class="user-summary-details-section">
+                        <h5>Marshall Kirlin</h5>
+                        <p>
+                          <span>sent 10,000 Coins</span>
+                          <img src="./assets/img/coinimg.png" class="coinImage" alt="">
+                          <span>& 10 Gifts</span>
+                          <img src="./assets/img/giftIconimg.png" class="giftIconimg" alt="">
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="user-summary-item">
+                    <a href="" class="user-summary-link">
+                      <div class="user-profile-img">
+                        <img src="./assets/img/modalProfileImg1.png" alt="">
+                      </div>
+                      <div class="user-summary-details-section">
+                        <h5>Marshall Kirlin</h5>
+                        <p>
+                          <span>sent 10,000 Coins</span>
+                          <img src="./assets/img/coinimg.png" class="coinImage" alt="">
+                          <span>& 10 Gifts</span>
+                          <img src="./assets/img/giftIconimg.png" class="giftIconimg" alt="">
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="user-summary-item">
+                    <a href="" class="user-summary-link">
+                      <div class="user-profile-img">
+                        <img src="./assets/img/modalProfileImg1.png" alt="">
+                      </div>
+                      <div class="user-summary-details-section">
+                        <h5>Marshall Kirlin</h5>
+                        <p>
+                          <span>sent 10,000 Coins</span>
+                          <img src="./assets/img/coinimg.png" class="coinImage" alt="">
+                          <span>& 10 Gifts</span>
+                          <img src="./assets/img/giftIconimg.png" class="giftIconimg" alt="">
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="user-summary-item">
+                    <a href="" class="user-summary-link">
+                      <div class="user-profile-img">
+                        <img src="./assets/img/modalProfileImg1.png" alt="">
+                      </div>
+                      <div class="user-summary-details-section">
+                        <h5>Marshall Kirlin</h5>
+                        <p>
+                          <span>sent 10,000 Coins</span>
+                          <img src="./assets/img/coinimg.png" class="coinImage" alt="">
+                          <span>& 10 Gifts</span>
+                          <img src="./assets/img/giftIconimg.png" class="giftIconimg" alt="">
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="user-summary-item">
+                    <a href="" class="user-summary-link">
+                      <div class="user-profile-img">
+                        <img src="./assets/img/modalProfileImg1.png" alt="">
+                      </div>
+                      <div class="user-summary-details-section">
+                        <h5>Marshall Kirlin</h5>
+                        <p>
+                          <span>sent 10,000 Coins</span>
+                          <img src="./assets/img/coinimg.png" class="coinImage" alt="">
+                          <span>& 10 Gifts</span>
+                          <img src="./assets/img/giftIconimg.png" class="giftIconimg" alt="">
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="user-summary-item">
+                    <a href="" class="user-summary-link">
+                      <div class="user-profile-img">
+                        <img src="./assets/img/modalProfileImg1.png" alt="">
+                      </div>
+                      <div class="user-summary-details-section">
+                        <h5>Marshall Kirlin</h5>
+                        <p>
+                          <span>sent 10,000 Coins</span>
+                          <img src="./assets/img/coinimg.png" class="coinImage" alt="">
+                          <span>& 10 Gifts</span>
+                          <img src="./assets/img/giftIconimg.png" class="giftIconimg" alt="">
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="user-summary-item">
+                    <a href="" class="user-summary-link">
+                      <div class="user-profile-img">
+                        <img src="./assets/img/modalProfileImg1.png" alt="">
+                      </div>
+                      <div class="user-summary-details-section">
+                        <h5>Marshall Kirlin</h5>
+                        <p>
+                          <span>sent 10,000 Coins</span>
+                          <img src="./assets/img/coinimg.png" class="coinImage" alt="">
+                          <span>& 10 Gifts</span>
+                          <img src="./assets/img/giftIconimg.png" class="giftIconimg" alt="">
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="user-summary-item">
+                    <a href="" class="user-summary-link">
+                      <div class="user-profile-img">
+                        <img src="./assets/img/modalProfileImg1.png" alt="">
+                      </div>
+                      <div class="user-summary-details-section">
+                        <h5>Marshall Kirlin</h5>
+                        <p>
+                          <span>sent 10,000 Coins</span>
+                          <img src="./assets/img/coinimg.png" class="coinImage" alt="">
+                          <span>& 10 Gifts</span>
+                          <img src="./assets/img/giftIconimg.png" class="giftIconimg" alt="">
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="user-summary-item">
+                    <a href="" class="user-summary-link">
+                      <div class="user-profile-img">
+                        <img src="./assets/img/modalProfileImg1.png" alt="">
+                      </div>
+                      <div class="user-summary-details-section">
+                        <h5>Marshall Kirlin</h5>
+                        <p>
+                          <span>sent 10,000 Coins</span>
+                          <img src="./assets/img/coinimg.png" class="coinImage" alt="">
+                          <span>& 10 Gifts</span>
+                          <img src="./assets/img/giftIconimg.png" class="giftIconimg" alt="">
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="liveStreamSettings-bottom-side">
+            <div class="offcanvas-body-footer">
+              <button class="modal-btn-1" type="submit">Save to Media</button>
+              <button
+                class="modal-btn-2"
+                type="button"
+                data-bs-dismiss="offcanvas"
+              >
+              Discard Media
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- ====== End Streaming Modal End ====== -->
 
     <!-- ===footer-start -->
     <footer>

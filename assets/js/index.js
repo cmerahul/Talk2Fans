@@ -249,7 +249,7 @@ backbtn.addEventListener("click", () => {
   parentdiv.classList.remove("active");
 });
 
-endvideo.addEventListener("click", () => {
-  videoDiv.classList.remove("active");
-  parentdiv.classList.remove("active");
-});
+// endvideo.addEventListener("click", () => {
+//   videoDiv.classList.remove("active");
+//   parentdiv.classList.remove("active");
+// });
