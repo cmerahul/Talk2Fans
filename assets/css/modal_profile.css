@@ -445,6 +445,13 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.modalProfile-Galaryright-side-card::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .modalProfile-GalaryRight-img {
@@ -1085,6 +1092,7 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   position: relative;
+  padding: 0;
   padding-left: 20px;
 }
 
@@ -1444,6 +1452,11 @@
 }
 
 /* ==== End Streming Modal End ====  */
+
+
+.input-section.radio-btn-main-section{
+  padding: 12px 20px;
+}
 
 /* ===Media-quary=== */
 
