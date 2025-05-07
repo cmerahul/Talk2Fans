@@ -23,8 +23,6 @@
 .live_video_wrp.active {
   display: block;
   margin-top: -56px;
-  position: sticky;
-  top: 100px;
 }
 
 .streaming_fans_card {
@@ -81,6 +79,18 @@
 .streaming_live_views svg {
   width: 15px;
   height: 15px;
+}
+
+@keyframes eyeblink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .streaming_fans_card_content h5 {
@@ -167,6 +177,7 @@
 .live_video_head_views svg {
   width: 20px;
   height: 20px;
+  animation: eyeblink 1s infinite linear;
 }
 
 .live_video_head_left {
