@@ -41,7 +41,7 @@
     <section class="section login-section">
       <div class="container-fluid">
         <form>
-          <div class="steps step1 d-none">
+          <div class="steps step1" id="step1">
             <div class="row stepsRow">
               <div
                 class="col-md-6 col-lg-6 login-from-img-section d-none d-md-block"
@@ -198,7 +198,7 @@
                       <button type="button" class="cmn_btn cancel_btn">
                         Cancel
                       </button>
-                      <button type="button" class="cmn_btn next">
+                      <button type="button" class="cmn_btn next" data-next="2">
                         Save & Next
                       </button>
                     </div>
@@ -208,7 +208,7 @@
             </div>
           </div>
 
-          <div class="steps step2">
+          <div class="steps step2 d-none" id="step2">
             <div class="row stepsRow">
               <div
                 class="col-md-6 col-lg-6 login-from-img-section d-none d-md-block"
@@ -224,7 +224,7 @@
                       <div class="login-from-btn-section">
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                           <button
-                            class="nav-link active"
+                            class="nav-link"
                             data-bs-toggle="tab"
                             type="button"
                             role="tab"
@@ -232,7 +232,7 @@
                             1. Personal Details
                           </button>
                           <button
-                            class="nav-link"
+                            class="nav-link active"
                             data-bs-toggle="tab"
                             type="button"
                             role="tab"
@@ -562,10 +562,10 @@
                       </div>
                     </div>
                     <div class="fromSubmit-btn-section">
-                      <button type="button" class="cmn_btn cancel_btn">
+                      <button type="button" class="cmn_btn cancel_btn" data-prev="1">
                         Cancel
                       </button>
-                      <button type="button" class="cmn_btn next">
+                      <button type="button" class="cmn_btn next" data-next="3">
                         Save & Next
                       </button>
                     </div>
@@ -575,7 +575,7 @@
             </div>
           </div>
 
-          <div class="steps step3 d-none">
+          <div class="steps step3 d-none" id="step3">
             <div class="row stepsRow">
               <div
                 class="col-md-6 col-lg-6 login-from-img-section d-none d-md-block"
@@ -591,7 +591,7 @@
                       <div class="login-from-btn-section">
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                           <button
-                            class="nav-link active"
+                            class="nav-link"
                             data-bs-toggle="tab"
                             type="button"
                             role="tab"
@@ -607,7 +607,7 @@
                             2. Upload Image
                           </button>
                           <button
-                            class="nav-link"
+                            class="nav-link active"
                             data-bs-toggle="tab"
                             type="button"
                             role="tab"
@@ -690,7 +690,7 @@
                       </div>
                     </div>
                     <div class="fromSubmit-btn-section">
-                      <button type="button" class="cmn_btn cancel_btn">
+                      <button type="button" class="cmn_btn cancel_btn" data-prev="2">
                         Cancel
                       </button>
                       <button type="submit" class="cmn_btn">Save</button>
@@ -713,6 +713,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
     <!-- <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script> -->
+    <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>
