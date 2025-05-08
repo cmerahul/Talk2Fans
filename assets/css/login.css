@@ -146,7 +146,7 @@
   border-radius: 13px;
 }
 
-.input-section input#phone{
+.input-section input#phone {
   padding-left: 0;
 }
 
@@ -547,7 +547,7 @@ label.login-from-userImg-section span {
 }
 
 @media only screen and (max-width: 575px) {
-  .input-section input{
+  .input-section input {
     padding: 12px 16px;
     padding-right: 8px;
   }
@@ -590,7 +590,7 @@ label.login-from-userImg-section span {
 }
 
 @media only screen and (max-width: 375px) {
-  .input-section  input{
+  .input-section input {
     padding: 12px 16px;
     padding-right: 8px;
   }
