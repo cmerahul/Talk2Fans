@@ -43,7 +43,7 @@
 
 .video_streaming .streaming_fans_card_Wrp.active .streaming_fans_card_inner {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  max-height: 772px;
+  max-height: 100dvh;
   overflow: auto;
 }
 
