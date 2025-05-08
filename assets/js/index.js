@@ -255,9 +255,36 @@ backbtn?.addEventListener("click", () => {
 // });
 
 // SearchBar Show Hide =====================
-const searchBarSeaction =  document.querySelector(".searchBar-section")
-const ShowSearchBarBtn  =  document.querySelector(".searchShowBtn")
+const searchBarSeaction = document.querySelector(".searchBar-section");
+const ShowSearchBarBtn = document.querySelector(".searchShowBtn");
 
-ShowSearchBarBtn.addEventListener("click", () => {
+ShowSearchBarBtn?.addEventListener("click", () => {
   searchBarSeaction.classList.add("active");
 });
+
+// Modal Form Wizard Section Strat =================================
+document.addEventListener("DOMContentLoaded", () => {
+  const steps = document.querySelectorAll(".steps");
+
+  document.querySelectorAll(".next").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const nextStep = btn.getAttribute("data-next");
+      if (nextStep) {
+        steps.forEach((step) => step.classList.add("d-none"));
+        document.getElementById(`step${nextStep}`).classList.remove("d-none");
+      }
+    });
+  });
+
+  document.querySelectorAll(".cancel_btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const prevStep = btn.getAttribute("data-prev");
+      if (prevStep) {
+        steps.forEach((step) => step.classList.add("d-none"));
+        document.getElementById(`step${prevStep}`).classList.remove("d-none");
+      }
+    });
+  });
+});
+
+// Modal Form Wizard Section ENd =================================
