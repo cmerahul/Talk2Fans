@@ -189,8 +189,8 @@
   border-bottom: 1px solid var(--primaryColor);
 }
 
-.live_streaming{
-  overflow-x: hidden ;
+.live_streaming {
+  overflow-x: hidden;
 }
 
 .live_streaming_card_wrp {
@@ -319,6 +319,7 @@
 
 .user_device .common_title_wrp .banner-btn-wrp {
   margin-top: 15px;
+  z-index: 10;
 }
 
 .heart-animation-wrapper {
