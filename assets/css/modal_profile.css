@@ -628,6 +628,7 @@
   font-family: var(--Poppins-Medium);
   color: var(--secondaryColor);
   border: none;
+  padding: 13px 10px;
 }
 .subscribe-tab-section .nav button.active {
   background: linear-gradient(to top right, #eb3349, #f45c43);
@@ -789,6 +790,7 @@
   background-color: #ffffff;
   border-radius: 14px;
   padding: 20px 22px;
+  cursor: pointer;
 }
 
 .purchaseAd-ons-select-card .purchaseAd-ons-select-title-section {
