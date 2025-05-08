@@ -199,6 +199,28 @@ header {
   gap: 15px !important;
 }
 
+.header_main .custom-dropdwon .custom-dropdwon-menu{
+  display: none;
+  overflow: visible !important;
+  height: max-content !important;
+}
+
+.header_main .custom-dropdwon .custom-dropdwon-menu.show{
+  display: block;
+}
+
+.header_main .custom-dropdwon .custom-dropdwon-menu a{
+  height: max-content;
+}
+
+.header_main .custom-dropdwon .custom-dropdwon-menu a::before{
+  display: none;
+}
+
+.header_main  .custom-dropdwon .custom-dropdwon-menu li{
+  height: max-content;
+}
+
 /* ===Media-quary=== */
 @media only screen and (max-width: 1399px) {
   .header_main ul li a {
