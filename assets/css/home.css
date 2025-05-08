@@ -191,6 +191,13 @@
 
 .live_streaming {
   overflow-x: hidden;
+
+}
+.live_streaming.home{
+  background-image: url("../img/LiveStreamings-section-bg-img.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
 }
 
 .live_streaming_card_wrp {
