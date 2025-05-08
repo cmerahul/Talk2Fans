@@ -16,6 +16,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  gap: 20px;
 }
 
 .header_logo {
@@ -199,25 +200,25 @@ header {
   gap: 15px !important;
 }
 
-.header_main .custom-dropdwon .custom-dropdwon-menu{
+.header_main .custom-dropdwon .custom-dropdwon-menu {
   display: none;
   overflow: visible !important;
   height: max-content !important;
 }
 
-.header_main .custom-dropdwon .custom-dropdwon-menu.show{
+.header_main .custom-dropdwon .custom-dropdwon-menu.show {
   display: block;
 }
 
-.header_main .custom-dropdwon .custom-dropdwon-menu a{
+.header_main .custom-dropdwon .custom-dropdwon-menu a {
   height: max-content;
 }
 
-.header_main .custom-dropdwon .custom-dropdwon-menu a::before{
+.header_main .custom-dropdwon .custom-dropdwon-menu a::before {
   display: none;
 }
 
-.header_main  .custom-dropdwon .custom-dropdwon-menu li{
+.header_main .custom-dropdwon .custom-dropdwon-menu li {
   height: max-content;
 }
 
@@ -229,6 +230,7 @@ header {
   .header_logo {
     width: 100%;
     max-width: 150px;
+    min-width: 150px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -238,6 +240,7 @@ header {
   .header_logo {
     width: 100%;
     max-width: 140px;
+    min-width: 140px;
   }
   .header-btn {
     font-size: 17px;
@@ -254,6 +257,7 @@ header {
   .header_logo {
     width: 100%;
     max-width: 120px;
+    min-width: 120px;
   }
   .header-btn {
     font-size: 16px;
@@ -331,6 +335,7 @@ header {
   .header_logo {
     width: 100%;
     max-width: 100px;
+    min-width: 100px;
   }
   .header-btn {
     font-size: 14px;
