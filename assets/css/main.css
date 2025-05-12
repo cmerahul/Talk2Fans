@@ -8,6 +8,7 @@
 @import url("./modal_stream_view.css");
 @import url("./video_stream_view.css");
 @import url("./modal_profile.css");
+@import url("./video_call.css");
 
 * {
   margin: 0px;

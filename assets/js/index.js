@@ -288,3 +288,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Modal Form Wizard Section ENd =================================
+
+// Video Call Button Section Start
+
+const videoCallButton = document.querySelector(".video-call-control-btn-section");
+const videoCallMainSectionVideo = document.querySelector(".main-vidos-call-section video");
+
+videoCallMainSectionVideo?.addEventListener("click", () => {
+  videoCallButton.classList.toggle("active");
+});
+
+
+// Video Call Button Section End

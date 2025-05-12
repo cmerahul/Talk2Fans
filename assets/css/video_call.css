@@ -1,0 +1,256 @@
+.message-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.message-card.video-call-card {
+  padding: 30px 30px 20px;
+}
+
+.message-card.video-call-card .main-vidos-call-section {
+  width: 100%;
+  height: calc(100dvh - 195px);
+  aspect-ratio: 16 / 15;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.message-card.video-call-card .main-vidos-call-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.message-card.video-call-card .main-vidos-call-section .userProfileVideo {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  top: auto;
+  left: auto;
+  width: 100%;
+  max-width: 165px;
+  height: auto;
+  aspect-ratio: 11 / 10;
+  border-radius: 8px;
+  z-index: 9;
+}
+
+.message-card.video-call-card
+  .main-vidos-call-section
+  .userProfileVideo.reciving-side {
+  z-index: 0;
+}
+
+.video-call-control-btn-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 26px;
+}
+
+.video-call-control-btn-section button {
+  width: 100%;
+  max-width: 60px;
+  min-width: 60px;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+
+.video-call-control-btn-section button.video-call-control-btn-1 {
+  background-color: var(--secondaryColor);
+}
+
+.video-call-control-btn-section button.video-call-control-btn-2 {
+  background-color: #d2162d;
+}
+
+.video-call-control-btn-section button.video-call-control-btn-3 {
+  background-color: #047004;
+  margin-top: -92px;
+  position: relative;
+  z-index: 9;
+  max-width: 75px;
+}
+
+.video-call-control-btn-section button.video-call-control-btn-3 svg {
+  width: 100%;
+  max-width: 60px;
+}
+
+.video-call-control-btn-section button svg {
+  width: 100%;
+  max-width: 28px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+/* Calling-Video Call view Section Start  */
+
+.video-call-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3.5px);
+  z-index: 9;
+}
+
+.video-call-overlay .video-call-profile-img {
+  width: 100%;
+  max-width: 122px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin: 40px auto 18px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.video-call-overlay .video-call-profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 50%;
+}
+
+.video-call-overlay .video-call-profile-img span {
+  display: inline-block;
+  width: 100%;
+  max-width: 16px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: #46d31b;
+  position: absolute;
+  bottom: 2px;
+  right: 20px;
+}
+
+.video-call-overlay h5 {
+  text-align: center;
+  font-family: var(--Poppins-SemiBold);
+  font-size: 22px;
+  line-height: 1.7;
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+.video-call-overlay span {
+  text-align: center;
+  font-family: var(--Poppins-Medium);
+  font-size: 18px;
+  display: block;
+  line-height: 1.7;
+  color: var(--white);
+  font-style: italic;
+}
+
+/* Calling-Video Call view Section End  */
+
+@media only screen and (max-width: 1399px) {
+  .video-call-overlay .video-call-profile-img {
+    max-width: 100px;
+  }
+  .video-call-overlay .video-call-profile-img span {
+    max-width: 12px;
+  }
+}
+
+@media only screen and (max-width: 1299px) {
+  .video-call-control-btn-section button.video-call-control-btn-3 {
+    max-width: 70px;
+  }
+  .video-call-control-btn-section button.video-call-control-btn-3 svg {
+    max-width: 55px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .message-card.video-call-card {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 0;
+    padding: 0;
+    z-index: 999;
+  }
+
+  .message-card.video-call-card .main-vidos-call-section {
+    border-radius: 0;
+    height: 100%;
+  }
+
+  .video-call-control-btn-section {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: -25%;
+    z-index: 9;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .video-call-control-btn-section.active{
+    bottom: 25px;
+  }
+
+  .video-call-control-btn-section button.video-call-control-btn-1 {
+    background-color: #6f6a6a;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .message-card.video-call-card .main-vidos-call-section .userProfileVideo {
+    max-width: 125px;
+  }
+
+  .video-call-control-btn-section button {
+    max-width: 50px;
+    min-width: 50px;
+  }
+
+  .video-call-control-btn-section button.video-call-control-btn-3 {
+    max-width: 60px;
+  }
+
+  .video-call-control-btn-section button svg {
+    max-width: 20px;
+  }
+
+  .video-call-overlay .video-call-profile-img {
+    max-width: 80px;
+  }
+
+  .video-call-overlay .video-call-profile-img span {
+    max-width: 11px;
+    bottom: 0px;
+    right: 15px;
+  }
+
+  .video-call-overlay h5 {
+    text-align: center;
+    font-family: var(--Poppins-SemiBold);
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--white);
+    margin-bottom: 0;
+  }
+
+  .video-call-overlay span {
+    font-size: 16px;
+  }
+}
