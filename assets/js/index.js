@@ -293,9 +293,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const videoCallButton = document.querySelector(".video-call-control-btn-section");
 const videoCallMainSectionVideo = document.querySelector(".main-vidos-call-section video");
+const videoCallOverlay = document.querySelector(".video-call-overlay")
+const userProfileSection = document.querySelector(".userProfileVideo")
 
 videoCallMainSectionVideo?.addEventListener("click", () => {
   videoCallButton.classList.toggle("active");
+  userProfileSection.classList.toggle("active");
+});
+videoCallOverlay?.addEventListener("click", () => {
+  videoCallButton.classList.toggle("active");
+  userProfileSection.classList.toggle("active");
 });
 
 
