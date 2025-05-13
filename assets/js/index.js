@@ -228,6 +228,35 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Upload Image In Login End =============================================
+
+  // User Login Profile Img Upload Section Start
+
+  const userProfileImgSection = document.querySelectorAll(
+    ".profileImg-upaload-section"
+  );
+
+  userProfileImgSection?.forEach((section) => {
+    const fileInput = section.querySelector('input[type="file"]'); // ⬅️ FIXED
+    const imagePreview = section.querySelector("img");
+    const icon = section.querySelector(".userProfileIcon");
+
+    fileInput.addEventListener("change", function () {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function () {
+          imagePreview.src = reader.result;
+          imagePreview.classList.remove("d-none");
+          if (icon) icon.style.display = "none";
+        };
+
+        reader.readAsDataURL(file);
+      }
+    });
+  });
+
+  // User Login Profile Img Upload Section End
 });
 
 // ===live-video-hide-show===
@@ -291,10 +320,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Video Call Button Section Start
 
-const videoCallButton = document.querySelector(".video-call-control-btn-section");
-const videoCallMainSectionVideo = document.querySelector(".main-vidos-call-section video");
-const videoCallOverlay = document.querySelector(".video-call-overlay")
-const userProfileSection = document.querySelector(".userProfileVideo")
+const videoCallButton = document.querySelector(
+  ".video-call-control-btn-section"
+);
+const videoCallMainSectionVideo = document.querySelector(
+  ".main-vidos-call-section video"
+);
+const videoCallOverlay = document.querySelector(".video-call-overlay");
+const userProfileSection = document.querySelector(".userProfileVideo");
 
 videoCallMainSectionVideo?.addEventListener("click", () => {
   videoCallButton.classList.toggle("active");
@@ -304,6 +337,5 @@ videoCallOverlay?.addEventListener("click", () => {
   videoCallButton.classList.toggle("active");
   userProfileSection.classList.toggle("active");
 });
-
 
 // Video Call Button Section End
