@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>User Subscribe</title>
+    <title>User Following</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/font.css" />
@@ -35,19 +35,13 @@
           <nav>
             <ul>
               <li class="nav-list">
-                <a href="./index.html" class="nav-item active">Home</a>
+                <a href="#index.html" class="nav-item active">Home</a>
               </li>
               <li class="nav-list">
                 <a class="nav-item searchShowBtn">Explore</a>
               </li>
               <li class="nav-list">
                 <a href="#index.html" class="nav-item">Message</a>
-              </li>
-              <li class="nav-list">
-                <a href="./User_ProfileSubscribe.html" class="nav-item">Subscribe</a>
-              </li>
-              <li class="nav-list">
-                <a href="#index.html" class="nav-item">Invite a Friend</a>
               </li>
             </ul>
             <a href="./notification.html" class="notifiction-icon-section">
@@ -170,7 +164,7 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-12">
-            <h2 class="section-title">Subscribe</h2>
+            <h2 class="section-title">Following</h2>
           </div>
           <div class="col-md-5 col-lg-4">
             <div class="modalProfile-left-side">
@@ -458,479 +452,180 @@
           </div>
 
           <div class="col-md-7 col-lg-8">
-            <div class="subscribe-tab-section">
-              <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <button
-                    class="nav-link active"
-                    data-bs-toggle="tab"
-                    data-bs-target="#home"
-                  >
-                    Coin Packages
-                  </button>
-                  <button
-                    class="nav-link"
-                    data-bs-toggle="tab"
-                    data-bs-target="#profile"
-                  >
-                    Video Call Packages
-                  </button>
-                </div>
-              </nav>
-
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="home">
-                  <div class="profileCard userPlanCard">
-                    <div class="subscribe-planCard">
-                      <div class="subscribe-planCard-title-section">
-                        <div class="subscribe-planCard-title">
-                          <img src="./assets/img/coinimg.png" alt="" />
-                          <h6>100 Credits</h6>
-                        </div>
-                        <span>Silver Plan</span>
-                      </div>
-
-                      <h5 class="subscribe-planCard-price">$70.00</h5>
-                    </div>
-                    <div class="mostpopularplan-card">
-                      <div class="mostpopularplan-card-title">
-                        <h4>Most Popular Plan</h4>
-                        <span>BEST DEAL!</span>
-                      </div>
-                      <div class="subscribe-planCard">
-                        <div class="subscribe-planCard-title-section">
-                          <div class="subscribe-planCard-title">
-                            <img src="./assets/img/coinimg.png" alt="" />
-                            <h6>500 Credits</h6>
-                          </div>
-                          <span>Gold Plan</span>
-                        </div>
-
-                        <h5 class="subscribe-planCard-price">$125.99</h5>
-                      </div>
-                    </div>
-                    <div class="subscribe-planCard">
-                      <div class="subscribe-planCard-title-section">
-                        <div class="subscribe-planCard-title">
-                          <img src="./assets/img/coinimg.png" alt="" />
-                          <h6>1000 Credits</h6>
-                        </div>
-                        <span>Platinum Plan</span>
-                      </div>
-
-                      <h5 class="subscribe-planCard-price">$145.00</h5>
-                    </div>
-                  </div>
-
-                  <p class="subscribe-planCard-info-message">
-                    Purchase credits through your account once logged in
-                  </p>
-
-                  <div class="purchase-accordion">
-                    <div class="accordion" id="accordionExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button
-                            class="accordion-button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne"
-                          >
-                            Purchase Ad-ons
-                            <span>
-                              <svg
-                                width="32"
-                                height="32"
-                                viewBox="0 0 32 32"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M3 16C3 18.5712 3.76244 21.0846 5.19089 23.2224C6.61935 25.3602 8.64968 27.0265 11.0251 28.0104C13.4006 28.9944 16.0144 29.2518 18.5362 28.7502C21.0579 28.2486 23.3743 27.0105 25.1924 25.1924C27.0105 23.3743 28.2486 21.0579 28.7502 18.5362C29.2518 16.0144 28.9944 13.4005 28.0104 11.0251C27.0265 8.64967 25.3602 6.61935 23.2224 5.19089C21.0846 3.76243 18.5712 2.99999 16 2.99999C12.5533 3.00363 9.24881 4.37444 6.81163 6.81163C4.37445 9.24881 3.00364 12.5533 3 16ZM27 16C27 18.1756 26.3549 20.3023 25.1462 22.1113C23.9375 23.9202 22.2195 25.3301 20.2095 26.1627C18.1995 26.9952 15.9878 27.2131 13.854 26.7886C11.7202 26.3642 9.7602 25.3165 8.22183 23.7782C6.68345 22.2398 5.6358 20.2798 5.21136 18.146C4.78692 16.0122 5.00476 13.8005 5.83732 11.7905C6.66989 9.78049 8.07979 8.06252 9.88873 6.85383C11.6977 5.64513 13.8244 4.99999 16 4.99999C18.9164 5.0033 21.7123 6.16329 23.7745 8.22547C25.8367 10.2877 26.9967 13.0836 27 16ZM13.2925 10.2925C13.3854 10.1995 13.4957 10.1258 13.6171 10.0754C13.7385 10.0251 13.8686 9.99921 14 9.99921C14.1314 9.99921 14.2615 10.0251 14.3829 10.0754C14.5043 10.1258 14.6146 10.1995 14.7075 10.2925L19.7075 15.2925C19.8005 15.3854 19.8742 15.4957 19.9246 15.6171C19.9749 15.7385 20.0008 15.8686 20.0008 16C20.0008 16.1314 19.9749 16.2615 19.9246 16.3829C19.8742 16.5043 19.8005 16.6146 19.7075 16.7075L14.7075 21.7075C14.5199 21.8951 14.2654 22.0005 14 22.0005C13.7346 22.0005 13.4801 21.8951 13.2925 21.7075C13.1049 21.5199 12.9994 21.2654 12.9994 21C12.9994 20.7346 13.1049 20.4801 13.2925 20.2925L17.5862 16L13.2925 11.7075C13.1995 11.6146 13.1258 11.5043 13.0754 11.3829C13.0251 11.2615 12.9992 11.1314 12.9992 11C12.9992 10.8686 13.0251 10.7385 13.0754 10.6171C13.1258 10.4957 13.1995 10.3854 13.2925 10.2925Z"
-                                  fill="black"
-                                />
-                              </svg>
-                            </span>
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseOne"
-                          class="accordion-collapse collapse show"
-                        >
-                          <div class="accordion-body">
-                            <div class="purchaseAd-ons-select-section">
-                              <label
-                                for="100Coins"
-                                class="purchaseAd-ons-select-card"
-                              >
-                                <div
-                                  class="purchaseAd-ons-select-title-section"
-                                >
-                                  <img src="./assets/img/coinimg.png" alt="" />
-                                  <span>100 Coins</span>
-                                </div>
-                                <div class="purchaseAd-ons-select-input">
-                                  <h5>$ 50.00</h5>
-                                  <input
-                                    type="radio"
-                                    name="purchaseAd-ons-select"
-                                    id="100Coins"
-                                  />
-                                </div>
-                              </label>
-                              <label
-                                for="200Coins"
-                                class="purchaseAd-ons-select-card"
-                              >
-                                <div
-                                  class="purchaseAd-ons-select-title-section"
-                                >
-                                  <img src="./assets/img/coinimg.png" alt="" />
-                                  <span>200 Coins</span>
-                                </div>
-                                <div class="purchaseAd-ons-select-input">
-                                  <h5>$ 75.00</h5>
-                                  <input
-                                    type="radio"
-                                    name="purchaseAd-ons-select"
-                                    id="200Coins"
-                                  />
-                                </div>
-                              </label>
-                              <label
-                                for="500Coins"
-                                class="purchaseAd-ons-select-card"
-                              >
-                                <div
-                                  class="purchaseAd-ons-select-title-section"
-                                >
-                                  <img src="./assets/img/coinimg.png" alt="" />
-                                  <span>500 Coins</span>
-                                </div>
-                                <div class="purchaseAd-ons-select-input">
-                                  <h5>$ 100.00</h5>
-                                  <input
-                                    type="radio"
-                                    name="purchaseAd-ons-select"
-                                    id="500Coins"
-                                  />
-                                </div>
-                              </label>
+            <div class="modalProfile-right-side modalProfile-Galaryright-side">
+              <div class="modalProfile-right-side-card">
+                <div class="row">
+                  <div class="col-lg-9">
+                    <ul class="modalProfile-follow-list">
+                      <li class="modalProfile-follow-item">
+                        <div class="modalProfile-follow-card">
+                          <a href="" class="modalProfile-follow-profile">
+                            <div class="modalProfile-follow-profile-img">
+                              <img
+                                src="./assets/img/modalFollowImg.png"
+                                alt=""
+                              />
                             </div>
-                          </div>
+                            <span>Marshall Kirlin</span>
+                          </a>
+                          <button class="follow-btn">Following</button>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="purchase-accordion giftPurchase-accordion">
-                    <div class="accordion" id="">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button
-                            class="accordion-button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#giftPurchase"
-                          >
-                            Gift Purchase
-                            <span>
-                              <svg
-                                width="32"
-                                height="32"
-                                viewBox="0 0 32 32"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M3 16C3 18.5712 3.76244 21.0846 5.19089 23.2224C6.61935 25.3602 8.64968 27.0265 11.0251 28.0104C13.4006 28.9944 16.0144 29.2518 18.5362 28.7502C21.0579 28.2486 23.3743 27.0105 25.1924 25.1924C27.0105 23.3743 28.2486 21.0579 28.7502 18.5362C29.2518 16.0144 28.9944 13.4005 28.0104 11.0251C27.0265 8.64967 25.3602 6.61935 23.2224 5.19089C21.0846 3.76243 18.5712 2.99999 16 2.99999C12.5533 3.00363 9.24881 4.37444 6.81163 6.81163C4.37445 9.24881 3.00364 12.5533 3 16ZM27 16C27 18.1756 26.3549 20.3023 25.1462 22.1113C23.9375 23.9202 22.2195 25.3301 20.2095 26.1627C18.1995 26.9952 15.9878 27.2131 13.854 26.7886C11.7202 26.3642 9.7602 25.3165 8.22183 23.7782C6.68345 22.2398 5.6358 20.2798 5.21136 18.146C4.78692 16.0122 5.00476 13.8005 5.83732 11.7905C6.66989 9.78049 8.07979 8.06252 9.88873 6.85383C11.6977 5.64513 13.8244 4.99999 16 4.99999C18.9164 5.0033 21.7123 6.16329 23.7745 8.22547C25.8367 10.2877 26.9967 13.0836 27 16ZM13.2925 10.2925C13.3854 10.1995 13.4957 10.1258 13.6171 10.0754C13.7385 10.0251 13.8686 9.99921 14 9.99921C14.1314 9.99921 14.2615 10.0251 14.3829 10.0754C14.5043 10.1258 14.6146 10.1995 14.7075 10.2925L19.7075 15.2925C19.8005 15.3854 19.8742 15.4957 19.9246 15.6171C19.9749 15.7385 20.0008 15.8686 20.0008 16C20.0008 16.1314 19.9749 16.2615 19.9246 16.3829C19.8742 16.5043 19.8005 16.6146 19.7075 16.7075L14.7075 21.7075C14.5199 21.8951 14.2654 22.0005 14 22.0005C13.7346 22.0005 13.4801 21.8951 13.2925 21.7075C13.1049 21.5199 12.9994 21.2654 12.9994 21C12.9994 20.7346 13.1049 20.4801 13.2925 20.2925L17.5862 16L13.2925 11.7075C13.1995 11.6146 13.1258 11.5043 13.0754 11.3829C13.0251 11.2615 12.9992 11.1314 12.9992 11C12.9992 10.8686 13.0251 10.7385 13.0754 10.6171C13.1258 10.4957 13.1995 10.3854 13.2925 10.2925Z"
-                                  fill="black"
-                                />
-                              </svg>
-                            </span>
-                          </button>
-                        </h2>
-                        <div
-                          id="giftPurchase"
-                          class="accordion-collapse collapse show"
-                        >
-                          <div class="accordion-body">
-                            <div class="purchaseAd-ons-select-section">
-                              <label
-                                for="singleGift"
-                                class="purchaseAd-ons-select-card"
-                              >
-                                <div
-                                  class="purchaseAd-ons-select-title-section"
-                                >
-                                  <img
-                                    src="./assets/img/giftIconimg.png"
-                                    class="giftIcon"
-                                    alt=""
-                                  />
-                                  <span>Single Gift</span>
-                                </div>
-                                <div class="purchaseAd-ons-select-input">
-                                  <h5>20 Coins</h5>
-                                  <input
-                                    type="radio"
-                                    name="giftPurchase-select"
-                                    id="singleGift"
-                                  />
-                                </div>
-                              </label>
-                              <label
-                                for="Shampain"
-                                class="purchaseAd-ons-select-card"
-                              >
-                                <div
-                                  class="purchaseAd-ons-select-title-section"
-                                >
-                                  <img
-                                    src="./assets/img/GlassIconImg.png"
-                                    class="GlassIcon"
-                                    alt=""
-                                  />
-                                  <span>Shampain</span>
-                                </div>
-                                <div class="purchaseAd-ons-select-input">
-                                  <h5>40 Coins</h5>
-                                  <input
-                                    type="radio"
-                                    name="giftPurchase-select"
-                                    id="Shampain"
-                                  />
-                                </div>
-                              </label>
+                      </li>
+                      <li class="modalProfile-follow-item">
+                        <div class="modalProfile-follow-card">
+                          <a href="" class="modalProfile-follow-profile">
+                            <div class="modalProfile-follow-profile-img">
+                              <img
+                                src="./assets/img/modalFollowImg2.png"
+                                alt=""
+                              />
                             </div>
-                          </div>
+                            <span>Betty Cruickshank</span>
+                          </a>
+                          <button class="follow-btn">Following</button>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="profile">
-                  <div class="profileCard userPlanCard">
-                    <div class="subscribe-planCard">
-                      <div class="subscribe-planCard-title-section">
-                        <div class="subscribe-planCard-title">
-                          <img src="./assets/img/videoIcon.png" alt="" />
-                          <h6>15 Mins</h6>
-                        </div>
-                        <span>Silver Plan</span>
-                      </div>
-
-                      <h5 class="subscribe-planCard-price">100 Credits</h5>
-                    </div>
-                    <div class="mostpopularplan-card">
-                      <div class="mostpopularplan-card-title">
-                        <h4>Most Popular Plan</h4>
-                        <span>BEST DEAL!</span>
-                      </div>
-                      <div class="subscribe-planCard">
-                        <div class="subscribe-planCard-title-section">
-                          <div class="subscribe-planCard-title">
-                            <img src="./assets/img/videoIcon.png" alt="" />
-                            <h6>30 Mins</h6>
-                          </div>
-                          <span>Gold Plan</span>
-                        </div>
-
-                        <h5 class="subscribe-planCard-price">500 Credits</h5>
-                      </div>
-                    </div>
-                    <div class="subscribe-planCard">
-                      <div class="subscribe-planCard-title-section">
-                        <div class="subscribe-planCard-title">
-                          <img src="./assets/img/videoIcon.png" alt="" />
-                          <h6>60 Mins</h6>
-                        </div>
-                        <span>Platinum Plan</span>
-                      </div>
-
-                      <h5 class="subscribe-planCard-price">1000 Credits</h5>
-                    </div>
-                  </div>
-
-                  <p class="subscribe-planCard-info-message">
-                    Purchase credits through your account once logged in
-                  </p>
-
-                  <div class="purchase-accordion">
-                    <div class="accordion" id="accordionExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button
-                            class="accordion-button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne"
-                          >
-                            Purchase Ad-ons
-                            <span>
-                              <svg
-                                width="32"
-                                height="32"
-                                viewBox="0 0 32 32"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M3 16C3 18.5712 3.76244 21.0846 5.19089 23.2224C6.61935 25.3602 8.64968 27.0265 11.0251 28.0104C13.4006 28.9944 16.0144 29.2518 18.5362 28.7502C21.0579 28.2486 23.3743 27.0105 25.1924 25.1924C27.0105 23.3743 28.2486 21.0579 28.7502 18.5362C29.2518 16.0144 28.9944 13.4005 28.0104 11.0251C27.0265 8.64967 25.3602 6.61935 23.2224 5.19089C21.0846 3.76243 18.5712 2.99999 16 2.99999C12.5533 3.00363 9.24881 4.37444 6.81163 6.81163C4.37445 9.24881 3.00364 12.5533 3 16ZM27 16C27 18.1756 26.3549 20.3023 25.1462 22.1113C23.9375 23.9202 22.2195 25.3301 20.2095 26.1627C18.1995 26.9952 15.9878 27.2131 13.854 26.7886C11.7202 26.3642 9.7602 25.3165 8.22183 23.7782C6.68345 22.2398 5.6358 20.2798 5.21136 18.146C4.78692 16.0122 5.00476 13.8005 5.83732 11.7905C6.66989 9.78049 8.07979 8.06252 9.88873 6.85383C11.6977 5.64513 13.8244 4.99999 16 4.99999C18.9164 5.0033 21.7123 6.16329 23.7745 8.22547C25.8367 10.2877 26.9967 13.0836 27 16ZM13.2925 10.2925C13.3854 10.1995 13.4957 10.1258 13.6171 10.0754C13.7385 10.0251 13.8686 9.99921 14 9.99921C14.1314 9.99921 14.2615 10.0251 14.3829 10.0754C14.5043 10.1258 14.6146 10.1995 14.7075 10.2925L19.7075 15.2925C19.8005 15.3854 19.8742 15.4957 19.9246 15.6171C19.9749 15.7385 20.0008 15.8686 20.0008 16C20.0008 16.1314 19.9749 16.2615 19.9246 16.3829C19.8742 16.5043 19.8005 16.6146 19.7075 16.7075L14.7075 21.7075C14.5199 21.8951 14.2654 22.0005 14 22.0005C13.7346 22.0005 13.4801 21.8951 13.2925 21.7075C13.1049 21.5199 12.9994 21.2654 12.9994 21C12.9994 20.7346 13.1049 20.4801 13.2925 20.2925L17.5862 16L13.2925 11.7075C13.1995 11.6146 13.1258 11.5043 13.0754 11.3829C13.0251 11.2615 12.9992 11.1314 12.9992 11C12.9992 10.8686 13.0251 10.7385 13.0754 10.6171C13.1258 10.4957 13.1995 10.3854 13.2925 10.2925Z"
-                                  fill="black"
-                                />
-                              </svg>
-                            </span>
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseOne"
-                          class="accordion-collapse collapse show"
-                        >
-                          <div class="accordion-body">
-                            <div class="purchaseAd-ons-select-section">
-                              <label
-                                for="video-100Coins"
-                                class="purchaseAd-ons-select-card"
-                              >
-                                <div
-                                  class="purchaseAd-ons-select-title-section"
-                                >
-                                  <img src="./assets/img/coinimg.png" alt="" />
-                                  <span>100 Coins</span>
-                                </div>
-                                <div class="purchaseAd-ons-select-input">
-                                  <h5>$ 50.00</h5>
-                                  <input
-                                    type="radio"
-                                    name="video-purchaseAd-ons-select"
-                                    id="video-100Coins"
-                                  />
-                                </div>
-                              </label>
-                              <label
-                                for="video-200Coins"
-                                class="purchaseAd-ons-select-card"
-                              >
-                                <div
-                                  class="purchaseAd-ons-select-title-section"
-                                >
-                                  <img src="./assets/img/coinimg.png" alt="" />
-                                  <span>200 Coins</span>
-                                </div>
-                                <div class="purchaseAd-ons-select-input">
-                                  <h5>$ 75.00</h5>
-                                  <input
-                                    type="radio"
-                                    name="video-purchaseAd-ons-select"
-                                    id="video-200Coins"
-                                  />
-                                </div>
-                              </label>
-                              <label
-                                for="video-500Coins"
-                                class="purchaseAd-ons-select-card"
-                              >
-                                <div
-                                  class="purchaseAd-ons-select-title-section"
-                                >
-                                  <img src="./assets/img/coinimg.png" alt="" />
-                                  <span>500 Coins</span>
-                                </div>
-                                <div class="purchaseAd-ons-select-input">
-                                  <h5>$ 100.00</h5>
-                                  <input
-                                    type="radio"
-                                    name="video-purchaseAd-ons-select"
-                                    id="video-500Coins"
-                                  />
-                                </div>
-                              </label>
+                      </li>
+                      <li class="modalProfile-follow-item">
+                        <div class="modalProfile-follow-card">
+                          <a href="" class="modalProfile-follow-profile">
+                            <div class="modalProfile-follow-profile-img">
+                              <img
+                                src="./assets/img/modalFollowImg3.png"
+                                alt=""
+                              />
                             </div>
-                          </div>
+                            <span>Norman Emard</span>
+                          </a>
+                          <button class="follow-btn">Following</button>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="purchase-accordion giftPurchase-accordion">
-                    <div class="accordion" id="">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button
-                            class="accordion-button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#giftPurchase"
-                          >
-                            Gift Purchase
-                            <span>
-                              <svg
-                                width="32"
-                                height="32"
-                                viewBox="0 0 32 32"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M3 16C3 18.5712 3.76244 21.0846 5.19089 23.2224C6.61935 25.3602 8.64968 27.0265 11.0251 28.0104C13.4006 28.9944 16.0144 29.2518 18.5362 28.7502C21.0579 28.2486 23.3743 27.0105 25.1924 25.1924C27.0105 23.3743 28.2486 21.0579 28.7502 18.5362C29.2518 16.0144 28.9944 13.4005 28.0104 11.0251C27.0265 8.64967 25.3602 6.61935 23.2224 5.19089C21.0846 3.76243 18.5712 2.99999 16 2.99999C12.5533 3.00363 9.24881 4.37444 6.81163 6.81163C4.37445 9.24881 3.00364 12.5533 3 16ZM27 16C27 18.1756 26.3549 20.3023 25.1462 22.1113C23.9375 23.9202 22.2195 25.3301 20.2095 26.1627C18.1995 26.9952 15.9878 27.2131 13.854 26.7886C11.7202 26.3642 9.7602 25.3165 8.22183 23.7782C6.68345 22.2398 5.6358 20.2798 5.21136 18.146C4.78692 16.0122 5.00476 13.8005 5.83732 11.7905C6.66989 9.78049 8.07979 8.06252 9.88873 6.85383C11.6977 5.64513 13.8244 4.99999 16 4.99999C18.9164 5.0033 21.7123 6.16329 23.7745 8.22547C25.8367 10.2877 26.9967 13.0836 27 16ZM13.2925 10.2925C13.3854 10.1995 13.4957 10.1258 13.6171 10.0754C13.7385 10.0251 13.8686 9.99921 14 9.99921C14.1314 9.99921 14.2615 10.0251 14.3829 10.0754C14.5043 10.1258 14.6146 10.1995 14.7075 10.2925L19.7075 15.2925C19.8005 15.3854 19.8742 15.4957 19.9246 15.6171C19.9749 15.7385 20.0008 15.8686 20.0008 16C20.0008 16.1314 19.9749 16.2615 19.9246 16.3829C19.8742 16.5043 19.8005 16.6146 19.7075 16.7075L14.7075 21.7075C14.5199 21.8951 14.2654 22.0005 14 22.0005C13.7346 22.0005 13.4801 21.8951 13.2925 21.7075C13.1049 21.5199 12.9994 21.2654 12.9994 21C12.9994 20.7346 13.1049 20.4801 13.2925 20.2925L17.5862 16L13.2925 11.7075C13.1995 11.6146 13.1258 11.5043 13.0754 11.3829C13.0251 11.2615 12.9992 11.1314 12.9992 11C12.9992 10.8686 13.0251 10.7385 13.0754 10.6171C13.1258 10.4957 13.1995 10.3854 13.2925 10.2925Z"
-                                  fill="black"
-                                />
-                              </svg>
-                            </span>
-                          </button>
-                        </h2>
-                        <div
-                          id="giftPurchase"
-                          class="accordion-collapse collapse show"
-                        >
-                          <div class="accordion-body">
-                            <div class="purchaseAd-ons-select-section">
-                              <label
-                                for="video-singleGift"
-                                class="purchaseAd-ons-select-card"
-                              >
-                                <div
-                                  class="purchaseAd-ons-select-title-section"
-                                >
-                                  <img
-                                    src="./assets/img/giftIconimg.png"
-                                    class="giftIcon"
-                                    alt=""
-                                  />
-                                  <span>Single Gift</span>
-                                </div>
-                                <div class="purchaseAd-ons-select-input">
-                                  <h5>20 Coins</h5>
-                                  <input
-                                    type="radio"
-                                    name="video-giftPurchase-select"
-                                    id="video-singleGift"
-                                  />
-                                </div>
-                              </label>
-                              <label
-                                for="video-Shampain"
-                                class="purchaseAd-ons-select-card"
-                              >
-                                <div
-                                  class="purchaseAd-ons-select-title-section"
-                                >
-                                  <img
-                                    src="./assets/img/GlassIconImg.png"
-                                    class="GlassIcon"
-                                    alt=""
-                                  />
-                                  <span>Shampain</span>
-                                </div>
-                                <div class="purchaseAd-ons-select-input">
-                                  <h5>40 Coins</h5>
-                                  <input
-                                    type="radio"
-                                    name="video-giftPurchase-select"
-                                    id="video-Shampain"
-                                  />
-                                </div>
-                              </label>
+                      </li>
+                      <li class="modalProfile-follow-item">
+                        <div class="modalProfile-follow-card">
+                          <a href="" class="modalProfile-follow-profile">
+                            <div class="modalProfile-follow-profile-img">
+                              <img
+                                src="./assets/img/modalFollowImg4.png"
+                                alt=""
+                              />
                             </div>
-                          </div>
+                            <span>Cathy Osinski</span>
+                          </a>
+                          <button class="follow-btn">Following</button>
                         </div>
-                      </div>
-                    </div>
+                      </li>
+                      <li class="modalProfile-follow-item">
+                        <div class="modalProfile-follow-card">
+                          <a href="" class="modalProfile-follow-profile">
+                            <div class="modalProfile-follow-profile-img">
+                              <img
+                                src="./assets/img/modalFollowImg5.png"
+                                alt=""
+                              />
+                            </div>
+                            <span>Laverne Dickens</span>
+                          </a>
+                          <button class="follow-btn follow-btn2">Follow</button>
+                        </div>
+                      </li>
+                      <li class="modalProfile-follow-item">
+                        <div class="modalProfile-follow-card">
+                          <a href="" class="modalProfile-follow-profile">
+                            <div class="modalProfile-follow-profile-img">
+                              <img
+                                src="./assets/img/modalFollowImg6.png"
+                                alt=""
+                              />
+                            </div>
+                            <span>Dr. Austin Nicolas</span>
+                          </a>
+                          <button class="follow-btn">Follow</button>
+                        </div>
+                      </li>
+                      <li class="modalProfile-follow-item">
+                        <div class="modalProfile-follow-card">
+                          <a href="" class="modalProfile-follow-profile">
+                            <div class="modalProfile-follow-profile-img">
+                              <img
+                                src="./assets/img/modalFollowImg7.png"
+                                alt=""
+                              />
+                            </div>
+                            <span>Dr. Jeannette Hayes</span>
+                          </a>
+                          <button class="follow-btn">Follow</button>
+                        </div>
+                      </li>
+                      <li class="modalProfile-follow-item">
+                        <div class="modalProfile-follow-card">
+                          <a href="" class="modalProfile-follow-profile">
+                            <div class="modalProfile-follow-profile-img">
+                              <img
+                                src="./assets/img/modalFollowImg8.png"
+                                alt=""
+                              />
+                            </div>
+                            <span>Jordan Christiansen</span>
+                          </a>
+                          <button class="follow-btn follow-btn2">Follow</button>
+                        </div>
+                      </li>
+                      <li class="modalProfile-follow-item">
+                        <div class="modalProfile-follow-card">
+                          <a href="" class="modalProfile-follow-profile">
+                            <div class="modalProfile-follow-profile-img">
+                              <img
+                                src="./assets/img/modalFollowImg9.png"
+                                alt=""
+                              />
+                            </div>
+                            <span>Beverly Wisoky</span>
+                          </a>
+                          <button class="follow-btn follow-btn2">Follow</button>
+                        </div>
+                      </li>
+                      <li class="modalProfile-follow-item">
+                        <div class="modalProfile-follow-card">
+                          <a href="" class="modalProfile-follow-profile">
+                            <div class="modalProfile-follow-profile-img">
+                              <img
+                                src="./assets/img/modalFollowImg10.png"
+                                alt=""
+                              />
+                            </div>
+                            <span>Jake Borer II</span>
+                          </a>
+                          <button class="follow-btn follow-btn211">Follow</button>
+                        </div>
+                      </li>
+                      <li class="modalProfile-follow-item">
+                        <div class="modalProfile-follow-card">
+                          <a href="" class="modalProfile-follow-profile">
+                            <div class="modalProfile-follow-profile-img">
+                              <img
+                                src="./assets/img/modalFollowImg12.png"
+                                alt=""
+                              />
+                            </div>
+                            <span>Regina Connelly</span>
+                          </a>
+                          <button class="follow-btn follow-btn2">Follow</button>
+                        </div>
+                      </li>
+                      <li class="modalProfile-follow-item">
+                        <div class="modalProfile-follow-card">
+                          <a href="" class="modalProfile-follow-profile">
+                            <div class="modalProfile-follow-profile-img">
+                              <img
+                                src="./assets/img/modalFollowImg12.png"
+                                alt=""
+                              />
+                            </div>
+                            <span>Mrs. Domingo Ernser</span>
+                          </a>
+                          <button class="follow-btn follow-btn2">Follow</button>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

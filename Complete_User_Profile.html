@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HomePage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- ===Header-start=== -->
+
+    <header>
+      <div class="mobile-menu-overlay"></div>
+      <div class="container">
+        <div class="header_main">
+          <a href="./index.html" class="header_logo login_header_logo">
+            <img src="./assets/img/headerlogo.png" alt="headerlogo" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- ===Header-end=== -->
+
+    <!-- ===LoginSection-Start=== -->
+
+    <section class="section login-section userLogin-section">
+      <div class="container-fluid">
+        <!-- <form action=""> -->
+        <div class="row userlogin-row">
+          <div
+            class="col-md-6 col-lg-6 login-from-img-section d-none d-md-block"
+          >
+            <div class="login-from-img">
+              <img src="./assets/img/loginImg-4.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="main-login-left-side">
+              <form action="">
+                <div class="login-from-section">
+                  <div class="from-main-section">
+                    <div class="userLogin-header-section">
+                      <a href="" class="backbutton">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.9625 7.41248L4.375 15L11.9625 22.5875"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M25.625 15H4.5875"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                      <h3>Complete Your Profile</h3>
+                    </div>
+                    <div class="from-input-section">
+                      <div class="row gy-4">
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                          <div class="input-section">
+                            <label for="Name">Name</label>
+                            <input
+                              type="text"
+                              name=""
+                              id="Name"
+                              placeholder="Enter Your Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                          <div class="input-section">
+                            <label for="EmailAddress">Email Address</label>
+                            <input
+                              type="email"
+                              name=""
+                              id="EmailAddress"
+                              placeholder="Enter Your Email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                          <div
+                            class="input-section d-flex align-items-center justify-content-start"
+                          >
+                            <label for="PhoneNumber">Phone Number</label>
+                            <div
+                              class="dropdown custom-dropdwon phoneDropdownBtn"
+                            >
+                              <button
+                                class=""
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <div class="phoneDropdwonImg">
+                                  <img
+                                    src="./assets/img/india-svgrepo-com-1.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <svg
+                                  width="7"
+                                  height="4"
+                                  viewBox="0 0 7 4"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M6.96189 0.308862C6.93673 0.248175 6.89986 0.193042 6.85337 0.146614C6.80694 0.100135 6.7518 0.0632628 6.69111 0.0381056C6.63041 0.0129484 6.56536 0 6.49966 0C6.43395 0 6.3689 0.0129484 6.3082 0.0381056C6.24751 0.0632628 6.19237 0.100135 6.14594 0.146614L3.49994 2.79297L0.853946 0.146614C0.760135 0.0528122 0.632899 0.000114417 0.50023 0.000114418C0.367561 0.000114419 0.240325 0.0528122 0.146514 0.146614C0.0527024 0.240416 0 0.367639 0 0.500295C0 0.632951 0.0527024 0.760173 0.146514 0.853975L3.14623 3.85339C3.19266 3.89987 3.2478 3.93674 3.30849 3.9619C3.36918 3.98705 3.43424 4 3.49994 4C3.56564 4 3.6307 3.98705 3.69139 3.9619C3.75209 3.93674 3.80723 3.89987 3.85366 3.85339L6.85337 0.853975C6.89986 0.807548 6.93673 0.752414 6.96189 0.691727C6.98705 0.63104 7 0.56599 7 0.500295C7 0.4346 6.98705 0.369549 6.96189 0.308862Z"
+                                    fill="#404040"
+                                  />
+                                </svg>
+                              </button>
+                              <ul class="dropdown-menu custom-dropdwon-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Another action</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+
+                            <input
+                              type="text"
+                              name=""
+                              id="PhoneNumber"
+                              placeholder="Enter Phone Number"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                          <div class="input-section">
+                            <label for="confirmPassword">Gender</label>
+                            <div class="dropdown custom-dropdwon ganderDropwon">
+                              <button
+                                class=""
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <span>Female</span>
+                                <div class="ganderDropdownImg">
+                                  <img
+                                    src="./assets/img/dropdwonIcon.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </button>
+                              <ul class="dropdown-menu custom-dropdwon-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">Male</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Female</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Other</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                          <div class="input-section">
+                            <label for="confirmPassword">Country</label>
+                            <div class="dropdown custom-dropdwon ganderDropwon">
+                              <button
+                                class=""
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <span>India</span>
+                                <div class="ganderDropdownImg">
+                                  <img
+                                    src="./assets/img/dropdwonIcon.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </button>
+                              <ul class="dropdown-menu custom-dropdwon-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">India</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">USA</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">UK</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="input-section">
+                            <label for="Bio">Your Bio</label>
+                            <textarea
+                              rows="3"
+                              id="Bio"
+                              placeholder="Text here"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fromSubmit-btn-section">
+                    <button type="button" class="cmn_btn cancel_btn">
+                      Back
+                    </button>
+                    <button type="button" class="cmn_btn next" data-next="2">
+                      Sent
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- </form> -->
+      </div>
+    </section>
+
+    <!-- ===LoginSection-End=== -->
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery-cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
+    <!-- <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script> -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

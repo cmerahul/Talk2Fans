@@ -9,6 +9,7 @@
 @import url("./video_stream_view.css");
 @import url("./modal_profile.css");
 @import url("./video_call.css");
+@import url("./notification.css");
 
 * {
   margin: 0px;
@@ -115,6 +116,7 @@ li {
   font-size: 38px;
   line-height: 45.6px;
   color: var(--secondaryColor);
+  text-transform: uppercase;
 }
 
 /* custom-dropdwon-menu Start */

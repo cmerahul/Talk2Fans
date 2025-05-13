@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HomePage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- ===Header-start=== -->
+
+    <header class="modal_stream_main_header">
+      <div class="mobile-menu-overlay"></div>
+      <div class="container">
+        <div class="header_main modal_stream_view_header">
+          <a href="./index.html" class="header_logo">
+            <img src="./assets/img/headerlogo.png" alt="headerlogo" />
+          </a>
+          <nav>
+            <ul>
+              <li class="nav-list">
+                <a href="#index.html" class="nav-item active">Home</a>
+              </li>
+              <li class="nav-list">
+                <a class="nav-item searchShowBtn">Explore</a>
+              </li>
+              <li class="nav-list">
+                <a href="#index.html" class="nav-item">Message</a>
+              </li>
+              <li class="nav-list">
+                <a href="./User_ProfileSubscribe.html" class="nav-item"
+                  >Subscribe</a
+                >
+              </li>
+              <li class="nav-list">
+                <a href="./UserLogin.html" class="nav-item">Invite a Friend</a>
+              </li>
+            </ul>
+            <a href="./notification.html" class="notifiction-icon-section">
+              <svg
+                width="34"
+                height="33"
+                viewBox="0 0 34 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_807_23699)">
+                  <path
+                    d="M14.2256 29.3225C14.8146 30.4207 15.9737 31.1679 17.3072 31.1679C18.6407 31.1679 19.7997 30.4207 20.3888 29.3225"
+                    stroke="white"
+                    stroke-width="1.88167"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.9293 4.68841C12.6208 2.99691 14.915 2.04663 17.3071 2.04663C19.6993 2.04663 21.9934 2.99691 23.6849 4.68841C25.3764 6.3799 26.3267 8.67406 26.3267 11.0662C26.3267 12.4737 26.559 13.7963 26.9084 15.1491C27.0063 15.4553 27.1141 15.7443 27.2302 16.0169C27.7707 17.2884 29.2589 17.7222 30.3694 18.5443C32.027 19.7714 31.7064 22.397 30.3277 23.4164C30.3277 23.4164 28.1017 25.3435 17.3071 25.3435C6.51242 25.3435 4.28645 23.4164 4.28645 23.4164C2.90778 22.397 2.58732 19.7714 4.24484 18.5443C5.35528 17.7222 6.84349 17.2885 7.38414 16.017C7.92305 14.7497 8.28755 13.1284 8.28755 11.0662C8.28755 8.67406 9.23783 6.3799 10.9293 4.68841Z"
+                    fill="white"
+                    fill-opacity="0.2"
+                  />
+                  <path
+                    d="M10.9293 4.68841C12.6208 2.99691 14.915 2.04663 17.3071 2.04663C19.6993 2.04663 21.9934 2.99691 23.6849 4.68841C25.3764 6.3799 26.3267 8.67406 26.3267 11.0662C26.3267 12.4737 26.559 13.7963 26.9084 15.1491C27.0063 15.4553 27.1141 15.7443 27.2302 16.0169C27.7707 17.2884 29.2589 17.7222 30.3694 18.5443C32.027 19.7714 31.7064 22.397 30.3277 23.4164C30.3277 23.4164 28.1017 25.3435 17.3071 25.3435C6.51242 25.3435 4.28645 23.4164 4.28645 23.4164C2.90778 22.397 2.58732 19.7714 4.24484 18.5443C5.35528 17.7222 6.84349 17.2885 7.38414 16.017C7.92305 14.7497 8.28755 13.1284 8.28755 11.0662C8.28755 8.67406 9.23783 6.3799 10.9293 4.68841Z"
+                    stroke="white"
+                    stroke-width="1.88167"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_807_23699">
+                    <rect
+                      width="33.3859"
+                      height="31.6303"
+                      fill="white"
+                      transform="translate(0.614258 0.791992)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="count">0</span>
+            </a>
+            <a href="./User_ProfileSubscribe.html" class="header-coin-wrp">
+              <img src="./assets/img/coinimg.png" alt="coinimg" />
+              <p>100 M</p>
+              <button><i class="fa-solid fa-plus"></i></button>
+            </a>
+            <div class="header-modal-profile">
+              <div class="dropdown custom-dropdwon">
+                <button
+                  class="dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="position-relative">
+                    <img src="./assets/img/livestreamimg.png" alt="" />
+                    <span></span>
+                  </div>
+                  <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu custom-dropdwon-menu">
+                  <li>
+                    <a class="dropdown-item" href="./User_ProfileScreen.html">
+                      <i class="fa-solid fa-user"></i>
+                      My Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./index.html">
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                      LogOut</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="moblie-menu-btn">
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                <path
+                  class="line line1"
+                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                ></path>
+                <path class="line line2" d="M 20,50 H 80"></path>
+                <path
+                  class="line line3"
+                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                ></path>
+              </svg>
+            </button>
+            <div class="searchBar-section">
+              <input type="text" placeholder="Search here" />
+              <span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1479 15.3519L12.6273 11.8321C13.6477 10.6071 14.1566 9.03577 14.048 7.44512C13.9394 5.85447 13.2217 4.36692 12.0443 3.29193C10.8668 2.21693 9.32029 1.63725 7.72635 1.67348C6.13241 1.7097 4.6138 2.35904 3.48642 3.48642C2.35904 4.6138 1.7097 6.13241 1.67348 7.72635C1.63725 9.32029 2.21693 10.8668 3.29193 12.0443C4.36692 13.2217 5.85447 13.9394 7.44512 14.048C9.03577 14.1566 10.6071 13.6477 11.8321 12.6273L15.3519 16.1479C15.4042 16.2001 15.4663 16.2416 15.5345 16.2699C15.6028 16.2982 15.676 16.3127 15.7499 16.3127C15.8238 16.3127 15.897 16.2982 15.9653 16.2699C16.0336 16.2416 16.0956 16.2001 16.1479 16.1479C16.2001 16.0956 16.2416 16.0336 16.2699 15.9653C16.2982 15.897 16.3127 15.8238 16.3127 15.7499C16.3127 15.676 16.2982 15.6028 16.2699 15.5345C16.2416 15.4663 16.2001 15.4042 16.1479 15.3519ZM2.81242 7.87492C2.81242 6.87365 3.10933 5.89486 3.6656 5.06234C4.22188 4.22982 5.01253 3.58094 5.93758 3.19778C6.86263 2.81461 7.88053 2.71435 8.86256 2.90969C9.84459 3.10503 10.7466 3.58718 11.4546 4.29519C12.1626 5.00319 12.6448 5.90524 12.8401 6.88727C13.0355 7.8693 12.9352 8.8872 12.5521 9.81225C12.1689 10.7373 11.52 11.528 10.6875 12.0842C9.85497 12.6405 8.87618 12.9374 7.87492 12.9374C6.53271 12.9359 5.24591 12.4021 4.29683 11.453C3.34775 10.5039 2.8139 9.21712 2.81242 7.87492Z"
+                    fill="black"
+                    fill-opacity="0.34"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- ===Header-end=== -->
+
+    <!-- ===LoginSection-Start=== -->
+
+    <section class="section login-section userLogin-section">
+      <div class="container-fluid">
+        <!-- <form action=""> -->
+        <div class="row userlogin-row">
+          <div
+            class="col-md-6 col-lg-6 login-from-img-section d-none d-md-block"
+          >
+            <div class="login-from-img">
+              <img src="./assets/img/loginImg-4.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="main-login-left-side">
+              <form action="">
+                <div class="login-from-section">
+                  <div class="from-main-section">
+                    <div class="from-input-section">
+                      <div class="row justify-content-center gap-4">
+                        <div class="col-sm-8">
+                          <div class="input-section">
+                            <label for="Name">Name</label>
+                            <input
+                              type="text"
+                              name=""
+                              id="Name"
+                              placeholder="Enter Your Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-8">
+                          <div class="input-section">
+                            <label for="EmailAddress">Email Address</label>
+                            <input
+                              type="email"
+                              name=""
+                              id="EmailAddress"
+                              placeholder="Enter Your Email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-8">
+                          <div
+                            class="input-section d-flex align-items-center justify-content-start"
+                          >
+                            <label for="PhoneNumber">Phone Number</label>
+                            <div
+                              class="dropdown custom-dropdwon phoneDropdownBtn"
+                            >
+                              <button
+                                class=""
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <div class="phoneDropdwonImg">
+                                  <img
+                                    src="./assets/img/india-svgrepo-com-1.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <svg
+                                  width="7"
+                                  height="4"
+                                  viewBox="0 0 7 4"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M6.96189 0.308862C6.93673 0.248175 6.89986 0.193042 6.85337 0.146614C6.80694 0.100135 6.7518 0.0632628 6.69111 0.0381056C6.63041 0.0129484 6.56536 0 6.49966 0C6.43395 0 6.3689 0.0129484 6.3082 0.0381056C6.24751 0.0632628 6.19237 0.100135 6.14594 0.146614L3.49994 2.79297L0.853946 0.146614C0.760135 0.0528122 0.632899 0.000114417 0.50023 0.000114418C0.367561 0.000114419 0.240325 0.0528122 0.146514 0.146614C0.0527024 0.240416 0 0.367639 0 0.500295C0 0.632951 0.0527024 0.760173 0.146514 0.853975L3.14623 3.85339C3.19266 3.89987 3.2478 3.93674 3.30849 3.9619C3.36918 3.98705 3.43424 4 3.49994 4C3.56564 4 3.6307 3.98705 3.69139 3.9619C3.75209 3.93674 3.80723 3.89987 3.85366 3.85339L6.85337 0.853975C6.89986 0.807548 6.93673 0.752414 6.96189 0.691727C6.98705 0.63104 7 0.56599 7 0.500295C7 0.4346 6.98705 0.369549 6.96189 0.308862Z"
+                                    fill="#404040"
+                                  />
+                                </svg>
+                              </button>
+                              <ul class="dropdown-menu custom-dropdwon-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Another action</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+
+                            <input
+                              type="text"
+                              name=""
+                              id="PhoneNumber"
+                              placeholder="Enter Phone Number"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fromSubmit-btn-section">
+                    <button type="button" class="cmn_btn cancel_btn">
+                      Back
+                    </button>
+                    <button type="submit" class="cmn_btn next" data-next="2">
+                      Invite a Friend
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- </form> -->
+      </div>
+    </section>
+
+    <!-- ===LoginSection-End=== -->
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery-cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
+    <!-- <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script> -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

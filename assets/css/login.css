@@ -44,6 +44,7 @@
 
 .login-section form {
   height: 100%;
+  width: 100%;
 }
 
 .login-section form .steps {
@@ -246,7 +247,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
 }
 
-.fromSubmit-btn-section .cmn_btn:hover{
+.fromSubmit-btn-section .cmn_btn:hover {
   border-color: var(--primaryColor);
 }
 
@@ -259,7 +260,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .fromSubmit-btn-section .cmn_btn.cancel_btn:hover {
   border: 1px solid #4d4d4d;
 }
-
 
 /* ===== Step-2 Start */
 
@@ -423,6 +423,45 @@ label.login-from-userImg-section span {
 
 /* ==== User login Section Start ==== */
 
+.login-from-section.userLogin-from-section {
+  padding: 50px 40px;
+}
+
+.userLogin-header-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.userLogin-header-section h3 {
+  text-align: center;
+  font-family: var(--Poppins-SemiBold);
+  font-size: 36px;
+  margin-bottom: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.userLogin-form .OTPVerificationText {
+  font-family: var(--Poppins-Regular);
+  font-size: 15px;
+  text-align: center;
+  max-width: 458px;
+  margin: 0 auto 30px;
+}
+
+.userLogin-form .fromSubmit-btn-section {
+  justify-content: center;
+}
+
+.userLogin-form .login-from-btn-section {
+  margin-bottom: 0;
+}
+
+.userLogin-form .login-from-btn-section nav {
+  margin-bottom: 40px;
+}
+
 .input-section .phoneDropwon {
   padding: 5.75px 6.65px;
   border-radius: 7px;
@@ -445,13 +484,241 @@ label.login-from-userImg-section span {
   justify-content: center;
 }
 
+.login-from-btn-section .checkbox-section {
+  display: flex;
+  align-items: center;
+}
+
+.login-from-btn-section .checkbox-section .form-check-input {
+  width: 20px;
+  height: 20px;
+  box-shadow: none;
+  border: 0.5px solid #6c7278;
+  background-color: transparent;
+  margin: 0;
+}
+
+.login-from-btn-section .checkbox-section .form-check-input:checked {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+
+.login-from-btn-section .checkbox-section .form-check-label {
+  display: inline-block;
+  font-family: var(--Poppins-Medium);
+  font-size: 14px;
+  color: #6c7278;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.login-from-btn-section .forgotLink {
+  font-family: var(--Poppins-Medium);
+  font-size: 13px;
+  color: var(--primaryColor);
+}
+
 /* ==== User login Section End ==== */
 
+/* ==== Create New Password Section Start ==== */
+
+.userLogin-header-section .backbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 40px;
+  min-width: 40px;
+  height: 40px;
+  background-color: var(--white);
+  border-radius: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.userLogin-header-section .backbutton svg {
+  width: 100%;
+  max-width: 20px;
+  min-width: 20px;
+  height: 20px;
+}
+
+/* ==== Create New Password Section End ==== */
+
+/* ==== OTP Verification Section Start ==== */
+
+.otpboxs-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.outpbox-section {
+  position: relative;
+}
+
+.outpbox-section .otpboxs {
+  width: 100%;
+  max-width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  background: #eb334933;
+  border: 1px solid transparent;
+  font-size: 18px;
+  line-height: 1;
+  font-family: var(--Poppins-SemiBold);
+  color: var(--white);
+}
+
+.outpbox-section.active .otpboxs {
+  background-color: var(--primaryColor);
+  border-color: #eb5433;
+}
+
+.outpbox-section span {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--secondaryColor);
+}
+
+.outpbox-section.active span {
+  display: none;
+}
+
+.fromSubmit-btn-section .OTPVerificationBtn {
+  max-width: 360px;
+}
+
+.resendCodeLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: var(--Poppins-Medium);
+  font-size: 13px;
+  line-height: 16.8px;
+  color: var(--secondaryColor);
+}
+
+.resendCodeLink span {
+  display: inline-block;
+  margin-left: 10px;
+  color: #eb3349;
+}
+
+/* ==== OTP Verification Section End ==== */
+
+/* ==== Complete Your Profile Section Strat ==== */
+
+.phoneDropdownBtn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+  background-color: #eceff3;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 38px;
+  min-width: 38px;
+  height: 23px;
+}
+
+.phoneDropdownBtn button .phoneDropdwonImg {
+  width: 100%;
+  max-width: 14px;
+  min-width: 14px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
+}
+
+.phoneDropdownBtn button .phoneDropdwonImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.dropdown.ganderDropwon {
+  border: none;
+  width: 100%;
+  outline: none;
+  font-family: var(--Poppins-Regular);
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 12px 20px;
+  padding-right: 16px;
+  border-radius: 13px;
+}
+
+.ganderDropwon button {
+  border: none;
+  width: 100%;
+  outline: none;
+  font-family: var(--Poppins-Regular);
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ganderDropwon button span {
+  display: block;
+  position: static;
+  text-align: left;
+}
+
+.fromSubmit-btn-section.userProfileBtnSection {
+  justify-content: end;
+}
+
+/* ==== Complete Your Profile Section End ==== */
+
 /* ===Media-quary=== */
+
+@media only screen and (min-width: 1440px) {
+  .userLogin-header-section h3 {
+    max-width: 100%;
+  }
+}
+
 @media only screen and (max-width: 1399px) {
   .login-from-section {
     padding: 40px 20px 20px;
   }
+
+  .fromSubmit-btn-section .OTPVerificationBtn {
+    max-width: 320px;
+  }
+}
+
+@media only screen and (max-width: 1299px) {
+  .outpbox-section .otpboxs {
+    max-width: 50px;
+    height: 50px;
+  }
+
+  .userLogin-header-section h3 {
+    font-size: 32px;
+    max-width: 450px;
+  }
+
+      .fromSubmit-btn-section .OTPVerificationBtn {
+        max-width: 280px;
+    }
+
+
 }
 
 @media only screen and (max-width: 1199px) {
@@ -461,6 +728,10 @@ label.login-from-userImg-section span {
   }
 
   .login-from-section {
+    padding: 25px;
+  }
+
+  .login-from-section.userLogin-from-section {
     padding: 25px;
   }
 
@@ -481,11 +752,32 @@ label.login-from-userImg-section span {
   .fromSubmit-btn-section {
     margin-top: 20px;
   }
+
+  .outpbox-section .otpboxs {
+    width: 100%;
+    max-width: 45px;
+    height: 45px;
+    font-size: 17px;
+  }
+
+  .userLogin-header-section h3 {
+    font-size: 30px;
+    max-width: 415px;
+  }
+
+      .fromSubmit-btn-section .OTPVerificationBtn {
+        max-width: 260px;
+    }
+
 }
 
 @media only screen and (max-width: 1024px) {
   .login-from-section {
     padding: 40px 10px;
+  }
+
+  .login-from-section.userLogin-from-section {
+    padding: 30px 20px;
   }
 
   .login-from-btn-section .nav-tabs button {
@@ -501,6 +793,11 @@ label.login-from-userImg-section span {
   .login-from-section {
     padding: 20px 0px;
   }
+
+  .login-from-section.userLogin-from-section {
+    padding: 30px 0;
+  }
+
   .login-from-btn-section .nav-tabs {
     padding: 6px 4px;
   }
@@ -529,6 +826,20 @@ label.login-from-userImg-section span {
     background-color: #f4f4f4;
     width: 100%;
   }
+
+  .userLogin-header-section h3 {
+    font-size: 26px;
+  }
+  .userLogin-form .OTPVerificationText {
+    font-size: 14px;
+  }
+
+  .outpbox-section .otpboxs {
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -553,6 +864,17 @@ label.login-from-userImg-section span {
   }
   .login-from-userImg-main-section {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .outpbox-section .otpboxs {
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .userLogin-header-section h3 {
+    max-width: 100%;
   }
 }
 
@@ -596,6 +918,21 @@ label.login-from-userImg-section span {
 
   .login-from-userImg-main-section {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .userLogin-header-section h3 {
+    font-size: 24px;
+  }
+
+  .userLogin-form .OTPVerificationText {
+    font-size: 13px;
+  }
+
+  .outpbox-section .otpboxs {
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    font-size: 14px;
   }
 }
 
@@ -645,5 +982,9 @@ label.login-from-userImg-section span {
 
   .login-from-userImg-main-section {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .userLogin-header-section h3 {
+    font-size: 20px;
   }
 }

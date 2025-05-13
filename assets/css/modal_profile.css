@@ -259,6 +259,9 @@
 
 .profileCard.profileCard-mainCard .profileCard-mainCard-header {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .profileCard.profileCard-mainCard
   .profileCard-mainCard-header
@@ -276,6 +279,19 @@
   height: 100%;
   object-fit: cover;
   object-position: center center;
+}
+
+.profileCard-mainCard-header .EditProfileBtn {
+  width: 100%;
+  max-width: 153px;
+  padding: 15px;
+  background-color: #eb334933;
+  border-radius: 14px;
+  color: var(--primaryColor);
+  font-family: var(--Poppins-Medium);
+  font-size: 16px;
+  text-align: center;
+  display: block;
 }
 
 .profileCard-mainCard-body {
@@ -360,7 +376,7 @@
   padding-right: 15px;
   background-color: var(--secondaryColor);
   border-radius: 16px;
-  margin-bottom: 12px;
+  margin: 20px 0 12px;
 }
 
 .modalProfile-banner-left p {
@@ -412,6 +428,7 @@
   font-family: var(--Poppins-Medium);
   line-height: 1.3;
   color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
 }
 
 .modalGalary-info-mesg span {
@@ -420,10 +437,6 @@
   min-width: 23px;
   height: 23px;
   margin-right: 7px;
-}
-
-.modalProfile-right-side {
-  margin-top: 20px;
 }
 
 .modalProfile-right-side-title {
@@ -436,8 +449,7 @@
 .modalProfile-right-side-card {
   padding: 30px 35px;
   border: 1px solid #e2e8f0;
-  border-bottom: none;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
   word-break: break-all;
 }
 
@@ -1455,8 +1467,7 @@
 
 /* ==== End Streming Modal End ====  */
 
-
-.input-section.radio-btn-main-section{
+.input-section.radio-btn-main-section {
   padding: 12px 20px;
 }
 
@@ -1486,6 +1497,20 @@
   .purchase-accordion .accordion-header .accordion-button {
     font-size: 16px;
   }
+
+  .profileCard.profileCard-mainCard
+    .profileCard-mainCard-header
+    .profileCard-mainCard-header-img {
+    max-width: 100px;
+  }
+}
+
+@media only screen and (max-width: 1299px) {
+  .profileCard.profileCard-mainCard
+    .profileCard-mainCard-header
+    .profileCard-mainCard-header-img {
+    max-width: 90px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -1498,11 +1523,22 @@
     font-size: 13px;
     margin-left: 14px;
   }
+
+  .profileCard.profileCard-mainCard
+    .profileCard-mainCard-header
+    .profileCard-mainCard-header-img {
+    max-width: 85px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .modalProfile-right-side-card {
     padding: 20px 25px;
+  }
+
+  .profileCard-mainCard-header .EditProfileBtn {
+    max-width: 140px;
+    padding: 12px;
   }
 }
 
@@ -1573,6 +1609,18 @@
   .modalProfile-paymentright-side .modalProfile-right-side-card {
     padding: 25px 15px;
   }
+
+  .profileCard-mainCard-header .EditProfileBtn {
+    max-width: 120px;
+    padding: 11px;
+    font-size: 15px;
+  }
+
+  .profileCard.profileCard-mainCard
+    .profileCard-mainCard-header
+    .profileCard-mainCard-header-img {
+    max-width: 80px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1631,6 +1679,22 @@
 
   .offcanvas-body-footer {
     padding: 30px 15px;
+  }
+
+  .profileCard.profileCard-mainCard {
+    padding: 8px 12px;
+  }
+
+  .profileCard-mainCard-header .EditProfileBtn {
+    max-width: 103px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .profileCard.profileCard-mainCard
+    .profileCard-mainCard-header
+    .profileCard-mainCard-header-img {
+    max-width: 70px;
   }
 }
 
@@ -1707,8 +1771,7 @@
     line-height: 1.2;
   }
 
-  .modalProfile-Galaryright-side-card{
+  .modalProfile-Galaryright-side-card {
     gap: 8px;
   }
-
 }

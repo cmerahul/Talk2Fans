@@ -1,0 +1,115 @@
+.notification-card-section .modalProfile-right-side-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.notification-list {
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-top: none;
+  border-bottom: none;
+}
+
+.modalProfile-follow-list.notification-list li {
+  margin-bottom: 4px;
+  padding: 16px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.modalProfile-follow-list.notification-list li:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.modalProfile-follow-list.notification-list li .notifiction-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.notifiction-card .notifiction-profileImg {
+  width: 100%;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #ffccd8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notifiction-card .notifiction-profileImg p {
+  margin-bottom: 0;
+  font-family: var(--Poppins-Regular);
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.notifiction-card .notifiction-profileImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.notifiction-card .notifiction-profileImg span {
+  width: 14px;
+  height: 14px;
+  border: 2.5px solid var(--white);
+  background-color: #46d31b;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1px;
+  right: 0px;
+}
+
+.notifiction-card .notifiction-Profile-details {
+  width: 100%;
+}
+
+.notifiction-card .notifiction-Profile-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notifiction-card .notifiction-Profile-title h6 {
+  font-family: var(--Poppins-SemiBold);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 0;
+  color: #0f172a;
+  margin-right: 8px;
+}
+
+.notifiction-card .notifiction-Profile-title span {
+  font-family: var(--Poppins-Regular);
+  font-size: 14px;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+.notifiction-Profile-details p {
+  font-family: var(--Poppins-Regular);
+  font-size: 14px;
+  line-height: 1.7;
+  color: #565656;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+  margin: 0;
+}
+.notifiction-Profile-details p img {
+  width: 100%;
+  max-width: 18.21px;
+  min-width: 18.21px;
+  height: 19.92px;
+  object-fit: contain;
+}

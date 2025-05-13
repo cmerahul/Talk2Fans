@@ -222,6 +222,42 @@ header {
   height: max-content;
 }
 
+/* Notifiction Icon Strat */
+
+.notifiction-icon-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 30px;
+  min-width: 30px;
+  height: 30px;
+}
+
+.notifiction-icon-section svg {
+  width: 100%;
+  max-width: 25px;
+  min-width: 25px;
+  height: 25px;
+}
+.notifiction-icon-section span {
+  position: absolute;
+  top: -5px;
+  right: -2px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: var(--secondaryColor);
+  color: var(--white);
+  font-size: 11px;
+  text-align: center;
+}
+
+/* Notifiction Icon End */
+
 /* ===Media-quary=== */
 @media only screen and (max-width: 1399px) {
   .header_main ul li a {
@@ -278,11 +314,6 @@ header {
   .header_main ul li a::before {
     bottom: -1px;
   }
-}
-@media only screen and (max-width: 767px) {
-  header {
-    height: 80px;
-  }
   .moblie-menu-btn {
     display: flex;
     border: 1px solid var(--white);
@@ -329,6 +360,12 @@ header {
   .header-btn {
     border-radius: 5px;
   }
+}
+@media only screen and (max-width: 767px) {
+  header {
+    height: 80px;
+  }
+  
 }
 
 @media only screen and (max-width: 424px) {
