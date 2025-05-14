@@ -493,6 +493,15 @@
   border-radius: 0;
   border-top: 2px dashed rgba(0, 0, 0, 0.2);
   padding-inline: 0;
+  width: 100%;
+}
+
+.modalProfile-right-side.modalProfile-paymentright-side {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  height: calc(100% - 220px);
 }
 
 .modalpayment-info-mesg {
@@ -503,6 +512,10 @@
   font-size: 12px;
   font-family: var(--Poppins-Regular);
   color: var(--secondaryColor);
+}
+
+.modalProfile-banner.payment-banner {
+  margin-top: 0;
 }
 
 /* ==== modal Payment Section End */
@@ -1712,6 +1725,11 @@
 @media only screen and (max-width: 767px) {
   .profileCard.profile-mian-card {
     margin-bottom: 0px;
+  }
+
+  .modalProfile-right-side.modalProfile-paymentright-side
+    .fromSubmit-btn-section {
+    justify-content: center;
   }
 }
 

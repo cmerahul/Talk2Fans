@@ -91,7 +91,7 @@
                             for="userProfileImg"
                           >
                             <input type="file" id="userProfileImg" hidden />
-                            <img src="" alt="" class="d-none">
+                            <img src="" alt="" class="d-none" />
                             <svg
                               width="43"
                               height="56"
@@ -142,18 +142,35 @@
                         </div>
                         <div class="col-sm-6 col-md-12 col-lg-6">
                           <div class="input-section">
-                            <label for="Name" class="input-label">Name</label>
+                            <label for="firstName" class="input-label"
+                              >First Name*</label
+                            >
                             <input
                               type="text"
                               name=""
-                              id="Name"
+                              id="firstName"
                               placeholder="Enter Your Name"
                             />
                           </div>
                         </div>
                         <div class="col-sm-6 col-md-12 col-lg-6">
                           <div class="input-section">
-                            <label for="EmailAddress" class="input-label">Email Address</label>
+                            <label for="lastName" class="input-label"
+                              >Last Name*</label
+                            >
+                            <input
+                              type="text"
+                              name=""
+                              id="lastName"
+                              placeholder="Enter Your Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                          <div class="input-section">
+                            <label for="EmailAddress" class="input-label"
+                              >Email Address</label
+                            >
                             <input
                               type="email"
                               name=""
@@ -166,7 +183,9 @@
                           <div
                             class="input-section d-flex align-items-center justify-content-start"
                           >
-                            <label for="PhoneNumber" class="input-label">Phone Number</label>
+                            <label for="PhoneNumber" class="input-label"
+                              >Phone Number</label
+                            >
                             <div
                               class="dropdown custom-dropdwon phoneDropdownBtn"
                             >
@@ -217,39 +236,22 @@
                         </div>
                         <div class="col-sm-6 col-md-12 col-lg-6">
                           <div class="input-section">
-                            <label for="confirmPassword" class="input-label">Gender</label>
-                            <div class="dropdown custom-dropdwon ganderDropwon">
-                              <button
-                                class=""
-                                type="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <span>Female</span>
-                                <div class="ganderDropdownImg">
-                                  <img
-                                    src="./assets/img/dropdwonIcon.png"
-                                    alt=""
-                                  />
-                                </div>
-                              </button>
-                              <ul class="dropdown-menu custom-dropdwon-menu">
-                                <li>
-                                  <a class="dropdown-item" href="#">Male</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Female</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Other</a>
-                                </li>
-                              </ul>
-                            </div>
+                            <label for="firstName" class="input-label"
+                              >Gender</label
+                            >
+                            <select>
+                              <option value="in">Select Gander</option>
+                              <option value="in">Female</option>
+                              <option value="in">Male</option>
+                              <option value="in">Other</option>
+                            </select>
                           </div>
                         </div>
                         <div class="col-sm-6 col-md-12 col-lg-6">
                           <div class="input-section">
-                            <label for="confirmPassword" class="input-label">Country</label>
+                            <label for="confirmPassword" class="input-label"
+                              >Country</label
+                            >
                             <div class="dropdown custom-dropdwon ganderDropwon">
                               <button
                                 class=""
@@ -281,7 +283,9 @@
                         </div>
                         <div class="col-12">
                           <div class="input-section">
-                            <label for="Bio" class="input-label">Your Bio</label>
+                            <label for="Bio" class="input-label"
+                              >Your Bio</label
+                            >
                             <textarea
                               rows="3"
                               id="Bio"
