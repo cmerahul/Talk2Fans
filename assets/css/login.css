@@ -753,6 +753,51 @@ label.login-from-userImg-section span {
 
 /* ==== Complete Your Profile Section End ==== */
 
+/* ==== User Login Mobile Country Code Section Strat ==== */
+
+.iti.iti--allow-dropdown.iti--separate-dial-code {
+  width: 100%;
+}
+
+.iti__selected-flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eceff3;
+  border-radius: 7px;
+  height: 23px;
+  top: 50%;
+  height: 100%;
+  padding: 5.5px 7px;
+  transform: translateY(-50%);
+}
+
+.iti__flag.iti__in{
+  width: 100%;
+  max-width: 14px;
+  min-width: 14px;
+  height: 12px;
+}
+.iti--separate-dial-code .iti__selected-dial-code{
+  font-size: 11px;
+  font-family: var(--Poppins-Medium);
+  color: var(--secondaryColor);
+}
+
+.iti__arrow{
+  border: none !important;
+  width: 100%;
+  max-width: 7px;
+  min-width: 7px;
+  height: 4px;
+  background-image: url(../img/dropdwonIcon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+/* ==== User Login Mobile Country Code Section End ==== */
+
 /* ===Media-quary=== */
 
 @media only screen and (min-width: 1440px) {

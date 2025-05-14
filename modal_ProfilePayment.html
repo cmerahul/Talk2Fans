@@ -508,7 +508,13 @@
               <div class="modalProfile-banner-left">
                 <p>Coins & Gifts</p>
                 <h4 class="modalProfile-banner-left-title">
-                  $ 1000.00 <a href="">Redeem</a>
+                  $ 1000.00
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#verificationPaymentModal"
+                    >Redeem</a
+                  >
                 </h4>
               </div>
               <div class="modalProfile-banner-right">
@@ -541,7 +547,9 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="input-section">
-                      <label for="withdrawMoney" class="input-label">Withdraw Money</label>
+                      <label for="withdrawMoney" class="input-label"
+                        >Withdraw Money</label
+                      >
                       <input
                         type="text"
                         name=""
@@ -573,7 +581,12 @@
                     </h5>
                     <div class="radio-btn-Section">
                       <div>
-                        <input type="radio" id="bankTransfer" name="payment" />
+                        <input
+                          type="radio"
+                          id="bankTransfer"
+                          name="payment"
+                          checked
+                        />
                         <label for="bankTransfer">Bank Transfer</label>
                       </div>
                     </div>
@@ -812,6 +825,100 @@
     </section>
 
     <!-- === Modal Profile End -->
+
+    <!-- === Payment verification Modal Start === -->
+
+    <div
+      class="modal fade"
+      id="verificationPaymentModal"
+      tabindex="-1"
+      aria-labelledby="endStreamingModal"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <form action="">
+            <div class="modal-header">
+              <div class="boostStremModalHeader-icon">
+                <svg
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M30.875 5.9375H7.125C6.49511 5.9375 5.89102 6.18772 5.44562 6.63312C5.00022 7.07852 4.75 7.68261 4.75 8.3125V16.625C4.75 24.4506 8.53813 29.1932 11.7162 31.7938C15.1391 34.5934 18.5443 35.5434 18.6927 35.5834C18.8968 35.639 19.1121 35.639 19.3162 35.5834C19.4646 35.5434 22.8653 34.5934 26.2927 31.7938C29.4619 29.1932 33.25 24.4506 33.25 16.625V8.3125C33.25 7.68261 32.9998 7.07852 32.5544 6.63312C32.109 6.18772 31.5049 5.9375 30.875 5.9375ZM30.875 16.625C30.875 22.1276 28.8473 26.5941 24.8484 29.8983C23.1077 31.3318 21.1279 32.4473 19 33.1936C16.8999 32.4603 14.9446 31.3645 13.2228 29.9562C9.17641 26.646 7.125 22.1617 7.125 16.625V8.3125H30.875V16.625ZM12.2223 21.0277C11.9995 20.8048 11.8743 20.5026 11.8743 20.1875C11.8743 19.8724 11.9995 19.5702 12.2223 19.3473C12.4452 19.1245 12.7474 18.9993 13.0625 18.9993C13.3776 18.9993 13.6798 19.1245 13.9027 19.3473L16.625 22.0712L24.0973 14.5973C24.2077 14.487 24.3387 14.3995 24.4828 14.3398C24.627 14.2801 24.7815 14.2493 24.9375 14.2493C25.0935 14.2493 25.248 14.2801 25.3922 14.3398C25.5363 14.3995 25.6673 14.487 25.7777 14.5973C25.888 14.7077 25.9755 14.8387 26.0352 14.9828C26.0949 15.127 26.1257 15.2815 26.1257 15.4375C26.1257 15.5935 26.0949 15.748 26.0352 15.8922C25.9755 16.0363 25.888 16.1673 25.7777 16.2777L17.4652 24.5902C17.3549 24.7006 17.2239 24.7882 17.0797 24.8479C16.9356 24.9077 16.7811 24.9384 16.625 24.9384C16.4689 24.9384 16.3144 24.9077 16.1703 24.8479C16.0261 24.7882 15.8951 24.7006 15.7848 24.5902L12.2223 21.0277Z"
+                    fill="#EB3349"
+                  />
+                </svg>
+              </div>
+              <button type="button" data-bs-dismiss="modal">
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.8873 19.7381C20.9628 19.8136 21.0227 19.9032 21.0635 20.0018C21.1044 20.1005 21.1254 20.2062 21.1254 20.313C21.1254 20.4197 21.1044 20.5254 21.0635 20.6241C21.0227 20.7227 20.9628 20.8123 20.8873 20.8878C20.8118 20.9633 20.7222 21.0232 20.6236 21.064C20.5249 21.1049 20.4192 21.1259 20.3125 21.1259C20.2057 21.1259 20.1 21.1049 20.0014 21.064C19.9027 21.0232 19.8131 20.9633 19.7376 20.8878L13 14.1491L6.26231 20.8878C6.10985 21.0403 5.90307 21.1259 5.68746 21.1259C5.47186 21.1259 5.26508 21.0403 5.11262 20.8878C4.96016 20.7353 4.87451 20.5286 4.87451 20.313C4.87451 20.0973 4.96016 19.8906 5.11262 19.7381L11.8513 13.0005L5.11262 6.2628C4.96016 6.11034 4.87451 5.90356 4.87451 5.68795C4.87451 5.47234 4.96016 5.26557 5.11262 5.11311C5.26508 4.96065 5.47186 4.875 5.68746 4.875C5.90307 4.875 6.10985 4.96065 6.26231 5.11311L13 11.8518L19.7376 5.11311C19.8901 4.96065 20.0969 4.875 20.3125 4.875C20.5281 4.875 20.7348 4.96065 20.8873 5.11311C21.0398 5.26557 21.1254 5.47234 21.1254 5.68795C21.1254 5.90356 21.0398 6.11034 20.8873 6.2628L14.1486 13.0005L20.8873 19.7381Z"
+                    fill="#565656"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modal-title">Verify your self</h3>
+              <p class="modal-text">
+                We sent a text message to +1234567890 enter the 6-degit from our
+                message.
+              </p>
+
+              <div class="payment-verify-otpboxs-section">
+                <div class="otpboxs-main-section">
+                  <div class="outpbox-section">
+                    <span></span>
+                    <input maxlength="1" type="text" class="otpboxs" placeholder="" />
+                  </div>
+                  <div class="outpbox-section">
+                    <span></span>
+                    <input maxlength="1" type="text" class="otpboxs" placeholder="" />
+                  </div>
+                  <div class="outpbox-section">
+                    <span></span>
+                    <input maxlength="1" type="text" class="otpboxs" placeholder="" />
+                  </div>
+                  <div class="outpbox-section">
+                    <span></span>
+                    <input maxlength="1" type="text" class="otpboxs" placeholder="" />
+                  </div>
+                  <div class="outpbox-section">
+                    <span></span>
+                    <input maxlength="1" type="text" class="otpboxs" placeholder="" />
+                  </div>
+                  <div class="outpbox-section active">
+                    <span></span>
+                    <input maxlength="1"
+                      type="text"
+                      class="otpboxs"
+                      placeholder=""
+                      value="4"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="modal-btn-1">Verify OTP</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- === Payment verification Modal End === -->
 
     <!-- ===footer-start -->
     <footer>
