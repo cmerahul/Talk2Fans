@@ -499,6 +499,7 @@ label.login-from-userImg-section span {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .userLogin-header-section h3 {

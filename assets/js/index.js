@@ -288,7 +288,7 @@ const searchBarSeaction = document.querySelector(".searchBar-section");
 const ShowSearchBarBtn = document.querySelector(".searchShowBtn");
 
 ShowSearchBarBtn?.addEventListener("click", () => {
-  searchBarSeaction.classList.add("active");
+  searchBarSeaction.classList.toggle("active");
 });
 
 // Modal Form Wizard Section Strat =================================
