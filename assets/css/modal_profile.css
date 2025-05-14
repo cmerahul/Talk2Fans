@@ -880,7 +880,7 @@
   content: "";
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
   height: 14px;
   width: 14px;
   border-radius: 50%;
@@ -891,6 +891,7 @@
 
 .purchase-accordion input:checked::after {
   opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .giftPurchase-accordion {
@@ -1146,7 +1147,7 @@
   content: "";
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   height: 14px;
   width: 14px;
   border-radius: 50%;
@@ -1160,6 +1161,7 @@
   div
   input:checked::after {
   opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 #liveStreamSettings .offcanvas-checkBox-section {

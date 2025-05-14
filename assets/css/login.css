@@ -473,7 +473,7 @@ label.login-from-userImg-section span {
   content: "";
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
   height: 14px;
   width: 14px;
   border-radius: 50%;
@@ -484,6 +484,7 @@ label.login-from-userImg-section span {
 
 .radio-btn-Section input:checked::after {
   opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 /* ===== Step-3 End ===== */
@@ -772,19 +773,19 @@ label.login-from-userImg-section span {
   transform: translateY(-50%);
 }
 
-.iti__flag.iti__in{
+.iti__flag.iti__in {
   width: 100%;
   max-width: 14px;
   min-width: 14px;
   height: 12px;
 }
-.iti--separate-dial-code .iti__selected-dial-code{
+.iti--separate-dial-code .iti__selected-dial-code {
   font-size: 11px;
   font-family: var(--Poppins-Medium);
   color: var(--secondaryColor);
 }
 
-.iti__arrow{
+.iti__arrow {
   border: none !important;
   width: 100%;
   max-width: 7px;
