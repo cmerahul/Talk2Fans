@@ -168,6 +168,16 @@ li {
 
 /* custom-dropdwon-menu End */
 
+/* Eorre Label Section Start */
+
+label.error {
+  font-size: 11px;
+  font-family: var(--Poppins-Medium);
+  color: var(--primaryColor);
+}
+
+/* Eorre Label Section End */
+
 /* ===Media-quary=== */
 
 @media only screen and (max-width: 1399px) {

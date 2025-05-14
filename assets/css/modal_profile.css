@@ -1593,6 +1593,10 @@
     .profileCard-mainCard-header-img {
     max-width: 90px;
   }
+  .payment-verify-otpboxs-section .outpbox-section .otpboxs {
+    max-width: 60px;
+    height: 60px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -1794,6 +1798,11 @@
     width: 35px;
     height: 35px;
   }
+
+  .payment-verify-otpboxs-section .outpbox-section .otpboxs {
+    max-width: 55px;
+    height: 55px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1889,5 +1898,9 @@
 
   #verificationPaymentModal .modal-body {
     padding: 0 12px 0px;
+  }
+  .payment-verify-otpboxs-section .outpbox-section .otpboxs {
+    max-width: 40px;
+    height: 40px;
   }
 }
