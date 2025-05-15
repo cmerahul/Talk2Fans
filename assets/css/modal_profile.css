@@ -919,6 +919,38 @@
 
 /* ==== modal Subscribe Section End ==== */
 
+/* ==== Modal User Profile view Section Strat ==== */
+.profileCard-main-card-btn-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 326px;
+  margin-left: 40px;
+}
+
+.profileCard-main-card-btn-section .profileCard-btn {
+  flex: 1 1;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  background-color: #eb3349;
+  color: var(--white);
+  font-size: 14px;
+  font-family: var(--Poppins-Medium);
+  transition: all 0.3s ease-in-out;
+}
+
+.profileCard-main-card-btn-section .profileCard-btn.active {
+  background-color: #eb33491a;
+  color: #eb3349;
+  border-color: #eb3349;
+}
+
+/* ==== Modal User Profile view Section End ==== */
+
 /* ==== Boost Stream Modal Strat ====  */
 
 #boostStreammodal .modal-content {
@@ -1722,6 +1754,9 @@
     .profileCard-mainCard-header-img {
     max-width: 80px;
   }
+  .profileCard-main-card-btn-section{
+    gap: 12px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1732,6 +1767,9 @@
   .modalProfile-right-side.modalProfile-paymentright-side
     .fromSubmit-btn-section {
     justify-content: center;
+  }
+  .profileCard-main-card-btn-section{
+    gap: 12px;
   }
 }
 
@@ -1823,6 +1861,17 @@
     max-width: 55px;
     height: 55px;
   }
+
+  /* ==== Modal User Profile view Section Strat ==== */
+  .profileCard.profileCard-mainCard .profileCard-mainCard-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .profileCard-main-card-btn-section {
+    gap: 10px;
+  }
+
+  /* ==== Modal User Profile view Section End ==== */
 }
 
 @media only screen and (max-width: 375px) {

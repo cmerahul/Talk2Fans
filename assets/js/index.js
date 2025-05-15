@@ -339,3 +339,17 @@ videoCallOverlay?.addEventListener("click", () => {
 });
 
 // Video Call Button Section End
+
+
+// Follow Button Section Start ============================
+
+const followBtn = document.querySelectorAll(".followBtn")
+
+followBtn?.forEach((btn)=>{
+  btn.addEventListener("click",function(){
+    this.classList.toggle("active")
+  })
+})
+
+
+// Follow Button Section End ============================
