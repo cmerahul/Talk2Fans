@@ -191,9 +191,8 @@
 
 .live_streaming {
   overflow-x: hidden;
-
 }
-.live_streaming.home{
+.live_streaming.home {
   background-image: url("../img/LiveStreamings-section-bg-img.png");
   background-repeat: no-repeat;
   background-position: left center;
@@ -383,6 +382,7 @@
 .user_device_image img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 /* HEART STYLE USING SVG */
