@@ -10,6 +10,7 @@
 @import url("./modal_profile.css");
 @import url("./video_call.css");
 @import url("./notification.css");
+@import url("./loader.css");
 
 * {
   margin: 0px;
