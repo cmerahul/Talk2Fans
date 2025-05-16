@@ -340,16 +340,38 @@ videoCallOverlay?.addEventListener("click", () => {
 
 // Video Call Button Section End
 
-
 // Follow Button Section Start ============================
 
-const followBtn = document.querySelectorAll(".followBtn")
+const followBtn = document.querySelectorAll(".followBtn");
 
-followBtn?.forEach((btn)=>{
-  btn.addEventListener("click",function(){
-    this.classList.toggle("active")
-  })
-})
+followBtn?.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
+});
 
+// Follow Button Section End ============================
+// Follow Button Section Start ============================
+
+document.addEventListener("click", function (e) {
+  const passwordIcon = e.target.closest(".password-icon");
+  if (!passwordIcon) return; // Clicked outside, exit
+
+  const inputSection = passwordIcon.closest(".input-section");
+  const inputField = inputSection.querySelector("input");
+  const openEye = inputSection.querySelector(".open-eye");
+  const closeEye = inputSection.querySelector(".close-eye");
+
+  const isPassword = inputField.type === "password";
+  inputField.type = isPassword ? "text" : "password";
+
+  if (isPassword) {
+    openEye.classList.add("active");
+    closeEye.classList.add("active");
+  } else {
+    openEye.classList.remove("active");
+    closeEye.classList.remove("active");
+  }
+});
 
 // Follow Button Section End ============================
