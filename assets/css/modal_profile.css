@@ -142,12 +142,12 @@
   margin-bottom: 0;
 }
 
-.profile-card-link-section .profile-card-link:last-child {
+.profile-card-link-section .profile-card-link:nth-child(2) {
   margin-left: 6px;
   padding-left: 6px;
   position: relative;
 }
-.profile-card-link-section .profile-card-link:last-child::after {
+.profile-card-link-section .profile-card-link:nth-child(2)::after {
   position: absolute;
   content: "";
   height: 12px;
