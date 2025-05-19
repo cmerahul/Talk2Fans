@@ -682,7 +682,7 @@
 .subscribe-planCard-title {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .subscribe-planCard-title img {
@@ -1155,6 +1155,7 @@
   padding: 0;
   padding-left: 20px;
   border: none;
+  height: auto;
 }
 
 .offcanvas-main-input-section.radio-input-section

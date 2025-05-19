@@ -142,6 +142,7 @@
 .input-section input {
   border: none;
   width: 100%;
+  height: auto;
   outline: none;
   font-family: var(--Poppins-Regular);
   font-size: 12px;
@@ -335,6 +336,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: 1px solid #4d4d4d;
 }
 
+.fromSubmit-btn-section a {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+}
+
 /* Profile Image Upload Section Start */
 
 .profileImg-upaload-section {
@@ -350,6 +358,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: relative;
   cursor: pointer;
   margin: auto;
+  border: none;
+  outline: none;
 }
 
 .profileImg-upaload-section span {
@@ -374,6 +384,117 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   object-position: center center;
   border-radius: 50%;
 }
+
+.custom-dropdwon .dropdown-menu.profileImg-menu-section li {
+  margin-bottom: 14px;
+}
+.custom-dropdwon .dropdown-menu.profileImg-menu-section li:last-child {
+  margin-bottom: 0px;
+}
+
+.custom-dropdwon .dropdown-menu .dropdown-item span.icon-fill-stroke svg {
+  transition: 0.3s;
+}
+.custom-dropdwon
+  .dropdown-menu
+  .dropdown-item:hover
+  span.icon-fill-stroke
+  svg
+  path {
+  stroke: var(--primaryColor);
+  fill: #fbd6db96;
+}
+.custom-dropdwon .dropdown-menu li label {
+  cursor: pointer;
+}
+
+/* ---- Modal Camera open Start ---- */
+#modalCamerOpen .modal-dialog {
+  max-width: 800px;
+}
+
+#modalCamerOpen .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border: none;
+}
+
+#modalCamerOpen .modal-header .back-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  width: 100%;
+  max-width: 32px;
+  min-width: 32px;
+  height: 32px;
+  background: none;
+}
+
+#modalCamerOpen .modal-header h4 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-family: var(--Poppins-SemiBold);
+  font-size: 20px;
+  line-height: 26.4px;
+  color: var(--secondaryColor);
+}
+
+#modalCamerOpen .modal-body {
+  padding: 0px 30px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalCamerOpen .modal-body video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  aspect-ratio: 13 / 8;
+}
+
+#modalCamerOpen .modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  border: none;
+}
+
+#modalCamerOpen .modal-footer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 51px;
+  min-width: 51px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: var(--primaryColor);
+}
+
+#modalCamerOpen .modal-header .back-icon {
+  max-width: 22px;
+  min-width: 22px;
+  height: 22px;
+}
+
+#modalCamerOpen .modal-header h4 {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+/* ---- Modal Camera open End ---- */
 
 /* Profile Image Upload Section End */
 
@@ -503,7 +624,10 @@ label.login-from-userImg-section span {
   -moz-appearance: none;
   -webkit-appearance: none;
   position: relative;
+  padding: 0;
   padding-left: 20px;
+  height: auto;
+  border: none;
 }
 
 .radio-btn-Section input::before {
@@ -614,6 +738,7 @@ label.login-from-userImg-section span {
   border: 0.5px solid #6c7278;
   background-color: transparent;
   margin: 0;
+  padding: 0px;
 }
 
 .login-from-btn-section .checkbox-section .form-check-input:checked {
@@ -848,6 +973,21 @@ label.login-from-userImg-section span {
 }
 
 /* ==== User Login Mobile Country Code Section End ==== */
+
+.remove-img-btn {
+  width: 100%;
+  max-width: 110px;
+  padding: 4px;
+  background-color: #eb334933;
+  border-radius: 4px;
+  border: none;
+  color: var(--primaryColor);
+  font-family: var(--Poppins-Medium);
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  margin: 5px auto 0;
+}
 
 /* ===Media-quary=== */
 
@@ -1094,6 +1234,23 @@ label.login-from-userImg-section span {
     max-width: 40px;
     height: 40px;
     font-size: 14px;
+  }
+
+  #modalCamerOpen .modal-header {
+    padding: 12px;
+  }
+  #modalCamerOpen .modal-body {
+    padding: 0px 12px;
+  }
+  #modalCamerOpen .modal-body video {
+    aspect-ratio: auto;
+  }
+  #modalCamerOpen .modal-footer {
+    padding: 12px;
+  }
+  #modalCamerOpen .modal-footer button {
+    max-width: 40px;
+    min-width: 40px;
   }
 }
 

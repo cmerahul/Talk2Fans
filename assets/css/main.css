@@ -141,6 +141,9 @@ li {
 }
 
 .custom-dropdwon .custom-dropdwon-menu .dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   padding: 0;
   color: var(--secondaryColor);
   font-size: 14px;
@@ -161,6 +164,15 @@ li {
   min-width: 26px;
   height: 26px;
   margin-right: 8px;
+}
+
+.custom-dropdwon .custom-dropdwon-menu .dropdown-item span.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 20px;
+  min-width: 20px;
+  height: 20px;
 }
 
 .custom-dropdwon .custom-dropdwon-menu .dropdown-item i {
