@@ -119,6 +119,8 @@
 .report-modal .modal-content {
   max-width: 504px;
   padding: 40px 30px;
+  border-radius: 22px;
+  border: none;
 }
 .report-modal .modal-content .modal-header {
   display: flex;
@@ -223,7 +225,7 @@
 
 /* =================== Message Report Modal End =================== */
 
-@media only screen and (max-width: 1399px) {
+@media only screen and (max-width: 1440px) {
   .report-modal .modal-content {
     padding: 20px 30px;
   }
