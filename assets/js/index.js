@@ -375,3 +375,16 @@ document.addEventListener("click", function (e) {
 });
 
 // Follow Button Section End ============================
+
+// Message Report Modal Button section Start =====================
+
+const buttons = document.querySelectorAll(".tabs-button-section .tabs-button");
+
+buttons?.forEach((button) => {
+  button.addEventListener("click", () => {
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+  });
+});
+
+// Message Report Modal Button section End =====================
