@@ -520,7 +520,13 @@
                             </div>
                             <span>Marshall Kirlin</span>
                           </a>
-                          <button class="follow-btn">Remove</button>
+                          <button
+                            class="follow-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#messageReportModal"
+                          >
+                            Remove
+                          </button>
                         </div>
                       </li>
                       <li class="modalProfile-follow-item">
@@ -1026,6 +1032,122 @@
       </div>
     </footer>
     <!-- ===footer-end -->
+
+    <!-- ========== Message Report Modal Strat ========== -->
+    <div
+      class="modal fade report-modal"
+      id="messageReportModal"
+      tabindex="-1"
+      aria-labelledby="messageReportModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button data-bs-dismiss="modal">
+              <svg
+                width="19"
+                height="15"
+                viewBox="0 0 19 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.88702 0.237976C8.20432 0.555277 8.20432 1.06972 7.88702 1.38702L2.77405 6.5H18.1458C18.5946 6.5 18.9583 6.86377 18.9583 7.3125C18.9583 7.76123 18.5946 8.125 18.1458 8.125H2.77405L7.88702 13.238C8.20432 13.5553 8.20432 14.0697 7.88702 14.387C7.56972 14.7043 7.05528 14.7043 6.73798 14.387L0.237976 7.88702C-0.0793252 7.56972 -0.0793252 7.05528 0.237976 6.73798L6.73798 0.237976C7.05528 -0.0793253 7.56972 -0.0793253 7.88702 0.237976Z"
+                  fill="#2C2D3A"
+                />
+              </svg>
+            </button>
+            <h3>Submit a Report</h3>
+          </div>
+          <div class="modal-body">
+            <p class="modal-body-text">
+              Thank you for helping to keep our Talk2Fans community safe by
+              reporting any rule violations.
+            </p>
+            <div class="tabs-button-section">
+              <button class="tabs-button">Harassment</button>
+              <button class="tabs-button">Threatening Violence</button>
+              <button class="tabs-button">Hate</button>
+              <button class="tabs-button active">Spam</button>
+              <button class="tabs-button">Inappropriate Content</button>
+              <button class="tabs-button">Violating Platform Policies</button>
+            </div>
+            <input
+              type="text"
+              placeholder="Details of Violation (Optional)"
+              class="options-report-input"
+            />
+
+            <p class="modal-bodyFooter-text">
+              Not sure if they broke the rules? Review our rules
+              <a href=""> here.</a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="modal-btn-1"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#reportSubmittedModal"
+            >
+              Submit Report
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========== Message Report Modal End ========== -->
+
+    <!-- ========== Message Report Submitted Modal Strat ========== -->
+    <div
+      class="modal fade report-modal"
+      id="reportSubmittedModal"
+      tabindex="-1"
+      aria-labelledby="reportSubmittedModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button data-bs-toggle="modal" data-bs-target="#messageReportModal">
+              <svg
+                width="19"
+                height="15"
+                viewBox="0 0 19 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.88702 0.237976C8.20432 0.555277 8.20432 1.06972 7.88702 1.38702L2.77405 6.5H18.1458C18.5946 6.5 18.9583 6.86377 18.9583 7.3125C18.9583 7.76123 18.5946 8.125 18.1458 8.125H2.77405L7.88702 13.238C8.20432 13.5553 8.20432 14.0697 7.88702 14.387C7.56972 14.7043 7.05528 14.7043 6.73798 14.387L0.237976 7.88702C-0.0793252 7.56972 -0.0793252 7.05528 0.237976 6.73798L6.73798 0.237976C7.05528 -0.0793253 7.56972 -0.0793253 7.88702 0.237976Z"
+                  fill="#2C2D3A"
+                />
+              </svg>
+            </button>
+            <h3>Report Submitted</h3>
+          </div>
+          <div class="modal-body">
+            <p class="modal-body-text">
+              Thank you for helping to keep our Talk2Fans community safe by
+              reporting any rule violations.
+            </p>
+
+            <p class="modal-bodyFooter-text">
+              Did you want to also block this user?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="modal-btn-1" type="button">Yes, Block</button>
+            <button class="modal-btn-2" type="button">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========== Message Report Submitted Modal End ========== -->
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- jquery-cdn -->
