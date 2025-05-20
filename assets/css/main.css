@@ -191,6 +191,10 @@ label.error {
 
 /* Eorre Label Section End */
 
+.offcanvas {
+  z-index: 9999;
+}
+
 /* ===Media-quary=== */
 
 @media only screen and (max-width: 1399px) {
