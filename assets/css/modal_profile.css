@@ -708,6 +708,51 @@
   text-transform: uppercase;
 }
 
+.subscribe-planCard-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.subscribe-planCard-right input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.subscribe-planCard-right input::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--secondaryColor);
+}
+.subscribe-planCard-right input::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: var(--secondaryColor);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.subscribe-planCard-right input:checked::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .subscribe-planCard-price {
   font-size: 18px;
   font-family: var(--Poppins-SemiBold);
@@ -915,6 +960,27 @@
   min-width: 39px;
   height: 41px;
   margin-right: 13px;
+}
+
+.ProfileSubscribeBtn.cmn_btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 0;
+  margin-left: auto;
+  border: none;
+  outline: none;
+  padding: 12px;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 18px;
+  background-color: var(--primaryColor);
+  color: var(--white);
+  font-family: var(--Poppins-SemiBold);
+  font-size: 18px;
+  line-height: 1.7;
+  border: 1px solid var(--primaryColor);
 }
 
 /* ==== modal Subscribe Section End ==== */
@@ -1755,7 +1821,7 @@
     .profileCard-mainCard-header-img {
     max-width: 80px;
   }
-  .profileCard-main-card-btn-section{
+  .profileCard-main-card-btn-section {
     gap: 12px;
   }
 }
@@ -1769,7 +1835,7 @@
     .fromSubmit-btn-section {
     justify-content: center;
   }
-  .profileCard-main-card-btn-section{
+  .profileCard-main-card-btn-section {
     gap: 12px;
   }
 }

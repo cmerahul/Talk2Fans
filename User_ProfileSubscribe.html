@@ -465,7 +465,7 @@
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="home">
                   <div class="profileCard userPlanCard">
-                    <div class="subscribe-planCard">
+                    <label for="silverPlan" class="subscribe-planCard">
                       <div class="subscribe-planCard-title-section">
                         <div class="subscribe-planCard-title">
                           <img src="./assets/img/coinimg.png" alt="" />
@@ -473,15 +473,21 @@
                         </div>
                         <span>Silver Plan</span>
                       </div>
-
-                      <h5 class="subscribe-planCard-price">$70.00</h5>
-                    </div>
+                      <div class="subscribe-planCard-right">
+                        <h5 class="subscribe-planCard-price">$70.00</h5>
+                        <input
+                          type="radio"
+                          name="Select-plan"
+                          id="silverPlan"
+                        />
+                      </div>
+                    </label>
                     <div class="mostpopularplan-card">
                       <div class="mostpopularplan-card-title">
                         <h4>Most Popular Plan</h4>
                         <span>BEST DEAL!</span>
                       </div>
-                      <div class="subscribe-planCard">
+                      <label for="goldPlan" class="subscribe-planCard">
                         <div class="subscribe-planCard-title-section">
                           <div class="subscribe-planCard-title">
                             <img src="./assets/img/coinimg.png" alt="" />
@@ -490,10 +496,17 @@
                           <span>Gold Plan</span>
                         </div>
 
-                        <h5 class="subscribe-planCard-price">$125.99</h5>
-                      </div>
+                        <div class="subscribe-planCard-right">
+                          <h5 class="subscribe-planCard-price">$125.99</h5>
+                          <input
+                            type="radio"
+                            name="Select-plan"
+                            id="goldPlan"
+                          />
+                        </div>
+                      </label>
                     </div>
-                    <div class="subscribe-planCard">
+                    <label for="platinumPlan" class="subscribe-planCard">
                       <div class="subscribe-planCard-title-section">
                         <div class="subscribe-planCard-title">
                           <img src="./assets/img/coinimg.png" alt="" />
@@ -502,8 +515,15 @@
                         <span>Platinum Plan</span>
                       </div>
 
-                      <h5 class="subscribe-planCard-price">$145.00</h5>
-                    </div>
+                      <div class="subscribe-planCard-right">
+                        <h5 class="subscribe-planCard-price">$70.00</h5>
+                        <input
+                          type="radio"
+                          name="Select-plan"
+                          id="platinumPlan"
+                        />
+                      </div>
+                    </label>
                   </div>
 
                   <p class="subscribe-planCard-info-message">
@@ -692,45 +712,65 @@
                 </div>
                 <div class="tab-pane fade" id="profile">
                   <div class="profileCard userPlanCard">
-                    <div class="subscribe-planCard">
+                    <label for="VideosilverPlan" class="subscribe-planCard">
                       <div class="subscribe-planCard-title-section">
                         <div class="subscribe-planCard-title">
                           <img src="./assets/img/videoIcon.png" alt="" />
-                          <h6>15 Mins</h6>
+                          <h6>100 Credits</h6>
                         </div>
                         <span>Silver Plan</span>
                       </div>
-
-                      <h5 class="subscribe-planCard-price">100 Credits</h5>
-                    </div>
+                      <div class="subscribe-planCard-right">
+                        <h5 class="subscribe-planCard-price">$70.00</h5>
+                        <input
+                          type="radio"
+                          name="videoSelect-plan"
+                          id="VideosilverPlan"
+                        />
+                      </div>
+                    </label>
                     <div class="mostpopularplan-card">
                       <div class="mostpopularplan-card-title">
                         <h4>Most Popular Plan</h4>
                         <span>BEST DEAL!</span>
                       </div>
-                      <div class="subscribe-planCard">
+                      <label for="videogoldPlan" class="subscribe-planCard">
                         <div class="subscribe-planCard-title-section">
                           <div class="subscribe-planCard-title">
                             <img src="./assets/img/videoIcon.png" alt="" />
-                            <h6>30 Mins</h6>
+                            <h6>500 Credits</h6>
                           </div>
                           <span>Gold Plan</span>
                         </div>
 
-                        <h5 class="subscribe-planCard-price">500 Credits</h5>
-                      </div>
+                        <div class="subscribe-planCard-right">
+                          <h5 class="subscribe-planCard-price">$125.99</h5>
+                          <input
+                            type="radio"
+                            name="videoSelect-plan"
+                            id="videogoldPlan"
+                          />
+                        </div>
+                      </label>
                     </div>
-                    <div class="subscribe-planCard">
+                    <label for="videosplatinumPlan" class="subscribe-planCard">
                       <div class="subscribe-planCard-title-section">
                         <div class="subscribe-planCard-title">
                           <img src="./assets/img/videoIcon.png" alt="" />
-                          <h6>60 Mins</h6>
+                          <h6>1000 Credits</h6>
                         </div>
                         <span>Platinum Plan</span>
                       </div>
 
-                      <h5 class="subscribe-planCard-price">1000 Credits</h5>
-                    </div>
+                      <div class="subscribe-planCard-right">
+                        <h5 class="subscribe-planCard-price">$70.00</h5>
+                        <input
+                          type="radio"
+                          name="videoSelect-plan"
+                          id="videosplatinumPlan"
+                        />
+                      </div>
+                    </label>
                   </div>
 
                   <p class="subscribe-planCard-info-message">
@@ -918,6 +958,9 @@
                   </div>
                 </div>
               </div>
+              <button class="ProfileSubscribeBtn cmn_btn">
+                Purchase - $125.99
+              </button>
             </div>
           </div>
 
