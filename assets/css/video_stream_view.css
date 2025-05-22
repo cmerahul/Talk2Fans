@@ -1,5 +1,4 @@
-
-.modal_streaming_fans.video_streaming{
+.modal_streaming_fans.video_streaming {
   padding-top: 110px;
 }
 
@@ -41,13 +40,13 @@
   flex-wrap: wrap;
   gap: 20px; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(259px, 1fr));
   gap: 20px;
   flex-basis: 100%;
 }
 
 .video_streaming .streaming_fans_card_Wrp.active .streaming_fans_card_inner {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   max-height: calc(100dvh - 195px);
   overflow: auto;
 }
@@ -65,8 +64,8 @@
   /* min-width: 259px; */
   /* flex-shrink: 1; */
   /* max-width: 260px; */
-  /* max-width: 259px;
-  flex-basis: 259px; */
+  max-width: 259px;
+  /*  flex-basis: 259px; */
 }
 
 .streaming_live_views p {
