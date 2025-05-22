@@ -517,7 +517,10 @@
   }
 
   .streaming_fans_card_inner {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(238px, 1fr));
+  }
+  .video_streaming .streaming_fans_card_Wrp.active .streaming_fans_card_inner {
+    grid-template-columns: repeat(auto-fill, minmax(196px, 1fr));
   }
   .live_video_screen_profile_left_img {
     width: 100%;
@@ -562,18 +565,33 @@
   }
 }
 
+@media only screen and (max-width: 1299px) {
+  .streaming_fans_card_inner {
+    grid-template-columns: repeat(auto-fill, minmax(219px, 1fr));
+  }
+  .video_streaming .streaming_fans_card_Wrp.active .streaming_fans_card_inner {
+    grid-template-columns: repeat(auto-fill, minmax(178px, 1fr));
+  }
+}
+
 @media only screen and (max-width: 1199px) {
   .video_streaming .streaming_fans_card_Wrp.active .streaming_fans_card_inner {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
-  .video_streaming .streaming_fans_card_Wrp .streaming_fans_card_inner {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  .streaming_fans_card_inner {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .video_streaming .streaming_fans_card_Wrp.active .streaming_fans_card_inner {
+    grid-template-columns: repeat(auto-fill, minmax(144px, 1fr));
   }
 }
 
 @media only screen and (max-width: 991px) {
   .streaming_fans_card_inner {
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
     width: 100%;
   }
 
@@ -645,11 +663,14 @@
     width: 100%;
     max-width: 20px;
   }
+  .streaming_fans_card_inner {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
 }
 
 @media only screen and (max-width: 575px) {
   .streaming_fans_card_inner {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
   .live_video_screen_profile {
     padding: 20px 10px;
@@ -740,9 +761,9 @@
 
 @media only screen and (max-width: 375px) {
   .streaming_fans_card_inner {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   }
-  .video_streaming .streaming_fans_card_Wrp .streaming_fans_card_inner {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  .video_streaming .streaming_fans_card_Wrp.active .streaming_fans_card_inner {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   }
 }
