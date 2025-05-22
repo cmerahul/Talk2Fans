@@ -46,7 +46,7 @@
 }
 
 .video_streaming .streaming_fans_card_Wrp.active .streaming_fans_card_inner {
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
   max-height: calc(100dvh - 195px);
   overflow: auto;
 }
@@ -570,13 +570,13 @@
     grid-template-columns: repeat(auto-fill, minmax(219px, 1fr));
   }
   .video_streaming .streaming_fans_card_Wrp.active .streaming_fans_card_inner {
-    grid-template-columns: repeat(auto-fill, minmax(178px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
   }
 }
 
 @media only screen and (max-width: 1199px) {
   .video_streaming .streaming_fans_card_Wrp.active .streaming_fans_card_inner {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
   .streaming_fans_card_inner {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -591,7 +591,7 @@
 
 @media only screen and (max-width: 991px) {
   .streaming_fans_card_inner {
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
     width: 100%;
   }
 
