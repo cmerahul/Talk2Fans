@@ -53,7 +53,7 @@
   width: 100%;
 }
 
-.login-section form .steps {
+.login-section .steps {
   height: 100%;
 }
 
@@ -1034,7 +1034,7 @@ label.login-from-userImg-section span {
   justify-content: center;
 }
 
-.loginModalsSection .modal-header .icon img{
+.loginModalsSection .modal-header .icon img {
   width: 63.5px;
   height: 46px;
   object-fit: contain;
@@ -1351,7 +1351,7 @@ label.login-from-userImg-section span {
   }
   .loginModalsSection .modal-content {
     padding: 30px 20px;
-}
+  }
 }
 
 @media only screen and (max-width: 375px) {
