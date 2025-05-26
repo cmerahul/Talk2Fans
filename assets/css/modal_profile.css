@@ -78,11 +78,19 @@
   margin-left: 6px;
 }
 
+.profile-mian-card-body .profile-card-body-textIcon-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
 .profile-mian-card-body .profile-card-body-subtitle {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
 }
 
 .profile-mian-card-body
@@ -1086,6 +1094,27 @@
   margin: 0 0 30px;
 }
 
+.modalProfile-banner.user .modalProfile-banner-left-title img {
+  width: 100%;
+  max-width: 30px;
+  min-width: 30px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.modalProfile-banner-left-title-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 26px;
+}
+
+.modalProfile-banner-left-title span.text {
+  display: inline-block;
+  font-size: 22px;
+  font-family: var(--Poppins-Regular);
+}
+
 /* ==== modal Subscribe Section End ==== */
 
 /* ==== Modal User Profile view Section Strat ==== */
@@ -1827,6 +1856,10 @@
     margin-left: 14px;
   }
 
+  .modalProfile-banner-left-title span.text {
+    font-size: 20px;
+  }
+
   .profileCard.profileCard-mainCard
     .profileCard-mainCard-header
     .profileCard-mainCard-header-img {
@@ -1907,6 +1940,9 @@
     padding: 3px 10px;
     font-size: 12px;
     margin-left: 11px;
+  }
+  .modalProfile-banner-left-title span.text {
+    font-size: 16px;
   }
 
   .modalProfile-paymentright-side .modalProfile-right-side-card {
@@ -2074,6 +2110,20 @@
   }
 
   /* ==== Modal User Profile view Section End ==== */
+
+  .modalProfile-banner-left-title-section {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  .modalProfile-banner.user .modalProfile-banner-left-title img {
+    max-width: 24px;
+    min-width: 24px;
+    height: 22px;
+  }
+  .modalProfile-banner-left-title span.text {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -2122,6 +2172,9 @@
   }
   .modalProfile-banner-left h4 {
     font-size: 18px;
+  }
+  .modalProfile-banner-left-title span.text {
+    font-size: 14px;
   }
   .modalProfile-banner-right .modalProfile-banner-img {
     max-width: 92px;
