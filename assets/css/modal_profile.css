@@ -1082,7 +1082,7 @@
   background-color: var(--primaryColor);
 }
 
-.modalProfile-banner.user{
+.modalProfile-banner.user {
   margin: 0 0 30px;
 }
 
@@ -1927,6 +1927,17 @@
   .profileCard-main-card-btn-section {
     gap: 12px;
   }
+
+  .giftPurchase-accordion-header-right {
+    gap: 8px;
+  }
+  .giftPurchase-accordion
+    .accordion-item
+    .accordion-button[data-bs-target="#giftPurchase"] {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1951,6 +1962,12 @@
 
   .giftAvailable-card-header h5 {
     font-size: 18px;
+  }
+  .giftPurchase-accordion
+    .accordion-item
+    .accordion-button[data-bs-target="#giftPurchase"] {
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -2156,5 +2173,12 @@
   .payment-verify-otpboxs-section .outpbox-section .otpboxs {
     max-width: 40px;
     height: 40px;
+  }
+  .giftPurchase-accordion
+    .accordion-item
+    .accordion-button[data-bs-target="#giftPurchase"] {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 }
