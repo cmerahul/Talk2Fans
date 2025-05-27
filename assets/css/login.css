@@ -163,55 +163,6 @@
   padding-left: 0;
 }
 
-.input-section span.password-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: auto;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  overflow: hidden;
-  width: 100%;
-  max-width: 20px;
-  min-width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.input-section span.password-icon svg {
-  width: 20px;
-  height: 20px;
-}
-
-.input-section span.password-icon svg.open-eye {
-  position: absolute;
-  top: 50%;
-  bottom: auto;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s ease-in-out;
-  visibility: visible;
-}
-.input-section span.password-icon svg.open-eye.active {
-  bottom: -50%;
-  top: 100%;
-  visibility: hidden;
-}
-
-.input-section span.password-icon svg.close-eye {
-  position: absolute;
-  top: -50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s ease-in-out;
-  visibility: hidden;
-}
-.input-section span.password-icon svg.close-eye.active {
-  top: 50%;
-  visibility: visible;
-}
 
 .dropdown.custom-dropdwon.phoneDropdownBtn {
   position: absolute;
