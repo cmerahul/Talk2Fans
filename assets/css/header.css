@@ -258,6 +258,71 @@ header {
 
 /* Notifiction Icon End */
 
+/* purchaseCoinsModal Section Start */
+
+.purchaseCoinsModal .modal-dialog {
+  max-width: 700px;
+}
+
+.purchaseCoinsModal .modal-content {
+  border: none;
+  border-radius: 22px;
+  background-color: var(--white);
+  padding: 30px;
+}
+
+.purchaseCoinsModal .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px 30px;
+  border: none;
+}
+
+.modal-header h3 {
+  font-size: 22px;
+  font-family: var(--Poppins-SemiBold);
+  color: #000000;
+  margin: 0;
+}
+
+.modal-header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 26px;
+  min-width: 26px;
+  height: 26px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.purchaseCoinsModal .modal-body {
+  padding: 0;
+}
+
+.purchaseCoinsModal .modal-footer {
+  border: none;
+  padding: 40px 0 0;
+}
+
+.purchaseCoinsModal .modal-btn-1 {
+  max-width: 320px;
+}
+
+#purchaseAddOnsCoinsModal label.subscribe-planCard{
+  box-shadow: none;
+}
+
+#purchaseAddOnsCoinsModal .subscribe-planCard-title h6 {
+  font-family: var(--Poppins-Regular);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* purchaseCoinsModal Section End */
+
 /* ===Media-quary=== */
 @media only screen and (max-width: 1399px) {
   .header_main ul li a {
@@ -365,7 +430,24 @@ header {
   header {
     height: 80px;
   }
-  
+  .purchaseCoinsModal .modal-dialog {
+    max-width: 620px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .purchaseCoinsModal .modal-content {
+    border-radius: 16px;
+    padding: 15px;
+  }
+
+  .purchaseCoinsModal .modal-header {
+    padding: 0 0 16px;
+  }
+
+  .modal-header h3 {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 424px) {
