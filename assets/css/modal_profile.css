@@ -636,6 +636,7 @@
   min-width: max-content;
   max-width: min-content;
   margin-left: 10px;
+  gap: 4px;
 }
 
 .modalProfile-transaction-card span.text.green-text {
