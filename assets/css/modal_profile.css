@@ -619,6 +619,7 @@
   color: var(--secondaryColor);
   font-family: var(--Poppins-Medium);
   margin-bottom: 0;
+  word-break: break-all;
 }
 .modalProfile-transaction-card-title span {
   font-size: 12px;
@@ -630,7 +631,11 @@
 .modalProfile-transaction-card span.text {
   font-family: var(--Poppins-SemiBold);
   font-size: 14px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  min-width: max-content;
+  max-width: min-content;
+  margin-left: 10px;
 }
 
 .modalProfile-transaction-card span.text.green-text {
