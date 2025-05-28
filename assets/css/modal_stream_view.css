@@ -90,7 +90,7 @@
 .modal_streaming_fans {
   padding-top: 150px;
   padding-bottom: 50px;
-  overflow-x: hidden ;
+  overflow-x: hidden;
 }
 .streaming_fans_card_Wrp {
   margin-top: 20px !important;
@@ -292,17 +292,11 @@
   cursor: pointer;
 }
 
-.searchBar-section{
+.searchBar-section {
   position: absolute;
   left: auto;
   right: 0px;
   top: 80%;
-  margin: 12px 0px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--white);
-  border: 0.5px solid #EB3349;
   width: 100%;
   max-width: 525px;
   border-radius: 13px;
@@ -311,22 +305,35 @@
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-
-.searchBar-section.active{
+ 
+.searchBar-section.active {
   top: 100%;
   opacity: 1;
   z-index: 999;
 }
-
-.searchBar-section input{
+ 
+.searchBar-section .searchBarInput-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-radius: 13px;
+  border: 0.5px solid #eb3349;
+  margin: 12px 0px;
+}
+ 
+.searchBar-section input {
   width: 100%;
   background-color: transparent;
   border: none;
   outline: none;
   padding: 10.5px 10px;
+  font-size: 14px;
+  font-family: var(--Poppins-Regular);
+  color: var(--secondaryColor);
 }
-
-.searchBar-section span{
+ 
+.searchBar-section span.icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -335,7 +342,124 @@
   min-width: 18px;
   height: 18px;
   margin-right: 10px;
-
+}
+ 
+.searchBarUserName-section {
+  padding: 12px 14px;
+  background-color: var(--white);
+  border: 1px solid #d9d9d9;
+  border-radius: 13px;
+}
+ 
+.searchBarUserName-section .searchBarUserName-section-header-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 2px 4px;
+  background-color: #efefef;
+  max-width: min-content;
+  min-width: max-content;
+  border-radius: 5px;
+}
+ 
+.searchBarUserName-section .searchBarUserName-section-header-label span {
+  font-size: 12px;
+  font-family: var(--Poppins-Regular);
+  color: #737373;
+  line-height: 15.8px;
+}
+ 
+.searchBarUserName-section .searchBarUserName-list {
+  margin-top: 20px;
+  display: block;
+  height: auto;
+  max-height: 180px;
+  overflow: hidden;
+  overflow-y: auto;
+  position: static;
+  box-shadow: none;
+}
+ 
+.searchBarUserName-section .searchBarUserName-list::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+ 
+.searchBarUserName-section .searchBarUserName-list li {
+  margin-bottom: 12px;
+}
+ 
+.searchBarUserName-section .searchBarUserName-list li:last-child {
+  margin-bottom: 0px;
+}
+ 
+.searchBarUserName-list .searchBarUserName-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.searchBarUserName-card .profileUserNameImg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-right: 12px;
+}
+ 
+.profileUserNameImg .profileImg {
+  width: 100%;
+  max-width: 34px;
+  min-width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+ 
+.profileUserNameImg .profileImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+ 
+.profileUserNameImg h6 {
+  font-size: 13px;
+  font-family: var(--Poppins-Medium);
+  margin: 0;
+  word-break: break-all;
+}
+ 
+.searchBarUserName-card button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  max-width: 24px;
+  min-width: 24px;
+  height: 24px;
+}
+ 
+.searchBarUserName-section .modal-btn-1{
+  display: block;
+  max-width: 80px;
+  margin-left: auto !important;
+  margin-top: 12px !important;
+  padding: 2px;
+  background: transparent ;
+  color: var(--primaryColor);
+  border-radius:0px ;
+  border-bottom: 1px solid var(--primaryColor);
+  transition: all 0.3s ease-in-out;
+}
+.searchBarUserName-section .modal-btn-1:hover{
+  background: transparent;
+}
+ 
+.searchBarUserName-section .modal-btn-1:hover{
+  color: var(--secondaryColor);
+  border-color: var(--secondaryColor);
 }
 
 @media only screen and (max-width: 1399px) {
