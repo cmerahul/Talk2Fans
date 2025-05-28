@@ -875,7 +875,7 @@
   cursor: pointer;
   border: 1px solid transparent;
 }
-.purchaseAd-ons-select-card.active{
+.purchaseAd-ons-select-card.active {
   border-color: var(--primaryColor);
 }
 
@@ -891,6 +891,7 @@
   min-width: 30px;
   height: 27px;
   margin-right: 13px;
+  object-fit: contain;
 }
 
 .purchaseAd-ons-select-card .purchaseAd-ons-select-title-section span {
@@ -900,6 +901,8 @@
   display: inline-flex;
   align-items: center;
   line-height: 14.4px;
+  word-break: break-all;
+  margin-right: 5px;
 }
 
 .purchaseAd-ons-select-input {
@@ -965,17 +968,19 @@
 
 .purchaseAd-ons-select-card .purchaseAd-ons-select-title-section img.giftIcon {
   width: 100%;
-  max-width: 39px;
-  min-width: 39px;
-  height: 41px;
-  margin-right: 13px;
+  max-width: 29px;
+  min-width: 29px;
+  height: 31px;
+  margin-right: 8px;
+  object-fit: contain;
 }
 .purchaseAd-ons-select-card .purchaseAd-ons-select-title-section img.GlassIcon {
   width: 100%;
-  max-width: 39px;
-  min-width: 39px;
-  height: 41px;
-  margin-right: 13px;
+  max-width: 29px;
+  min-width: 29px;
+  height: 31px;
+  margin-right: 8px;
+  object-fit: contain;
 }
 
 .ProfileSubscribeBtn.cmn_btn {
@@ -1131,6 +1136,17 @@
   margin-left: auto !important;
   margin-top: 12px !important;
   padding: 10px 12px;
+}
+
+.giftPurchase-accordion .purchaseAd-ons-select-card {
+  padding: 14px 14px 14px 17px;
+}
+
+.giftPurchase-header-label-section {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 /* ==== modal Subscribe Section End ==== */
