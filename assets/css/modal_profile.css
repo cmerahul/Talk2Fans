@@ -873,6 +873,10 @@
   border-radius: 14px;
   padding: 20px 22px;
   cursor: pointer;
+  border: 1px solid transparent;
+}
+.purchaseAd-ons-select-card.active{
+  border-color: var(--primaryColor);
 }
 
 .purchaseAd-ons-select-card .purchaseAd-ons-select-title-section {
@@ -1120,6 +1124,15 @@
   font-family: var(--Poppins-Regular);
 }
 
+.modal-btn-1.purchaseGiftBtn {
+  max-width: min-content;
+  min-width: max-content;
+  display: block;
+  margin-left: auto !important;
+  margin-top: 12px !important;
+  padding: 10px 12px;
+}
+
 /* ==== modal Subscribe Section End ==== */
 
 /* ==== Modal User Profile view Section Strat ==== */
@@ -1144,6 +1157,7 @@
   font-size: 14px;
   font-family: var(--Poppins-Medium);
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 
 .profileCard-main-card-btn-section .profileCard-btn.active {

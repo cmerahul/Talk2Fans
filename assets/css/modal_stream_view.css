@@ -403,6 +403,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 .searchBarUserName-list .searchBarUserName-card::before{
   display: none;
@@ -437,6 +438,7 @@
   font-family: var(--Poppins-Medium);
   margin: 0;
   word-break: break-all;
+  color: var(--secondaryColor);
 }
 
 .searchBarUserName-card button {

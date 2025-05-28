@@ -86,6 +86,7 @@ header {
   border-radius: 12px;
   font-family: var(--Poppins-Medium);
   font-size: 18px;
+  /* color: var(--secondaryColor); */
   line-height: normal;
   display: flex;
   align-items: center;
@@ -312,7 +313,7 @@ header {
   max-width: 320px;
 }
 
-#purchaseAddOnsCoinsModal label.subscribe-planCard{
+#purchaseAddOnsCoinsModal label.subscribe-planCard {
   box-shadow: none;
 }
 

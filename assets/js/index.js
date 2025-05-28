@@ -284,13 +284,23 @@ backbtn?.addEventListener("click", () => {
 // });
 
 // SearchBar Show Hide =====================
-const searchBarSeaction = document.querySelector(".searchBar-section");
-const ShowSearchBarBtn = document.querySelector(".searchShowBtn");
+const searchBarSection = document.querySelector(".searchBar-section");
+const showSearchBarBtn = document.querySelector(".searchShowBtn");
 
-ShowSearchBarBtn?.addEventListener("click", () => {
-  searchBarSeaction.classList.toggle("active");
+// Toggle active class on the search bar section when the button is clicked
+showSearchBarBtn?.addEventListener("click", () => {
+  searchBarSection.classList.toggle("active");
 });
 
+// Close the search bar if a click happens outside the search bar section
+document.addEventListener("click", (event) => {
+  if (
+    !searchBarSection.contains(event.target) &&
+    event.target !== showSearchBarBtn
+  ) {
+    searchBarSection.classList.remove("active");
+  }
+});
 // Modal Form Wizard Section Strat =================================
 document.addEventListener("DOMContentLoaded", () => {
   const steps = document.querySelectorAll(".steps");
