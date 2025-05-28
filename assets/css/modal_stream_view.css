@@ -304,14 +304,17 @@
   z-index: -1;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  height: 0%;
+  overflow: hidden;
 }
- 
+
 .searchBar-section.active {
   top: 100%;
   opacity: 1;
   z-index: 999;
+  height: 350px;
 }
- 
+
 .searchBar-section .searchBarInput-section {
   display: flex;
   align-items: center;
@@ -321,7 +324,7 @@
   border: 0.5px solid #eb3349;
   margin: 12px 0px;
 }
- 
+
 .searchBar-section input {
   width: 100%;
   background-color: transparent;
@@ -332,7 +335,7 @@
   font-family: var(--Poppins-Regular);
   color: var(--secondaryColor);
 }
- 
+
 .searchBar-section span.icon {
   display: inline-flex;
   align-items: center;
@@ -343,14 +346,14 @@
   height: 18px;
   margin-right: 10px;
 }
- 
+
 .searchBarUserName-section {
   padding: 12px 14px;
   background-color: var(--white);
   border: 1px solid #d9d9d9;
   border-radius: 13px;
 }
- 
+
 .searchBarUserName-section .searchBarUserName-section-header-label {
   display: flex;
   align-items: center;
@@ -362,14 +365,14 @@
   min-width: max-content;
   border-radius: 5px;
 }
- 
+
 .searchBarUserName-section .searchBarUserName-section-header-label span {
   font-size: 12px;
   font-family: var(--Poppins-Regular);
   color: #737373;
   line-height: 15.8px;
 }
- 
+
 .searchBarUserName-section .searchBarUserName-list {
   margin-top: 20px;
   display: block;
@@ -381,27 +384,30 @@
   position: static;
   box-shadow: none;
 }
- 
-.searchBarUserName-section .searchBarUserName-list::-webkit-scrollbar{
+
+.searchBarUserName-section .searchBarUserName-list::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
- 
+
 .searchBarUserName-section .searchBarUserName-list li {
   margin-bottom: 12px;
   height: auto !important;
 }
- 
+
 .searchBarUserName-section .searchBarUserName-list li:last-child {
   margin-bottom: 0px;
 }
- 
+
 .searchBarUserName-list .searchBarUserName-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
- 
+.searchBarUserName-list .searchBarUserName-card::before{
+  display: none;
+}
+
 .searchBarUserName-card .profileUserNameImg {
   display: flex;
   align-items: center;
@@ -409,7 +415,7 @@
   gap: 12px;
   margin-right: 12px;
 }
- 
+
 .profileUserNameImg .profileImg {
   width: 100%;
   max-width: 34px;
@@ -418,22 +424,22 @@
   border-radius: 50%;
   overflow: hidden;
 }
- 
+
 .profileUserNameImg .profileImg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center top;
 }
- 
+
 .profileUserNameImg h6 {
   font-size: 13px;
   font-family: var(--Poppins-Medium);
   margin: 0;
   word-break: break-all;
 }
- 
-.searchBarUserName-card button{
+
+.searchBarUserName-card button {
   border: none;
   outline: none;
   background-color: transparent;
@@ -442,24 +448,24 @@
   min-width: 24px;
   height: 24px;
 }
- 
-.searchBarUserName-section .modal-btn-1{
+
+.searchBarUserName-section .modal-btn-1 {
   display: block;
   max-width: 80px;
   margin-left: auto !important;
   margin-top: 12px !important;
   padding: 2px;
-  background: transparent ;
+  background: transparent;
   color: var(--primaryColor);
-  border-radius:0px ;
+  border-radius: 0px;
   border-bottom: 1px solid var(--primaryColor);
   transition: all 0.3s ease-in-out;
 }
-.searchBarUserName-section .modal-btn-1:hover{
+.searchBarUserName-section .modal-btn-1:hover {
   background: transparent;
 }
- 
-.searchBarUserName-section .modal-btn-1:hover{
+
+.searchBarUserName-section .modal-btn-1:hover {
   color: var(--secondaryColor);
   border-color: var(--secondaryColor);
 }

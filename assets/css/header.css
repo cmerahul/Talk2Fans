@@ -413,6 +413,7 @@ header {
     height: 220px;
     padding-top: 20px;
     padding-bottom: 20px;
+    z-index: 999;
   }
   .header_main ul li a {
     font-size: 17px;
