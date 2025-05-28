@@ -374,6 +374,7 @@
   margin-top: 20px;
   display: block;
   height: auto;
+  padding: 0 !important;
   max-height: 180px;
   overflow: hidden;
   overflow-y: auto;
@@ -388,6 +389,7 @@
  
 .searchBarUserName-section .searchBarUserName-list li {
   margin-bottom: 12px;
+  height: auto !important;
 }
  
 .searchBarUserName-section .searchBarUserName-list li:last-child {
