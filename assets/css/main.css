@@ -11,6 +11,7 @@
 @import url("./video_call.css");
 @import url("./notification.css");
 @import url("./loader.css");
+@import url("./Policy.css");
 
 * {
   margin: 0px;
