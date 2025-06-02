@@ -20,6 +20,7 @@
   line-height: 16px;
   color: var(--secondaryColor);
   margin-bottom: 0px;
+  word-break: break-all;
 }
 
 .header-coin-wrp button {
@@ -405,7 +406,7 @@
   justify-content: space-between;
   width: 100%;
 }
-.searchBarUserName-list .searchBarUserName-card::before{
+.searchBarUserName-list .searchBarUserName-card::before {
   display: none;
 }
 
@@ -508,6 +509,10 @@
   }
 }
 @media only screen and (max-width: 575px) {
+  .header-modal-profile button.dropdown-toggle {
+    gap: 6px;
+  }
+
   .streaming_fans_card_content h3 {
     font-size: 14px;
   }
