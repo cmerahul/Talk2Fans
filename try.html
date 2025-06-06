@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>ModalLogin</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/font.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-
-  <body>
-    <!-- ===Header-start=== -->
-
-    <header>
-      <div class="mobile-menu-overlay"></div>
-      <div class="container">
-        <div class="header_main">
-          <a href="./index.html" class="header_logo login_header_logo">
-            <img src="./assets/img/headerlogo.png" alt="headerlogo" />
-          </a>
-        </div>
-      </div>
-    </header>
-    <!-- ===Header-end=== -->
-
-    <!-- ===LoginSection-Start=== -->
-
-    <section class="section login-section">
+<section class="section login-section">
       <div class="container-fluid">
         <div class="steps step1" id="step1">
           <form action="">
@@ -59,10 +19,10 @@
                           <button class="nav-link active" data-step="1" type="button">
                             1. Personal Details
                           </button>
-                          <button class="nav-link" data-step="2" type="button">
+                          <button class="nav-link" data-step="1" type="button">
                             2. Upload Image
                           </button>
-                          <button class="nav-link" data-step="3" type="button">
+                          <button class="nav-link" data-step="1" type="button">
                             3. Social Links
                           </button>
                         </div>
@@ -545,13 +505,13 @@
                     <div class="from-main-section">
                       <div class="login-from-btn-section">
                         <div class="nav nav-tabs">
-                          <button class="nav-link" data-step="1" type="button">
+                          <button class="nav-link" type="button">
                             1. Personal Details
                           </button>
-                          <button class="nav-link active" data-step="2" type="button">
+                          <button class="nav-link active" type="button">
                             2. Upload Image
                           </button>
-                          <button class="nav-link" data-step="3" type="button">
+                          <button class="nav-link" type="button">
                             3. Social Links
                           </button>
                         </div>
@@ -903,13 +863,13 @@
                     <div class="from-main-section">
                       <div class="login-from-btn-section">
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                          <button class="nav-link" data-step="1" type="button">
+                          <button class="nav-link" type="button">
                             1. Personal Details
                           </button>
-                          <button class="nav-link" data-step="2" type="button">
+                          <button class="nav-link" type="button">
                             2. Upload Image
                           </button>
-                          <button class="nav-link active" data-step="3" type="button">
+                          <button class="nav-link active" type="button">
                             3. Social Links
                           </button>
                         </div>
@@ -1016,71 +976,3 @@
         </div>
       </div>
     </section>
-
-    <!-- ===LoginSection-End=== -->
-
-    <!-- ===Camera open modal Strat=== -->
-    <div
-      class="modal fade"
-      id="modalCamerOpen"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="back-icon" data-bs-dismiss="modal">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M27.9998 15.9999C27.9998 16.2652 27.8945 16.5195 27.7069 16.7071C27.5194 16.8946 27.265 16.9999 26.9998 16.9999H7.41356L14.7073 24.2924C14.8002 24.3854 14.8739 24.4957 14.9242 24.6171C14.9745 24.7384 15.0004 24.8686 15.0004 24.9999C15.0004 25.1313 14.9745 25.2614 14.9242 25.3828C14.8739 25.5042 14.8002 25.6145 14.7073 25.7074C14.6144 25.8004 14.5041 25.8741 14.3827 25.9243C14.2613 25.9746 14.1312 26.0005 13.9998 26.0005C13.8684 26.0005 13.7383 25.9746 13.6169 25.9243C13.4955 25.8741 13.3852 25.8004 13.2923 25.7074L4.29231 16.7074C4.19933 16.6146 4.12557 16.5043 4.07525 16.3829C4.02493 16.2615 3.99902 16.1314 3.99902 15.9999C3.99902 15.8685 4.02493 15.7384 4.07525 15.617C4.12557 15.4956 4.19933 15.3853 4.29231 15.2924L13.2923 6.29245C13.4799 6.1048 13.7344 5.99939 13.9998 5.99939C14.2652 5.99939 14.5197 6.1048 14.7073 6.29245C14.895 6.48009 15.0004 6.73458 15.0004 6.99995C15.0004 7.26531 14.895 7.5198 14.7073 7.70745L7.41356 14.9999H26.9998C27.265 14.9999 27.5194 15.1053 27.7069 15.2928C27.8945 15.4804 27.9998 15.7347 27.9998 15.9999Z"
-                  fill="black"
-                />
-              </svg>
-            </button>
-            <h4>Camera</h4>
-          </div>
-          <div class="modal-body">
-            <video autoplay>
-              <source src="./assets/img/dummyvideo2.mp4" />
-            </video>
-          </div>
-          <div class="modal-footer">
-            <button type="button">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.875 4.8125H15.4928L14.3215 3.05594C14.2587 2.96188 14.1737 2.88475 14.0741 2.83139C13.9744 2.77802 13.8631 2.75007 13.75 2.75H8.25C8.13693 2.75007 8.02562 2.77802 7.92594 2.83139C7.82625 2.88475 7.74127 2.96188 7.67852 3.05594L6.50633 4.8125H4.125C3.57799 4.8125 3.05339 5.0298 2.66659 5.41659C2.2798 5.80339 2.0625 6.32799 2.0625 6.875V16.5C2.0625 17.047 2.2798 17.5716 2.66659 17.9584C3.05339 18.3452 3.57799 18.5625 4.125 18.5625H17.875C18.422 18.5625 18.9466 18.3452 19.3334 17.9584C19.7202 17.5716 19.9375 17.047 19.9375 16.5V6.875C19.9375 6.32799 19.7202 5.80339 19.3334 5.41659C18.9466 5.0298 18.422 4.8125 17.875 4.8125ZM18.5625 16.5C18.5625 16.6823 18.4901 16.8572 18.3611 16.9861C18.2322 17.1151 18.0573 17.1875 17.875 17.1875H4.125C3.94266 17.1875 3.7678 17.1151 3.63886 16.9861C3.50993 16.8572 3.4375 16.6823 3.4375 16.5V6.875C3.4375 6.69266 3.50993 6.5178 3.63886 6.38886C3.7678 6.25993 3.94266 6.1875 4.125 6.1875H6.875C6.98822 6.18757 7.0997 6.15969 7.19954 6.10632C7.29939 6.05294 7.38451 5.97574 7.44734 5.88156L8.61781 4.125H13.3813L14.5527 5.88156C14.6155 5.97574 14.7006 6.05294 14.8005 6.10632C14.9003 6.15969 15.0118 6.18757 15.125 6.1875H17.875C18.0573 6.1875 18.2322 6.25993 18.3611 6.38886C18.4901 6.5178 18.5625 6.69266 18.5625 6.875V16.5ZM11 7.5625C10.2521 7.5625 9.52107 7.78427 8.89925 8.19976C8.27743 8.61524 7.79277 9.20579 7.50658 9.89673C7.22039 10.5877 7.14551 11.3479 7.29141 12.0814C7.43731 12.8149 7.79743 13.4887 8.32625 14.0175C8.85507 14.5463 9.52882 14.9064 10.2623 15.0523C10.9958 15.1982 11.7561 15.1234 12.447 14.8372C13.138 14.551 13.7285 14.0663 14.144 13.4445C14.5595 12.8227 14.7812 12.0916 14.7812 11.3438C14.7801 10.3412 14.3814 9.38013 13.6725 8.67126C12.9636 7.96238 12.0025 7.56364 11 7.5625ZM11 13.75C10.5241 13.75 10.0589 13.6089 9.66316 13.3445C9.26745 13.0801 8.95904 12.7043 8.77691 12.2646C8.59479 11.8249 8.54714 11.3411 8.63999 10.8743C8.73283 10.4075 8.962 9.97879 9.29852 9.64227C9.63504 9.30575 10.0638 9.07658 10.5306 8.98374C10.9973 8.89089 11.4811 8.93854 11.9208 9.12066C12.3605 9.30279 12.7363 9.6112 13.0007 10.0069C13.2651 10.4026 13.4062 10.8678 13.4062 11.3438C13.4062 11.9819 13.1527 12.594 12.7015 13.0452C12.2502 13.4965 11.6382 13.75 11 13.75Z"
-                  fill="white"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ===Camera open modal End=== -->
-
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <!-- jquery-cdn -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
-    <!-- <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script> -->
-    <script src="./assets/js/wow.min.js"></script>
-    <script src="./assets/js/index.js"></script>
-  </body>
-</html>

@@ -324,6 +324,15 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+  document.querySelectorAll(".nav-link[data-step]").forEach((navBtn) => {
+  navBtn.addEventListener("click", () => {
+    const step = navBtn.getAttribute("data-step");
+    if (step) {
+      steps.forEach((s) => s.classList.add("d-none"));
+      document.getElementById(`step${step}`).classList.remove("d-none");
+    }
+  });
+});
 });
 
 // Modal Form Wizard Section ENd =================================
