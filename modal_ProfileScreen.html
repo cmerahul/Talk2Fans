@@ -253,12 +253,19 @@
                     Marie Wuckert <span>Model</span>
                   </h4>
                   <div class="profile-card-body-textIcon-section">
-                    <div class="profile-card-body-subtitle">
+                    <button
+                      class="profile-card-body-subtitle"
+                      data-bs-toggle="modal"
+                      data-bs-target="#viewGiftsModal"
+                    >
                       <div class="profile-mian-card-body-img">
-                        <img src="./assets/img/giftIconimg.png" alt="coinImage" />
+                        <img
+                          src="./assets/img/giftIconimg.png"
+                          alt="coinImage"
+                        />
                       </div>
                       <h6>32</h6>
-                    </div>
+                    </button>
                     <div class="profile-card-body-subtitle">
                       <div class="profile-mian-card-body-img">
                         <img src="./assets/img/coinimg.png" alt="coinImage" />
@@ -1072,6 +1079,89 @@
       </div>
     </footer>
     <!-- ===footer-end -->
+
+    <!-- ================= View Gift modal Start ================= -->
+
+    <div
+      class="modal fade viewGifts-Modal"
+      id="viewGiftsModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Gift Purchase</h4>
+            <div class="giftTotalLabel">
+              <img src="./assets/img/giftIconimg.png" alt="" />
+              <h6>32</h6>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row gy-3">
+              <div class="col-lg-4 col-md-6">
+                <div class="gitmodal-card">
+                  <div class="gitmodal-card-left">
+                    <div class="gitmodal-card-img">
+                      <img src="./assets/img/giftIconimg.png" alt="gift" />
+                    </div>
+                    <h5>Gift Box</h5>
+                  </div>
+                  <h6 class="gift-count">05</h6>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="gitmodal-card">
+                  <div class="gitmodal-card-left">
+                    <div class="gitmodal-card-img">
+                      <img src="./assets/img/rose.png" alt="gift" />
+                    </div>
+                    <h5>Rose</h5>
+                  </div>
+                  <h6 class="gift-count">03</h6>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="gitmodal-card">
+                  <div class="gitmodal-card-left">
+                    <div class="gitmodal-card-img">
+                      <img src="./assets/img/Teddy.png" alt="gift" />
+                    </div>
+                    <h5>Teddy</h5>
+                  </div>
+                  <h6 class="gift-count">30</h6>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="gitmodal-card">
+                  <div class="gitmodal-card-left">
+                    <div class="gitmodal-card-img">
+                      <img src="./assets/img/Heart.png" alt="gift" />
+                    </div>
+                    <h5>Heart</h5>
+                  </div>
+                  <h6 class="gift-count">35</h6>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="gitmodal-card">
+                  <div class="gitmodal-card-left">
+                    <div class="gitmodal-card-img">
+                      <img src="./assets/img/glassIcon.svg" alt="gift" />
+                    </div>
+                    <h5>Champagne</h5>
+                  </div>
+                  <h6 class="gift-count">02</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= View Gift modal Start ================= -->
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- jquery-cdn -->

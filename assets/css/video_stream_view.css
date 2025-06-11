@@ -432,8 +432,10 @@
   padding: 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 7px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
+  width: 100%;
 }
 
 .live_video_screen_coins_wrp li button {
@@ -502,6 +504,136 @@
 
 .user_stream_view.video_streaming .streaming_fans_card_Wrp {
   display: block;
+}
+
+.livestreamimg-like-main-wrp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.livestreamimg-like-main-wrp .live_video_screen_like-btn {
+  border: none;
+  background-color: rgba(235, 51, 73, 0.2);
+  width: 100%;
+  max-width: 58px;
+  min-width: 58px;
+  height: 58px;
+  padding: 4.26px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 9999999;
+}
+
+.livestreamimg-like-main-wrp .live_video_screen_like-icon {
+  width: 100%;
+  max-width: 48px;
+  min-width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 14px;
+  position: relative;
+  z-index: 9999999999;
+}
+
+.live_video_screen_like-btn .user_heart_effect {
+  position: absolute;
+  bottom: 55px;
+  right: 45px;
+  padding: 0;
+  margin: 0;
+}
+
+#sendGiftIcon .modal-dialog .modal-header .giftTotalLabel {
+  max-width: 88px;
+  min-width: 88px;
+}
+
+#sendGiftIcon .giftTotalLabel h6 {
+  font-size: 14px;
+}
+
+.gitmodal-card {
+  position: relative;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.gitmodal-card input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.gitmodal-card input::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--secondaryColor);
+}
+.gitmodal-card input::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: var(--secondaryColor);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.gitmodal-card input:checked::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.gitmodal-card .gitmodal-card-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.gitmodal-card-right .gitmodal-card-right-purchase-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.gitmodal-card-right-purchase-icon span {
+  font-family: var(--Poppins-SemiBold);
+  font-size: 16px;
+  color: var(--secondaryColor);
+}
+
+.gitmodal-card .purchase-btn {
+  font-family: var(--Poppins-Regular);
+  color: var(--primaryColor);
+  font-size: 12px;
+  line-height: 1.2;
+  text-decoration: underline;
+  display: block;
+  background-color: transparent;
+  border: none;
+  margin: 7px auto 0;
+  width: 100%;
 }
 
 /* ===Media-quary=== */
@@ -679,7 +811,7 @@
     padding: 10px 10px;
   }
   .live_video_screen_coins_wrp {
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     overflow: hidden;
     overflow-x: scroll;
   }

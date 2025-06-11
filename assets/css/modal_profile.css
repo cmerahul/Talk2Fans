@@ -91,6 +91,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+  background-color: transparent;
 }
 
 .profile-mian-card-body
@@ -1890,6 +1892,110 @@
 }
 
 /* ==== Payment Varifiction Modal End ==== */
+
+/* ====== View Gift Modal Start ===== */
+
+.viewGifts-Modal .modal-dialog {
+  max-width: 900px;
+}
+
+.viewGifts-Modal .modal-dialog .modal-content {
+  background-color: var(--white);
+  border-radius: 18px;
+  border: none;
+  padding: 28px 24px;
+}
+
+.viewGifts-Modal .modal-dialog .modal-header {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 16px;
+}
+.viewGifts-Modal .modal-dialog .modal-header h4 {
+  font-family: var(--Poppins-SemiBold);
+  font-size: 18px;
+  color: var(--secondaryColor);
+  margin: 0;
+}
+
+.viewGifts-Modal .modal-dialog .modal-header .giftTotalLabel {
+  width: 100%;
+  max-width: 62px;
+  min-width: 62px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #e4e4e4;
+  border-radius: 18px;
+  padding: 8px 10px;
+}
+
+.giftTotalLabel img {
+  width: 100%;
+  max-width: 18px;
+  min-width: 18px;
+  height: 18px;
+}
+
+.giftTotalLabel h6 {
+  font-size: 16px;
+  font-family: var(--Poppins-Medium);
+  color: var(--secondaryColor);
+  margin-bottom: 0;
+}
+
+.viewGifts-Modal .modal-dialog .modal-body {
+  padding: 0;
+}
+
+.gitmodal-card {
+  padding: 14px 17px;
+  border-radius: 16px;
+  background-color: #f8f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gitmodal-card .gitmodal-card-left {
+  display: flex;
+  align-items: center;
+}
+
+.gitmodal-card .gitmodal-card-left .gitmodal-card-img {
+  width: 100%;
+  max-width: 39.22px;
+  min-width: 39.22px;
+  height: 41px;
+}
+
+.gitmodal-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gitmodal-card .gitmodal-card-left h5 {
+  margin-left: 7px;
+  font-family: var(--Poppins-Regular);
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.gitmodal-card .gift-count {
+  font-size: 16px;
+  font-family: var(--Poppins-SemiBold);
+  color: var(--secondaryColor);
+  margin-bottom: 0;
+}
+
+/* ====== View Gift Modal End ===== */
 
 /* ===Media-quary=== */
 
