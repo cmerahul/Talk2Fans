@@ -553,18 +553,43 @@
 }
 
 #sendGiftIcon .modal-dialog .modal-header .giftTotalLabel {
-  max-width: 88px;
+  max-width: min-content;
   min-width: 88px;
+  height: auto;
 }
 
 #sendGiftIcon .giftTotalLabel h6 {
   font-size: 14px;
 }
+#sendGiftIcon .giftTotalLabel svg {
+  width: 100%;
+  max-width: 22px;
+  min-width: 22px;
+  height: 22px;
+}
+
+#sendGiftIcon .modal-btn-1 {
+  max-width: 150px;
+  display: block;
+  margin-left: auto !important;
+  padding: 12px 12px;
+}
+
+.gitmodal-card.gitmodal-card-outer {
+  /* padding: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.gitmodal-card.gitmodal-card-outer .gitmodal-card {
+  padding: 0;
+  width: 100%;
+}
 
 .gitmodal-card {
   position: relative;
   cursor: pointer;
-  flex-wrap: wrap;
 }
 
 .gitmodal-card input {
@@ -614,7 +639,7 @@
 .gitmodal-card-right .gitmodal-card-right-purchase-icon {
   display: flex;
   align-items: center;
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .gitmodal-card-right-purchase-icon span {
