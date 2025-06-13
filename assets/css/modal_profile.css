@@ -93,9 +93,9 @@
   justify-content: center;
 }
 
-button.profile-card-body-subtitle{
+button.profile-card-body-subtitle {
   padding: 5px 10px;
-  background-color: #EB33491A	;
+  background-color: #eb33491a;
   border: 1px solid rgba(235, 51, 73, 0.45);
   border-radius: 7px;
   gap: 4px;
@@ -536,6 +536,36 @@ button.profile-card-body-subtitle{
 /* ==== modal Payment Section End */
 
 /* ==== modal Follow Section Strat ==== */
+.searchBarInput-section.follow-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-radius: 13px;
+  border: 0.5px solid #eb3349;
+  margin: 0 0px 18px ;
+}
+
+.searchBarInput-section.follow-search input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10.5px 10px;
+  font-size: 14px;
+  font-family: var(--Poppins-Regular);
+  color: var(--secondaryColor);
+}
+.searchBarInput-section.follow-search span.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 18px;
+  min-width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
 
 .modalProfile-follow-list {
   padding: 0;

@@ -13,6 +13,7 @@
 @import url("./loader.css");
 @import url("./Policy.css");
 @import url("./aboutUs.css");
+@import url("./errorPage.css");
 
 * {
   margin: 0px;
