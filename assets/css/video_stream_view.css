@@ -600,7 +600,7 @@
   padding-left: 20px;
 }
 
-.gitmodal-card input::before {
+.gitmodal-card input[type="radio"]::before {
   position: absolute;
   content: "";
   left: 0;
@@ -611,7 +611,7 @@
   border-radius: 50%;
   border: 1px solid var(--secondaryColor);
 }
-.gitmodal-card input::after {
+.gitmodal-card input[type="radio"]::after {
   position: absolute;
   content: "";
   left: 50%;
@@ -628,6 +628,21 @@
 .gitmodal-card input:checked::after {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
+}
+
+.gitmodal-card input.form-check-input {
+  border: 1px solid #bea8ab;
+  background-color: transparent;
+  height: 22px;
+  width: 100%;
+  min-width: 22px;
+  max-width: 22px;
+  margin-right: 10px;
+  box-shadow: none;
+}
+.gitmodal-card input.form-check-input:checked {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
 }
 
 .gitmodal-card .gitmodal-card-right {

@@ -543,7 +543,7 @@ button.profile-card-body-subtitle {
   background-color: var(--white);
   border-radius: 13px;
   border: 0.5px solid #eb3349;
-  margin: 0 0px 18px ;
+  margin: 0 0px 18px;
 }
 
 .searchBarInput-section.follow-search input {
@@ -2017,12 +2017,44 @@ button.profile-card-body-subtitle {
   object-fit: contain;
 }
 
-.gitmodal-card .gitmodal-card-left h5 {
+.gitmodal-card .gitmodal-card-left .gitmodal-card-details {
   margin-left: 7px;
+}
+
+.gitmodal-card .gitmodal-card-left .gitmodal-card-details h5 {
   font-family: var(--Poppins-Regular);
   color: rgba(0, 0, 0, 0.7);
   font-size: 14px;
   margin-bottom: 0;
+}
+
+.gitmodal-card-details .gift-info-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 4px;
+}
+
+.gift-info-section svg {
+  width: 100%;
+  max-width: 12px;
+  min-width: 12px;
+  margin-right: 3px;
+}
+
+.gift-info-section span {
+  font-size: 11px;
+  font-family: var(--Poppins-Regular);
+  color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.gift-info-section img {
+  width: 100%;
+  max-width: 15px;
+  min-width: 15px;
+  height: 14px;
 }
 
 .gitmodal-card .gift-count {
@@ -2032,6 +2064,25 @@ button.profile-card-body-subtitle {
   margin-bottom: 0;
 }
 
+.redeem-button {
+  display: block;
+  width: 100%;
+  max-width: 169px;
+  margin: 10px auto 0;
+  padding: 13px 16px;
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+  border-radius: 9px;
+  background-color: transparent;
+  font-family: var(--Poppins-Medium);
+  font-size: 16px;
+  line-height: 16.8px;
+  transition: all 0.3s ease-in-out;
+}
+.redeem-button:hover{
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
 /* ====== View Gift Modal End ===== */
 
 /* ===Media-quary=== */
